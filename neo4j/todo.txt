@@ -1,0 +1,86 @@
+node       = "TIMEPOINT"
+word       = "WORD"
+punc       = "PUNC"
+sil        = "SIL"
+trace      = "TRACE"
+prase      = "PARSE"
+turn       = "TURN"
+open_floor = "OPEN_FLOOR"
+nt         = "NT"
+dialact    = "DIALACT"
+
+9) For this speaker assign, for top dial act
+    Total(dialact)/Total # dial act this turn
+10) For this speaker, compute:
+    Total (Sentence so far)/Total turns by speaker
+    and assign to the turn
+10) For this speaker, compute:
+    Total (clause so far)/Total turns by speaker
+    and assign to to turn
+10) For this speaker, compute:
+    Total (terminal so far)/Total turns by speaker
+    and assign to the turn
+11) For the turn compute % of avg word length so far.
+12) For the turn compute % of avg turn time so far as compared to turn.
+12.1) For the turn compute the avg floor open pre turn to the avg floor open so far.
+13) Get the numbers as CSV
+14) Compute the base line.
+15) Add the feature and compute the base line.
+16) Read the full graph
+17) Perform the calc per dialog and assign the value for each turn.
+18) Compute the base line and the full feature machine leanring.
+
+
+
+
+
+
+
+
+
+
+0) Likehood is (#phonemana)/#number of turns so far
+0) % turn so far.
+1) Avg turn length in time
+2) Avg turn length in word
+3) Avg floor open tim
+
+
+
+3) Likelhood of sentence
+4) Likelhood of backchannel
+5) (Current words)/Avg turn length in time
+6) Current
+7) Liklhood of turn change
+8) Avg # silence per turn
+9) Avg length of tim(sielence) per turn.
+9) Avg punc per turn.
+10) Likelhood of a single word
+11) Likehood of clouse over all the last turns
+12) Likelhood of repair
+13) Likehood of dialog act, per top 10 acts
+14) Liklhood of active
+
+
+15) compute it when building a grpah and put it as attribute
+16) extract all the turns to CSV
+17) import the CSV to panda
+18) Perofrm forcasting.
+
+
+
+Stand allone features:
+
+1. number of words
+2. number of silence
+3. number of punc
+4. turn length in time
+5. dialog act
+6. prev dialog act.
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+As recent advances in machine learning \cite{hinton2012deep} reduce speech recognition error rates, the problem of
+turn taking in SDS rises in importance. Traditional SDS systems use a simple silence timeout approach to
+trigger turn transitions. This creates three issues \cite{arsikere2015enhanced}: first, the model might not be robust enough
+in a noisy environment (for example when driving); second, if the timeout is too short, the system might
+detect intra turn pauses (for example, the user pausing to think) as a turn transition and will cut into user's turn;
+and third, if the timeout is too long the system will wait too long to take the turn, resulting in large gaps between turns.
+
+Recent studies tried to improve over the simple threshold model by using machine learning to train models based on features derived from the last utterance. As different studies use a variety of features, we will outline those that used counting features that are close to the summary features.
+
+Arsikere et al.~\cite{atterer2008towards} focus on utterance segmentation in the context of incremental dialog system.
+Using the switchboard corpus, they used a decision tree algorithm to decide if a word is utterance final using various features and in particular the number of words in the turn so far. The usage of count features improves precision by 10\% but has very low recall (7\%), which might have occurred, according to the author, from turns with only one word.
+
+Gravano and Hirschberg \cite{gravano2011turn} used the Columbia games corpus in order to study the effectiveness of
+different turn transition cues. The authors define inter pausal units (IPU) as a maximum sequence of words surrounded
+by silence of more than 50 ms. A turn is the longest sequence of IPUs by the same speaker.
+One of the features studied is IPU duration in ms as well as number of words. As in our findings,
+the authors found that long IPUs are a good indication of upcoming turn changes (long IPUs might correlate with a speaker passing
+its average turn length). Moreover, as we show in Section 5, the authors found that combining multiple cues leads to better accuracy.
+
+Raux and Eskenazi \cite{raux2012optimizing} performed a comprehensive study on features that inform turn changes. The study
+found that timing features, like turn duration and number of pauses, have relatively strong predictive power. While Raux and Eskenazi use features of the current turn, in our study we use the timing features for the turns that have occurred so far in the current conversation.
+
+In more recent study, Nishitha and Rodney \cite{SSS1510313} used a model based on N grams of dialog acts to predict turn transitions.
+They trained a decision tree model using the switchboard data and tested bigram, trigram and 4 grams models of
+dialog acts with and without speaker id. They achieved an F1 measure of $0.67$ for the trigram model.
+In this paper we based our baseline models on bigrams and trigrams of dialog acts.  We also mapped the switchboard dialog acts from 148 dialog acts down to 9 in order to reduce data dimensionality. The prediction performance of our baseline model is comparable to their results.
+

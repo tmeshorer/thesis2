@@ -1,0 +1,7 @@
+To evaluate the importance of the summary features in predicting turn transition we used the 2010 version of the switchboard corpus \cite{calhoun2010nxt} which is based on the original release \cite{225858} the switchboard corpus.
+
+The switchboard corpus is the first large collection of phone conversations who was collected in 1990-1191. The original corpus composed of 2483 calls involving 520 speakers. Each call range from 1.5 minute to 10 minute with an average length of 6 minutes. Conversation involve randomly chosen topic, between two randomly selected speakers. The corpus was later improved and was released as part of the Penn Treebank 3 corpus which included 650 conversations. The current release as was used for this research includes 642 conversations and just over 830000 words.
+
+The current corpus contain different annotations over the original data. At the base we used the token annotation, which include words and pauses between them. The token annotation was used to compute the number of words per turn and the timing of the turn. We used the dialog act annotation to segment the turn. The dialog act annotation was derived from , and include pointer from dialog acts to the syntax tree annotation. We thus derived the dialog act start and stop time from the left most token in the systax tree start time and the right most token stop time.
+
+  

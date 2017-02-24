@@ -1,0 +1,50 @@
+To test the summary features effectiveness, we used the NXT version of the Switchboard corpus \cite{calhoun2010nxt,Godfrey-etal92:icassp} to train random forest models \cite{scikit-learn}. The baseline models were trained on local features: current and previous dialog acts. we also trained a model on the summary features as well as a model that includes both the local and the summary features.
+
+
+  This section defines the local and summary features. The local features are based on pragmatics and consist of the current and previous dialog acts. The summary features are based on measurements of each speaker's behavior over over the preceding turns in the dialogue.
+
+     \subsection{Local Features}
+
+     We define a conversation as a sequence of dialogue acts $d_1 \dots d_N$, where $d_i$ is uttered by speaker $s_i$.  We write this as the following sequence:
+%
+     \begin{equation}
+       \ldots  s_{i-2}, d_{i-2}, s_{i-1} , d_{i-1}, s_i, d_i  \ldots
+     \end{equation}
+     We denote whether there was a turn transition with $y_i$. A turn transition occurs when the speaker $s_i$ is different from speaker $s_{i-1}$. Hence, (1) can be also be viewed as a sequence of dialog acts $d_i$ followed by turn transitions $y_i$:
+%
+     \begin{equation}
+       \ldots    d_{i-2}, y_{i-1}, d_{i-1}, y_{i} , d_i, y_{i+1} \ldots
+     \end{equation}
+      In our first baseline model, we try to predict the turn transition value $y_{i+1}$ based only on the latest dialog act $d_i$. In our second baseline model, we try to predict turn transition $y_{i+1}$ based on the latest two dialog acts: $d_{i-1}$ and $d_i$.
+
+
+     \subsection{Summary Features}
+
+     As discussed in the introduction, we introduce two types of summary features in this paper: relative turn length ($rt_i$) and relative floor control ($rc_i$).  These features are used in predicting whether there is a change in speaker $y_{i+1}$ after dialogue act $d_i$.
+
+     To compute the summary features, at dialogue act $d_i$, we denote $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
+%
+    \begin{equation}
+     avg\_t_i = \frac{\sum_{t \in S_i} length(t)}{|S_i|}
+     \end{equation}
+     The \textit{relative turn length} summary feature of $t_i$, denoted as $rt_i$, measures the percent of the length of the turn $t_i$ so far, relative to the average turn length up to $t_i$ of the current speaker $s_i$ (but not including $t_i$).
+%
+     \begin{equation}
+            rt_i =  \frac{length(t_i)} {avg\_t_i}
+     \end{equation}
+     Note that we calculate two versions of $rt_i$: in seconds and in words.  The purpose of $rt_i$ is to let the listener, in predicting turn changes, take into account whether the current speaker is exceeding his or her average turn length.
+
+     The \textit{relative floor control}, denoted as $rc_i$, measures the percent of time in which the current speaker controlled the conversation floor up to $d_i$. We again define $S_i$ as above, and we define $L_i$ to be the turns of the other conversant (the listener of $d_i$). We first compute the conversation length up to $d_i$ denoted as $c_i$ which excludes inter-utterance pauses.
+     \begin{equation}
+         c_i = \sum_{t \in S_i \cup L_i} length(t)
+     \end{equation}
+     To compute relative floor control at $d_i$, we divide the floor time of the speaker $s_i$ up to turn $t_i$ by $c_i$:
+
+     \begin{equation}
+        rc_i = \frac{\sum_{t \in S_i} length(t)} {c_i}
+     \end{equation}
+     Note that we calculate $rc_i$ in seconds and in words. Participants can use the relative floor control as a means to determine if one speaker is controlling the conversation - a controlling speaker will probably be less inclined to give up the floor.
+
+     We use these two summary features in the \textit{summary model} and \textit{full model}, as described in the next section.
+
+

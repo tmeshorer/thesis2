@@ -1,0 +1,39 @@
+%Move 1 Introducing the field
+%Move 2 Introducing the general topic within the field
+%Move 3 Introducing the particular topic (within the general topic)
+%Move 4 Defining the scope of the particular topic
+%Move 5 Preparing for present research
+%Move 6 Introducing present research
+Conversations are the most common form of everyday social interaction. Conversations are interactive and characterized by rapid exchange of messages between the conversants. 
+In their seminal work \cite{sacks1974simplest} that created the foundation for the field of conversation analysis, Sack et al. found that turn taking is a universal
+set of rules which define the framework of interaction. Later work showed that the turn taking system also and crosses culture, age and language.  
+According to \cite{sacks1974simplest} the majority of time in a conversation a single speaker control the conversation floor, that the conversant takes turns, and that the gap and overlap between turns is kept to minimum. This attributes apply regardless of turn length (from a single word to an whole sentence) and conversation length.
+To keep the gaps between turns minimal while supporting speaker change, the listener must prepare its turn before the current turn end and the speaker need to release
+the conversation floor such that the next speaker could gain control of it. In this study we concern of the latter.   
+   
+
+Spoken dialogue systems (SDS) are a computer systems that support conversional user interface. User engage in a conversation with computer in order to
+perform their needed task (for example information seeking) in using their natural apparatus - voice. Hence to be effective and user friendly, an SDS
+system should not only be able to understand the semantic of user utterance, but should also adhere to the delicate system of turn exchange and timing.       
+
+Up until recently the major barrier to natural interaction with users was high degree of errors during speech recognition. However, recent advances 
+in machine learning , greatly reduced this barrier. This increase the importance of other components in SDS like turn taking subsystem.
+         
+Early SDS systems did not contain any turn management component and instead used a fixed timeout to detect user turn ending. Using simple a timeout led
+to both barge-in situations in which the system prematurely started to speak while the user still assume its turn. In order to decrease the barge-ins
+an increase in timeout cause large gaps between turns, where the user wait for the system to speak.
+To improve the situation, later SDS systems are trying to incorporate recent finding in human-human conversation and create prediction models which
+are based on features from the latest utterance in order to predict turn transition. Prediction in human-human conversation is based syntactic \cite{sacks1974simplest,de2006projecting}, prosodic  \cite{ford1996interactional,stolcke2002speaker,ferrer2003prosody}, pragmatic \cite{ford2001intersection}.
+% introducing current research
+
+While local features of the latest utterance form an important input for prediction, this thesis postulate that speakers might also use long term features which are computed over
+many turns. The long term features form a conversational image of the speaker and contain features that represent its average behavior over many turns. For example, average turn length
+measure the length in both time and words of each converstants turn up to this turn. Hence, if the current speaker turn length is more than its average turn length, it is more likely that a turn
+ending will occur.
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+% Example thesis demonstrating cslu-thesis.cls usage
+%
+% Document options:
+%
+% copyright - include a copyright page
+% listoftables - include a list of tables
+% listoffigures - include a list of figures
+% twoside - format for two-sided printing and binding
+% masters - generate a Master's thesis instead of a Ph.D. thesis
+%
+% All other options are passed to the underlying report class, e.g., 10pt
+\documentclass[copyright,masters]{cslu-thesis}
+
+\usepackage{lipsum} % for placeholder content text only
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath,bm}
+\usepackage{textcomp}
+\usepackage{tkz-graph}
+\usepackage{enumitem}
+
+
+\begin{document}
+
+
+% Required info for title page and elsewhere
+\title{Using Past Speaker Behavior to Better Predict Turn Transitions}
+\author{Tomer M.\ Meshorer}
+\previousdegrees{B.\,A. Computer Science, Tel Aviv University, 1997}
+\discipline{Computer Science \& Engineering}
+% Advisor, readers are in {Name}{Title} format
+% Fourth reader is optional; all others are required
+\principaladvisor{Prof Peter A Heeman}{Research Associate Professor}
+\firstreader{Steven Bedrick}{Research Assistant Professor}
+\secondreader{Stephen Wu}{Research Associate Professor}
+\thirdreader{NA}{NA}
+% Date degree will be conferred
+\degreedate{June}{2016}
+% Override the default department if needed
+% Default is "Center for Spoken Language Understanding"
+%\renewcommand{\department}{Department of Biomedical Engineering}
+
+
+% Front matter
+% Title, copyright, signature pages
+% See document options above
+\frontmatter
+
+
+% Additional preface sections (optional)
+\prefacesection{Dedication}
+
+
+\prefacesection{Acknowledgements}
+
+
+% Table of contents, lists of tables/figures
+% See document options above
+\tableofcontents
+
+
+% Abstract
+\abstract
+ Conversations are at the core of everyday social interactions. The interactions between conversants are preformed within the realm of a sophisticated and self managed turn taking system. The turn taking system in human conversations supports minimum speaker overlap during turn transition and minimum gaps between turns. Spoken dialogue systems represent new form of conversational user interface, which permit users to use their voice in order to interact with the computer. As such, the turn taking capabilities of SDS should evolve from simple timeout to more human like. Recent advances in turn taking system for SDS use different local features of the last few utterances to predict turn transition.
+ This thesis explores using a summary of past speaker behavior to better predict turn transitions. We believe that the summary features represent an evolving model of the other conversant. For example, speakers who, on average, use long turns, will likely to use long turns in the future. Moreover, speakers with more control of the conversation floor will be unlikely to yield their turn often. As the conversational image of the speaker evolves with the conversation, other speakers might adjust their turn taking behavior in response.
+ We computed two types of summary features that represent the current speaker's past turn-taking behavior: \textit{relative turn length} and \textit{relative floor control}. Relative turn length measures the current turn length so far (in time and words) relative to the speaker's average turn length. Relative floor control measures the speaker's control of the conversation floor (in time and words) relative to the total conversation length. The features are recomputed for each dialog act based on past turns of the speaker within the current conversation. Using the switchboard corpus, we trained two models to predict turn transitions: one with just local features (e.g., current speech act, previous speech act) and one that added the summary features. Our results shows that using the summary features improve turn transitions prediction.
+ % Main body
+\body
+
+
+\part{Introduction} % parts are optional, just chapters are OK too
+
+\chapter{Introduction}
+\input{p1}
+\section{Thesis Statement}
+\input{p2}
+\section{Approach}
+\input{p3}
+\section{Dissertation Structure}
+\input{p4}
+\section{Contribution}
+\input{p5}
+\chapter{Related Work}
+\input{p6}
+\section{Human - Human Conversations}
+\input{p7}
+\section{Human - Computer Conversations}
+\input{p8}
+\chapter{Experiment}
+\section{Data}
+\input{p9}
+\section{Data Preparation}
+\input{p10}
+\section{Results}
+\input{p11}
+\chapter{Conclusions}
+\input{p12}
+\section{Future Direction}
+\input{p14}
+
+
+% Appendix
+\appendix
+
+
+% Bibliography
+\nocite{*} % temporarily include all references, even if not cited
+\bibliographystyle{abbrv} % check with your advisor for appropriate style
+\bibliography{thesis} % name of your thesis.bib file
+
+
+% Biographical note
+\biography
+\lipsum[9]
+
+
+\end{document}

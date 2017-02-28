@@ -1,22 +1,29 @@
 \contentsline {chapter}{Dedication}{iv}
 \contentsline {chapter}{Acknowledgements}{v}
-\contentsline {chapter}{Abstract}{vii}
+\contentsline {chapter}{Abstract}{viii}
 \contentsline {part}{I\hspace {1em}Introduction}{1}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Thesis Statement}{3}
 \contentsline {section}{\numberline {1.2}Approach}{3}
-\contentsline {subsection}{\numberline {1.2.1}Local Features}{4}
+\contentsline {subsection}{\numberline {1.2.1}Local Features}{3}
 \contentsline {subsection}{\numberline {1.2.2}Summary Features}{4}
 \contentsline {section}{\numberline {1.3}Dissertation Structure}{5}
 \contentsline {section}{\numberline {1.4}Contribution}{5}
 \contentsline {chapter}{\numberline {2}Related Work}{6}
-\contentsline {section}{\numberline {2.1}Human - Human Conversations}{6}
-\contentsline {section}{\numberline {2.2}Human - Computer Conversations}{8}
-\contentsline {chapter}{\numberline {3}Experiment}{10}
-\contentsline {section}{\numberline {3.1}Data}{10}
-\contentsline {section}{\numberline {3.2}Data Preparation}{10}
-\contentsline {section}{\numberline {3.3}Results}{13}
-\contentsline {chapter}{\numberline {4}Conclusions}{15}
-\contentsline {section}{\numberline {4.1}Future Direction}{15}
-\contentsline {chapter}{Bibliography}{17}
-\contentsline {chapter}{Biographical Note}{21}
+\contentsline {section}{\numberline {2.1}Human-Human Conversations}{6}
+\contentsline {section}{\numberline {2.2}Human-Computer Conversations}{7}
+\contentsline {chapter}{\numberline {3}Study one: Long term features over all past turns}{9}
+\contentsline {section}{\numberline {3.1}Data}{9}
+\contentsline {section}{\numberline {3.2}Data Preparation}{9}
+\contentsline {subsection}{\numberline {3.2.1}Classification Models}{11}
+\contentsline {section}{\numberline {3.3}Results of first experiment}{12}
+\contentsline {chapter}{\numberline {4}Study two: Long term features moving average}{14}
+\contentsline {section}{\numberline {4.1}Moving Average}{14}
+\contentsline {subsection}{\numberline {4.1.1}Local Features}{14}
+\contentsline {subsection}{\numberline {4.1.2}Summary Features Moving Averages}{15}
+\contentsline {section}{\numberline {4.2}Data}{16}
+\contentsline {section}{\numberline {4.3}Data Preparation}{16}
+\contentsline {section}{\numberline {4.4}Results}{16}
+\contentsline {chapter}{\numberline {5}Conclusions}{17}
+\contentsline {section}{\numberline {5.1}Future Direction}{17}
+\contentsline {chapter}{Bibliography}{19}

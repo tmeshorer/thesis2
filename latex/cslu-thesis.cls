@@ -1,17 +1,17 @@
 % LaTeX format for theses at CSLU
-% 
+%
 % Based on "Guidelines and Regulations for Completion of Master's and PhD Degrees,"
 % Section 4, "Instructions for Preparing the Master's Thesis or Doctoral Dissertation"
 % http://www.ohsu.edu/xd/education/schools/school-of-medicine/academic-programs/graduate-studies/students/upload/Guidelines-and-Regulations-revised-9-2010.pdf
 % Last referenced 2014/06/10
-% 
+%
 % This document class attempts to adhere to the above guidelines as closely as possible.
 % However, no guarantees are made as to the accuracy and acceptability of the resulting output.
 % Use at your own risk.
-% 
+%
 % Some portions are blindly copied from the outdated, but still-in-use ogi-thesis.sty.
 % These portions likely require revision, and are not guaranteed to be up-to-date.
-% 
+%
 % Latest version available at:
 % http://gitlab.cslu.ohsu.edu/sniderb/cslu-thesis
 
@@ -101,7 +101,7 @@
 %                         \if\@tempa b\advance\@tempcnta 4\relax\fi
 %                         \if\@tempa p\advance\@tempcnta 8\relax\fi
 %         }\global\count\@currbox\@tempcnta}\@fltovf\fi
-%    \global\setbox\@currbox\vbox\bgroup 
+%    \global\setbox\@currbox\vbox\bgroup
 %    \def\baselinestretch{1}\@normalsize
 %    \boxmaxdepth\z@
 %    \hsize\columnwidth \@parboxrestore}
@@ -116,7 +116,7 @@
 
 % Redefine the macro used for footnotes to use single spacing
 \long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
-    \interlinepenalty\interfootnotelinepenalty 
+    \interlinepenalty\interfootnotelinepenalty
     \splittopskip\footnotesep
     \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
     \hsize\columnwidth \@parboxrestore
@@ -273,7 +273,9 @@
         \vfill
         \signature{\@secondreader}{\@secondreadertitle}
         \vfill
-        \signature{\@thirdreader}{\@thirdreadertitle}
+        \ifcsname @thirdreader\endcsname
+            \signature{\@thirdreader}{\@thirdreadertitle}
+        \fi
         \vfill
         \ifcsname @fourthreader\endcsname
             \signature{\@fourthreader}{\@fourthreadertitle}
@@ -291,7 +293,7 @@
 	    \copyrightpage
 	\fi
     \signaturepage
-}   
+}
 
 
 % Additional preface sections
@@ -361,7 +363,7 @@
 \newcommand{\biography}{%
 	\def\@makeschapterhead##1{
 	    \vspace*{0.2in}{
-	        \center 
+	        \center
             \huge \bf ##1\par
 	        \nobreak \vskip 40pt }
 	    }
@@ -401,7 +403,7 @@
 % out at the top of the page and used \huge rather than \Huge font sizes.
 \def\@makeschapterhead#1{%
     \vspace*{0.2in}{%
-        \center 
+        \center
         \huge \bf #1\par
         \nobreak \vskip 40pt
     }

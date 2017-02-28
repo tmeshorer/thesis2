@@ -1,7 +1,5 @@
-To test the summary features effectiveness, we used the NXT version of the Switchboard corpus \cite{calhoun2010nxt,Godfrey-etal92:icassp} to train random forest models \cite{scikit-learn}. The baseline models were trained on local features: current and previous dialog acts. we also trained a model on the summary features as well as a model that includes both the local and the summary features.
-
-
-  This section defines the local and summary features. The local features are based on pragmatics and consist of the current and previous dialog acts. The summary features are based on measurements of each speaker's behavior over over the preceding turns in the dialogue.
+To test the effectiveness of the summary features, we used the NXT version of the Switchboard corpus \cite{calhoun2010nxt,Godfrey-etal92:icassp} to train random forest models \cite{scikit-learn}. The baseline models were trained on local features: current and previous dialog acts. We also trained a model on the summary features as well as a model that includes both the local and the summary features.
+The summary features are based on measurements of each speaker's behavior over the preceding turns in the dialogue.
 
      \subsection{Local Features}
 
@@ -43,7 +41,7 @@ To test the summary features effectiveness, we used the NXT version of the Switc
      \begin{equation}
         rc_i = \frac{\sum_{t \in S_i} length(t)} {c_i}
      \end{equation}
-     Note that we calculate $rc_i$ in seconds and in words. Participants can use the relative floor control as a means to determine if one speaker is controlling the conversation - a controlling speaker will probably be less inclined to give up the floor.
+     Note that we calculate $rc_i$ in seconds and in words. Participants can use the relative floor control as a means to determine if one speaker is controlling the conversation; a controlling speaker will probably be less inclined to give up the floor.
 
      We use these two summary features in the \textit{summary model} and \textit{full model}, as described in the next section.
 

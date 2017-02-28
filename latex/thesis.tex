@@ -18,7 +18,35 @@
 \usepackage{textcomp}
 \usepackage{tkz-graph}
 \usepackage{enumitem}
+\usepackage{listings}
+\usepackage{booktabs}
 
+\GraphInit[vstyle = Shade]
+\tikzset{
+  LabelStyle/.style = { rectangle, rounded corners, draw,
+                        minimum width = 2em, fill = yellow!50,
+                        text = red, font = \bfseries },
+  VertexStyle/.append style = { inner sep=5pt,
+                                font = \Large\bfseries},
+  EdgeStyle/.append style = {->, bend left} }
+
+\def\vec#1{\ensuremath{\bm{{#1}}}}
+\def\mat#1{\vec{#1}}
+
+
+\lstset{language=Java,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=false,
+  breakatwhitespace=false,
+  tabsize=3
+}
 
 \begin{document}
 
@@ -30,12 +58,12 @@
 \discipline{Computer Science \& Engineering}
 % Advisor, readers are in {Name}{Title} format
 % Fourth reader is optional; all others are required
-\principaladvisor{Prof Peter A Heeman}{Research Associate Professor}
+\principaladvisor{Prof. Peter A. Heeman}{Research Associate Professor}
 \firstreader{Steven Bedrick}{Research Assistant Professor}
 \secondreader{Stephen Wu}{Research Associate Professor}
-\thirdreader{NA}{NA}
+%\thirdreader{NA}{NA}
 % Date degree will be conferred
-\degreedate{June}{2016}
+\degreedate{August}{2016}
 % Override the default department if needed
 % Default is "Center for Spoken Language Understanding"
 %\renewcommand{\department}{Department of Biomedical Engineering}
@@ -49,9 +77,18 @@
 
 % Additional preface sections (optional)
 \prefacesection{Dedication}
-
-
+I would like to dedicate this work to my father, Israel Sagie $(1945-2016)$, who passed away during the preparation of this work.
+His wisdom and support will always guide me.
 \prefacesection{Acknowledgements}
+I would like to express my deep appreciation to Prof. Peter Heeman for his guidance during this research. Without his valuable assistance,
+I could not have completed this work.
+
+I would also like to express my appreciation to the members of the committee, Prof. Steven Bedrick and Prof. Stephen Wu, for reviewing
+the work and providing invaluable feedback.
+
+I am also indebted to the staff and students of the Center of Spoken Language Understanding, and especially to the gradate program coordinator, Ms. Patricia Dickerson,
+for her valuable assistance during the course of my studies.
+This work was funded by the National Science Foundation under grant IIS-1321146.
 
 
 % Table of contents, lists of tables/figures
@@ -61,9 +98,11 @@
 
 % Abstract
 \abstract
- Conversations are at the core of everyday social interactions. The interactions between conversants are preformed within the realm of a sophisticated and self managed turn taking system. The turn taking system in human conversations supports minimum speaker overlap during turn transition and minimum gaps between turns. Spoken dialogue systems represent new form of conversational user interface, which permit users to use their voice in order to interact with the computer. As such, the turn taking capabilities of SDS should evolve from simple timeout to more human like. Recent advances in turn taking system for SDS use different local features of the last few utterances to predict turn transition.
- This thesis explores using a summary of past speaker behavior to better predict turn transitions. We believe that the summary features represent an evolving model of the other conversant. For example, speakers who, on average, use long turns, will likely to use long turns in the future. Moreover, speakers with more control of the conversation floor will be unlikely to yield their turn often. As the conversational image of the speaker evolves with the conversation, other speakers might adjust their turn taking behavior in response.
- We computed two types of summary features that represent the current speaker's past turn-taking behavior: \textit{relative turn length} and \textit{relative floor control}. Relative turn length measures the current turn length so far (in time and words) relative to the speaker's average turn length. Relative floor control measures the speaker's control of the conversation floor (in time and words) relative to the total conversation length. The features are recomputed for each dialog act based on past turns of the speaker within the current conversation. Using the switchboard corpus, we trained two models to predict turn transitions: one with just local features (e.g., current speech act, previous speech act) and one that added the summary features. Our results shows that using the summary features improve turn transitions prediction.
+ Conversations are at the core of everyday social interactions. The interactions between conversants are preformed within the realm of a sophisticated and self-managed turn taking system. In human conversations, the turn taking system  supports minimal speaker overlap during turn transitions and minimum gaps between turns. Spoken dialogue systems are a new form of conversational user interface that permits users to use their voice to interact with the computer. As such, the turn taking capabilities of SDS should evolve from a simple timeout to a more human-like model. Recent advances in turn taking systems for SDS use different local features of the last few utterances to predict turn transition.
+
+This thesis explores using a summary of past speaker behavior to better predict turn transitions. We believe that the summary features represent an evolving model of the other conversant. For example, speakers who typically use long turns will be likely to use long turns in the future. Moreover, speakers with more control of the conversation floor will be unlikely to yield their turn often. As the conversational image of the speaker evolves with the conversation, other speakers might adjust their turn taking behavior in response.
+
+We computed two types of summary features that represent the current speaker's past turn-taking behavior: \textit{relative turn length} and \textit{relative floor control}. Relative turn length measures the current turn length so far (in time and words) relative to the speaker's average turn length. Relative floor control measures the speaker's control of the conversation floor (in time and words) relative to the total conversation length. The features are recomputed for each dialog act based on past turns of the speaker within the current conversation. Using the switchboard corpus, we trained two models to predict turn transitions: one with just local features (e.g., current speech act, previous speech act) and one that added the summary features. Our results shows that using the summary features improves turn transitions prediction.
  % Main body
 \body
 
@@ -82,17 +121,26 @@
 \input{p5}
 \chapter{Related Work}
 \input{p6}
-\section{Human - Human Conversations}
+\section{Human-Human Conversations}
 \input{p7}
-\section{Human - Computer Conversations}
+\section{Human-Computer Conversations}
 \input{p8}
-\chapter{Experiment}
+\chapter{Study one: Long term features over all past turns}
 \section{Data}
 \input{p9}
 \section{Data Preparation}
 \input{p10}
-\section{Results}
+\section{Results of first experiment}
 \input{p11}
+\chapter{Study two: Long term features moving average}
+\section{Moving Average}
+\input{p20}
+\section{Data}
+\input{p21}
+\section{Data Preparation}
+\input{p22}
+\section{Results}
+\input{p15}
 \chapter{Conclusions}
 \input{p12}
 \section{Future Direction}
@@ -110,8 +158,8 @@
 
 
 % Biographical note
-\biography
-\lipsum[9]
+%\biography
+%\lipsum[9]
 
 
 \end{document}

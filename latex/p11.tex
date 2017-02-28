@@ -1,7 +1,7 @@
-We first analyze the results in terms of accuracy: how often the models correctly predicted whether a turn transition occurred or not, in other words, how often it predicts the correct value of $y_{i+1}$.
+We first analyzed the results in terms of accuracy: how often the models correctly predicted whether a turn transition occurred; in other words, how often the model predicts the correct value of $y_{i+1}$.
 %
 Table 2 shows the results of training a random forest for each model.
-We see that using the summary features provides better accuracy than baseline 1, which only uses the current current dialog act ($66.14\%$ vs $60.26\%$). In addition, using the full model yields an improvement of over $1.58\%$ in the result.
+We see that using the summary features provides better accuracy than baseline 1, which use only the current dialog act ($66.14\%$ vs $60.26\%$). In addition, using the full model yields an improvement of over $1.58\%$ in the result.
 %
 \begin{table}[ht!]
 \scriptsize
@@ -13,7 +13,7 @@ We see that using the summary features provides better accuracy than baseline 1,
     Baseline 1      & 60.26\% & 0.63 & \scriptsize{max\_features=sqrt, max\_depth=7} \\
     Baseline 2     & 74.43\% & 0.79 & \scriptsize{max\_features=log2, max\_depth=9}\\
     Summary        & 66.14\% & 0.65 & \scriptsize{max\_features=sqrt, max\_depth=5} \\
-    Full           & 76.05\% & 0.82 &\scriptsize{ max\_features=10, max\_depth=9}\\
+    Full           & 76.05\% & 0.82 &\scriptsize{max\_features=10, max\_depth=9}\\
   \hline
 \end{tabular}
 \end{center}
@@ -22,7 +22,7 @@ We see that using the summary features provides better accuracy than baseline 1,
 \end{table}
 
 The effect can also be seen in Figure 3, which shows the ROC curves and the AUC for each
-model. We notice that the AUC of the summary model is better than baseline model ($0.65$ vs $0.63$), and when adding the summary features to the local features, the full model, we see the AUC improves ($0.82$ vs $0.79$). This suggests that while the discrimination facility of the summary features is lacking (AUC $<0.7$), adding them to a classifier that uses local features (full model) yields better results than the baseline.
+model. We notice that the AUC of the summary model is better than baseline model ($0.65$ vs $0.63$), and when adding the summary features to the local features in the full model, we see the AUC improves ($0.82$ vs $0.79$). This suggests that while the discrimination facility of the summary features is lacking (AUC $<0.7$), adding them to a classifier that uses local features (full model) yields better results than the baseline.
 %
  \begin{figure}[ht!]
  \centering

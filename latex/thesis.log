@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  23 FEB 2017 09:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  28 FEB 2017 07:34
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -563,41 +563,89 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box39
 \enitdp@description=\count134
 )
-(thesis.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count135
+\lst@gtempboxa=\box40
+\lst@token=\toks38
+\lst@length=\count136
+\lst@currlwidth=\dimen169
+\lst@column=\count137
+\lst@pos=\count138
+\lst@lostspace=\dimen170
+\lst@width=\dimen171
+\lst@newlines=\count139
+\lst@lineno=\count140
+\lst@maxwidth=\dimen172
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count141
+\lst@skipnumbers=\count142
+\lst@framebox=\box41
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count143
+\@cmidlb=\count144
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count145
+\@lastruleclass=\count146
+\@thisrulewidth=\dimen185
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 51.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
-\scratchdimen=\dimen169
-\scratchbox=\box40
-\nofMPsegments=\count136
-\nofMParguments=\count137
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count138
-\MPscratchDim=\dimen170
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count147
+\scratchdimen=\dimen186
+\scratchbox=\box42
+\nofMPsegments=\count148
+\nofMParguments=\count149
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count150
+\MPscratchDim=\dimen187
+\MPnumerator=\count151
+\makeMPintoPDFobject=\count152
+\everyMPtoPDFconversion=\toks40
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -643,32 +691,32 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-ABD: EveryShipout initializing macros [1
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count153
+ [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
+LaTeX Font Info:    Try loading font information for U+msa on input line 80.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 80.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [4
 
 ] [5
 
-] (thesis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+]
+(thesis.toc [6
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [6
+ [7] [8
 
-] [7
-
-] [8]
-[1
+] [9] [1
 
 ]
 Chapter 1.
@@ -676,55 +724,53 @@ Chapter 1.
 
 ]) (p2.tex) (p3.tex [3] [4]) (p4.tex) (p5.tex) [5]
 Chapter 2.
-(p6.tex
+(p6.tex) (p7.tex [6
 
-LaTeX Warning: Citation `duduncan1972some' on page 6 undefined on input line 6.
-
-
-) (p7.tex [6
-
-]) (p8.tex [7]) [8] [9]
+]) (p8.tex [7]) [8]
 Chapter 3.
-(p9.tex
+(p9.tex) (p10.tex
 
-LaTeX Warning: Citation `225858' on page 10 undefined on input line 1.
-
-) (p10.tex
+pdfTeX warning: pdflatex.exe (file ./pipeline1.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<pipeline1.pdf, id=71, 794.97pt x 614.295pt>
 File: pipeline1.pdf Graphic file (type pdf)
-Package pdftex.def Info: Interpreting graphics options as viewport.
  <use pipeline1.pdf>
 Package pdftex.def Info: pipeline1.pdf used on input line 5.
-(pdftex.def)             Requested size: 213.19627pt x 213.19257pt.
-File: graph5.jpg Graphic file (type jpg)
-Package pdftex.def Info: Interpreting graphics options as viewport.
- <use graph5.jpg>
-Package pdftex.def Info: graph5.jpg used on input line 12.
-(pdftex.def)             Requested size: 213.19627pt x 224.37643pt.
- [10
+(pdftex.def)             Requested size: 284.52756pt x 219.86188pt.
+ [9
 
-] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+]
+<graph5.jpg, id=75, 749.80125pt x 268.75406pt>
+File: graph5.jpg Graphic file (type jpg)
+ <use graph5.jpg>
+Package pdftex.def Info: graph5.jpg used on input line 14.
+(pdftex.def)             Requested size: 284.52756pt x 101.98407pt.
+ [10 <./pipeline1.pdf> <./graph5.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/10 Switchboard
  []
 
-[12]) (p11.tex <roc.pdf, id=82, 1445.4pt x 1445.4pt>
+) [11] (p11.tex <roc.pdf, id=86, 1445.4pt x 1445.4pt>
 File: roc.pdf Graphic file (type pdf)
  <use roc.pdf>
 Package pdftex.def Info: roc.pdf used on input line 29.
 (pdftex.def)             Requested size: 170.70569pt x 170.70569pt.
-) [13]
-[14 <./roc.pdf>]
+ [12 <./roc.pdf>]) [13]
 Chapter 4.
+(p20.tex [14
+
+]) [15] (p21.tex) (p22.tex) (p15.tex) [16]
+Chapter 5.
 (p12.tex) (p14.tex
 
-LaTeX Warning: Citation `HeemanAllen95:cdrom' on page 15 undefined on input lin
+LaTeX Warning: Citation `HeemanAllen95:cdrom' on page 17 undefined on input lin
 e 5.
 
-[15
+[17
 
-]) (thesis.bbl [16] [17
+]) (thesis.bbl [18] [19
 
-] [18]
+] [20]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -737,21 +783,19 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [19]) [20] [21
-
-] (thesis.aux)
+ [21]) [22] (thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14746 strings out of 493333
- 283572 string characters out of 3139182
- 421045 words of memory out of 3000000
- 17934 multiletter control sequences out of 15000+200000
+ 16045 strings out of 493333
+ 302583 string characters out of 3139182
+ 459426 words of memory out of 3000000
+ 19201 multiletter control sequences out of 15000+200000
  11590 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,56p,956b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,11n,72p,956b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tmeshorer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
 600\tcrm1000.pk> <C:\Users\tmeshorer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
 knappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
@@ -766,9 +810,9 @@ e1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on thesis.pdf (29 pages, 249672 bytes).
+Output written on thesis.pdf (31 pages, 346988 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 227 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

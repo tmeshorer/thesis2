@@ -1,0 +1,153 @@
+# plot scatter matrix
+
+import pandas as pd
+    
+iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
+pd.tools.plotting.scatter_matrix(iris_df, figsize=(8, 8));
+
+# Stratify the split
+
+train_X, test_X, train_y, test_y = train_test_split(X, y, 
+                                                    train_size=0.5, 
+                                                    random_state=123,
+                                                    stratify=y)
+#fit the model
+classifier.fit(X_train, y_train)                                                    
+
+#predict
+prediction = classifier.predict(X_test)
+
+
+np.mean(prediction == y_test)
+
+# Cross validation score
+cross_val_score(classifier, X, y, cv=5)
+
+
+#Validation curve
+
+from sklearn.model_selection import validation_curve
+n_neighbors = [1, 3, 5, 10, 20, 50]
+train_errors, test_errors = validation_curve(KNeighborsRegressor(), X, y, param_name="n_neighbors",
+                                             param_range=n_neighbors, cv=cv)
+plt.plot(n_neighbors, train_errors.mean(axis=1), label="train error")
+plt.plot(n_neighbors, test_errors.mean(axis=1), label="test error")
+plt.legend(loc="best")
+
+
+#Cross validation with validation
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+
+param_grid = {'C': [0.001, 0.01, 0.1, 1, 10], 'gamma': [0.001, 0.01, 0.1, 1]}
+cv = KFold(n_splits=10, shuffle=True)
+
+grid = GridSearchCV(SVR(), param_grid=param_grid, cv=cv)
+
+grid.fit(X_train, y_train)
+grid.score(X_test, y_test)
+
+#Confusion matrix
+from sklearn.metrics import confusion_matrix
+confusion_matrix(y_test, y_test_pred)
+
+# precision/recall/f1
+from sklearn.metrics import classification_report
+print(classification_report(y_test, y_test_pred))
+
+#ROC curve
+from sklearn.metrics import roc_curve, roc_auc_score
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+
+for gamma in [.01, .05, 1]:
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate (recall)")
+    svm = SVC(gamma=gamma).fit(X_train, y_train)
+    decision_function = svm.decision_function(X_test)
+    fpr, tpr, _ = roc_curve(y_test, decision_function)
+    acc = svm.score(X_test, y_test)
+    auc = roc_auc_score(y_test, svm.decision_function(X_test))
+    plt.plot(fpr, tpr, label="acc:%.2f auc:%.2f" % (acc, auc), linewidth=3)
+plt.legend(loc="best");
+
+
+#Random forest classifier CV GridSearchCV
+
+from sklearn.model_selection import GridSearchCV
+from sklearn.datasets import load_digits
+from sklearn.ensemble import RandomForestClassifier
+
+digits = load_digits()
+X, y = digits.data, digits.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+
+rf = RandomForestClassifier(n_estimators=200)
+parameters = {'max_features':['sqrt', 'log2', 10],
+              'max_depth':[5, 7, 9]}
+
+clf_grid = GridSearchCV(rf, parameters, n_jobs=-1)
+clf_grid.fit(X_train, y_train)
+
+#Gradient boosting
+from sklearn.ensemble import GradientBoostingRegressor
+clf = GradientBoostingRegressor(n_estimators=100, max_depth=5, learning_rate=.2)
+clf.fit(X_train, y_train)
+
+print(clf.score(X_train, y_train))
+print(clf.score(X_test, y_test))
+
+
+
+#Search gradient boosting
+
+
+from sklearn.datasets import load_digits
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import GradientBoostingClassifier
+
+digits = load_digits()
+X_digits, y_digits = digits.data, digits.target
+X_digits_train, X_digits_test, y_digits_train, y_digits_test = train_test_split(X_digits, y_digits, random_state=1)
+
+param_grid = {'learning_rate': [0.01, 0.1, 0.1, 0.5, 1.0],
+              'max_depth':[1, 3, 5, 7, 9]}
+
+grid = GridSearchCV(GradientBoostingClassifier(), param_grid=param_grid, cv=5, verbose=3)
+grid.fit(X_digits_train, y_digits_train)
+print('Best score for GradientBoostingClassifier: {}'.format(grid.score(X_digits_test, y_digits_test)))
+print('Best parameters for GradientBoostingClassifier: {}'.format(grid.best_params_))
+
+#### Feature selection 
+
+# Use P Value
+from sklearn.feature_selection import SelectPercentile
+
+# use f_classif (the default) and SelectPercentile to select 50% of features:
+select = SelectPercentile(percentile=50)
+select.fit(X_train, y_train)
+# transform training set:
+X_train_selected = select.transform(X_train)
+
+print(X_train.shape)
+print(X_train_selected.shape)
+
+
+from sklearn.feature_selection import f_classif, f_regression, chi2
+F, p = f_classif(X_train, y_train)
+
+#Get Feature importance
+from sklearn.feature_selection import SelectFromModel
+from sklearn.ensemble import RandomForestClassifier
+select = SelectFromModel(RandomForestClassifier(n_estimators=100, random_state=42), threshold="median")
+
+
+
+
+
+
+
+
+
+

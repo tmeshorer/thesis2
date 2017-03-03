@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  28 FEB 2017 07:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  2 MAR 2017 16:51
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -610,7 +610,26 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (thesis.aux)
+) (thesis.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -627,8 +646,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 51.
@@ -708,15 +726,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [5
 
 ]
-(thesis.toc [6
-
-])
+(thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [7] [8
+ [6
 
-] [9] [1
+] [7
+
+] [8] [1
 
 ]
 Chapter 1.
@@ -732,35 +750,101 @@ Chapter 3.
 
 pdfTeX warning: pdflatex.exe (file ./pipeline1.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<pipeline1.pdf, id=71, 794.97pt x 614.295pt>
+<pipeline1.pdf, id=68, 794.97pt x 614.295pt>
 File: pipeline1.pdf Graphic file (type pdf)
  <use pipeline1.pdf>
 Package pdftex.def Info: pipeline1.pdf used on input line 5.
 (pdftex.def)             Requested size: 284.52756pt x 219.86188pt.
- [9
 
-]
-<graph5.jpg, id=75, 749.80125pt x 268.75406pt>
+<graph5.jpg, id=69, 749.80125pt x 268.75406pt>
 File: graph5.jpg Graphic file (type jpg)
  <use graph5.jpg>
 Package pdftex.def Info: graph5.jpg used on input line 14.
 (pdftex.def)             Requested size: 284.52756pt x 101.98407pt.
- [10 <./pipeline1.pdf> <./graph5.jpg>]
+ [9
+
+] [10 <./pipeline1.pdf> <./graph5.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/10 Switchboard
  []
 
-) [11] (p11.tex <roc.pdf, id=86, 1445.4pt x 1445.4pt>
-File: roc.pdf Graphic file (type pdf)
- <use roc.pdf>
-Package pdftex.def Info: roc.pdf used on input line 29.
-(pdftex.def)             Requested size: 170.70569pt x 170.70569pt.
- [12 <./roc.pdf>]) [13]
-Chapter 4.
-(p20.tex [14
+) (visualization.tex [11]
+<../scikitlearn/figures/countplot_da_name_count.pdf, id=83, 722.7pt x 722.7pt>
+File: ../scikitlearn/figures/countplot_da_name_count.pdf Graphic file (type pdf
+)
 
-]) [15] (p21.tex) (p22.tex) (p15.tex) [16]
-Chapter 5.
+<use ../scikitlearn/figures/countplot_da_name_count.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/countplot_da_name_count.pdf use
+d on input line 37.
+(pdftex.def)             Requested size: 213.19627pt x 213.19464pt.
+
+<../scikitlearn/figures/grid_secs_by_da_name.pdf, id=84, 1734.48pt x 216.81pt>
+File: ../scikitlearn/figures/grid_secs_by_da_name.pdf Graphic file (type pdf)
+
+<use ../scikitlearn/figures/grid_secs_by_da_name.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/grid_secs_by_da_name.pdf used o
+n input line 46.
+(pdftex.def)             Requested size: 426.39255pt x 53.29921pt.
+
+<../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf, id=85, 1734.48pt x
+ 433.62pt>
+File: ../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf Graphic file (
+type pdf)
+ <use ../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/grid_secs_by_da_name_by_tchange
+.pdf used on input line 56.
+(pdftex.def)             Requested size: 426.39255pt x 106.59842pt.
+
+<../scikitlearn/figures/barplot_da_prob_to_tchange.png, id=86, 722.7pt x 722.7p
+t>
+File: ../scikitlearn/figures/barplot_da_prob_to_tchange.png Graphic file (type 
+png)
+ <use ../scikitlearn/figures/barplot_da_prob_to_tchange.png>
+Package pdftex.def Info: ../scikitlearn/figures/barplot_da_prob_to_tchange.png 
+used on input line 65.
+(pdftex.def)             Requested size: 426.39255pt x 426.3893pt.
+
+<../scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf, id=88, 1734.48p
+t x 216.81pt>
+File: ../scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf Graphic fil
+e (type pdf)
+
+<use ../scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/grid_precent_secs_sofar_by_da_n
+ame.pdf used on input line 77.
+(pdftex.def)             Requested size: 426.39255pt x 53.29921pt.
+ [12]
+[13 <../scikitlearn/figures/countplot_da_name_count.pdf> <../scikitlearn/figure
+s/grid_secs_by_da_name.pdf
+
+pdfTeX warning: pdflatex.exe (file ../scikitlearn/figures/grid_secs_by_da_name.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf
+
+pdfTeX warning: pdflatex.exe (file ../scikitlearn/figures/grid_secs_by_da_name_
+by_tchange.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>] [14 <../scikitlearn/figures/barplot_da_prob_to_tchange.png> <../scikitlearn/
+figures/grid_precent_secs_sofar_by_da_name.pdf>]
+<../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf, id=260, 173
+4.48pt x 433.62pt>
+File: ../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf Graphic
+ file (type pdf)
+
+<use ../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/grid_timecontrol_by_da_name_by_
+tchange.pdf used on input line 88.
+(pdftex.def)             Requested size: 426.39255pt x 106.59842pt.
+)
+(p11.tex <../scikitlearn/figures/roc.pdf, id=261, 578.16pt x 397.485pt>
+File: ../scikitlearn/figures/roc.pdf Graphic file (type pdf)
+
+<use ../scikitlearn/figures/roc.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/roc.pdf used on input line 29.
+(pdftex.def)             Requested size: 170.71451pt x 117.36623pt.
+ [15 <../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf>]) [16 
+<../scikitlearn/figures/roc.pdf>]
+Chapter 4.
 (p12.tex) (p14.tex
 
 LaTeX Warning: Citation `HeemanAllen95:cdrom' on page 17 undefined on input lin
@@ -787,15 +871,18 @@ Missing character: There is no ù in font cmr10!
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 16045 strings out of 493333
- 302583 string characters out of 3139182
- 459426 words of memory out of 3000000
- 19201 multiletter control sequences out of 15000+200000
+ 16068 strings out of 493333
+ 304327 string characters out of 3139182
+ 460427 words of memory out of 3000000
+ 19225 multiletter control sequences out of 15000+200000
  11590 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,72p,956b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,11n,72p,956b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tmeshorer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
 600\tcrm1000.pk> <C:\Users\tmeshorer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
 knappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
@@ -810,9 +897,9 @@ e1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on thesis.pdf (31 pages, 346988 bytes).
+Output written on thesis.pdf (30 pages, 485298 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
+ 425 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

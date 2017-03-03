@@ -26,7 +26,7 @@ model. We notice that the AUC of the summary model is better than baseline model
 %
  \begin{figure}[ht!]
  \centering
- \includegraphics[width=0.5\textwidth,width=6cm,height=6cm,keepaspectratio]{roc.pdf}\vspace{-1.5em}
+ \includegraphics[width=0.5\textwidth,width=6cm,height=6cm,keepaspectratio]{../scikitlearn/figures/roc.pdf}\vspace{-1.5em}
  \caption{ROC curves and AUC of the different models \label{overflow}}
  \end{figure}
 
@@ -36,19 +36,19 @@ that were considered to lead to turn transitions are classified correctly. If we
 leading to the highest F1 score and the best performance.
 %
 \begin{table}[ht!]
-\scriptsize
-   \begin{center}
-    \begin{tabular}{|l|l|l|c|}
-    \hline
-    Model & Precision & Recall & F1\\
-    \hline
-    Baseline 1               &69.49\% &45.52\%&54.97\%\\
-    Baseline 2               &80.38\% &68.80\%&74.08\%\\
-    Summary                  &64.55\% &68.88\%&66.42\%\\
-    Full                     &76.17\% &77.25\%&74.87\%\\
-  \hline
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  accuracy &        F1 &  precision &    recall &   roc\_auc \\
+\midrule
+all      &  0.754587 &  0.775238 &   0.773176 &  0.777437 &  0.835127 \\
+baseline &  0.624320 &  0.577152 &   0.746507 &  0.470676 &  0.655748 \\
+both     &  0.748215 &  0.747843 &   0.823304 &  0.685486 &  0.810832 \\
+summary  &  0.653455 &  0.692469 &   0.670798 &  0.714937 &  0.690383 \\
+\bottomrule
 \end{tabular}
-\end{center}\vspace{-0.8em}
+\end{center}
 \caption{Precision, recall and F1 results }
 \end{table}
+
 

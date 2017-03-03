@@ -1,0 +1,26 @@
+\subsection{Classification Models}
+
+    To test the contribution of the summary features, we used a binary classifier with
+    $y_i$ as the outcome variable. We trained four models, which used the following sets of features:
+
+    \begin{description}
+        \item[baseline 1:] Predict turn transition based only on the current dialog act label.
+        \item[baseline 2:] Predict turn transition based on the labels of the current and previous dialog acts.
+        \item[summary model:] Predict turn transition using just the summary features.
+        \item[full model:] Predict turn transition using the summary features and the current and previous dialog acts.
+    \end{description}
+
+
+We used random forests to build the binary classifiers $(N=200)$ \cite{Breiman01randomforests}. Random forests build an ensemble of decision trees during training, and during testing, each decision tree votes on the outcome.  Like decision trees, they can account for interactions between variables, such as making greater use of the summary features when the current speech act is not a question.  Random forests though are not as sensitive to overfitting and data fragmentation.
+
+To find the optimal hyper parameters, we ran a grid search over the \textit{max\_features} and \textit{max\_depth} hyper parameters for each model. The hyper parameters search was done over $\{sqrt, log2, 10\}$ for \textit{max\_features} and $\{5, 7, 9\}$ for \textit{max\_depth}. When training the model, we used the optimal hyper parameters for each feature set.
+
+We performed 10 fold-labeled cross validations.  We made sure that each conversation was entirely in a single fold. This way, each dialogue was entirely used for training or testing, but never for both at the same time.
+   
+\subsection{Metrics}
+After training the models, we perform the actual prediction and evaluate the prediction against the true labels. We than compute the confusion matrix which compose of the following variables.
+
+
+
+   
+   

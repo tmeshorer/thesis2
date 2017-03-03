@@ -14,8 +14,8 @@ Field &  Description & Type &\\
      Previous Dialog Act & dialog act before the current one  & categorical\\
      Dialog Act & current dialog act & categorical \\
      Length & length of the current dialog act in seconds & numeric \\
-     Relative Turn Length (RTL)  & The relative of the dialog act & numeric \\
-     Relative Time Control (RTC) & The relative control of the current turn in words & numeric \\
+     Relative Turn Length(in seconds) (RTL)  & The length of the current dialog act in seconds & numeric \\
+     Relative Time Control(in seconds) (RTC) & length of the current turn in words & numeric \\
      Turn Change & 1 if there was a turn change after this dialog act & binary \\
 \bottomrule
 \end{tabular}
@@ -27,7 +27,7 @@ Field &  Description & Type &\\
 \subsection{Dialog Acts}
 
 Figure \ref{dactsizefig} shows the count for each dialog act. We can observe that the majority of dialog acts are statements, backchannels and opinions. This is true to the nature of the switchboard corpus
-which consists mainly of casual conversations.
+which consists mainly of casual conversations. 
 
  \begin{figure}[ht!]
  \centering
@@ -44,18 +44,18 @@ Figure \ref{dactssecsbyname} shows an histogram of the length in seconds for eac
  \caption{Dialog act length in words \label{overflow}}
  \label{dactssecsbyname}
   \end{figure}
-
+ 
  Figure \ref{l3} shows the and histogram for each dialog act length conditioned on the occuruce of a turn change. We can observe that the length distribution is the same, however when a turn change occur, some
- dialog acts tends to be longer than regular.
-
+ dialog acts tends to be longer than regular. 
+ 
 \begin{figure}[ht!]
  \centering
  \includegraphics[width=\textwidth]{../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf}
  \caption{Dialog act length in words conditioned on turn change\label{overflow}}
  \label{l3}
  \end{figure}
-
-In figure \ref{l4} , we measure the probability that a dialog act will lead to turn change. We can observe that the majority of back channels and question will lead to a turn change.
+ 
+In figure \ref{l4} , we measure the probability that a dialog act will lead to turn change. We can observe that the majority of back channels and question will lead to a turn change.  
 
 \begin{figure}[ht!]
 \centering
@@ -68,7 +68,7 @@ In figure \ref{l4} , we measure the probability that a dialog act will lead to t
 \subsection{Relative Turn Length}
 
 Figure \ref{l5} shows the distribution of the relative turn length for each dialog act. We can observe
-that
+that 
 
 \begin{figure}[ht!]
 \centering
@@ -76,7 +76,7 @@ that
 \caption{Relative turn length for each dialog act\label{overflow}}
 \label{l5}
 \end{figure}
-
+ 
 
 \subsection{Relative Floor Control}
 

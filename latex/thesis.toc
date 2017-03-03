@@ -1,6 +1,6 @@
 \contentsline {chapter}{Dedication}{iv}
 \contentsline {chapter}{Acknowledgements}{v}
-\contentsline {chapter}{Abstract}{vii}
+\contentsline {chapter}{Abstract}{viii}
 \contentsline {part}{I\hspace {1em}Introduction}{1}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Thesis Statement}{3}
@@ -12,16 +12,18 @@
 \contentsline {chapter}{\numberline {2}Related Work}{6}
 \contentsline {section}{\numberline {2.1}Human-Human Conversations}{6}
 \contentsline {section}{\numberline {2.2}Human-Computer Conversations}{7}
-\contentsline {chapter}{\numberline {3}Long term features over all past turns}{9}
+\contentsline {chapter}{\numberline {3}Study}{9}
 \contentsline {section}{\numberline {3.1}Data}{9}
 \contentsline {section}{\numberline {3.2}Data Preparation}{9}
-\contentsline {subsection}{\numberline {3.2.1}Classification Models}{11}
-\contentsline {section}{\numberline {3.3}Data Exploration}{12}
-\contentsline {subsection}{\numberline {3.3.1}Features}{12}
-\contentsline {subsubsection}{Dialog Acts}{12}
-\contentsline {subsection}{\numberline {3.3.2}Relative Turn Length}{12}
-\contentsline {subsection}{\numberline {3.3.3}Relative Floor Control}{15}
-\contentsline {section}{\numberline {3.4}Results}{15}
+\contentsline {section}{\numberline {3.3}Data Exploration}{11}
+\contentsline {subsection}{\numberline {3.3.1}Features}{11}
+\contentsline {subsection}{\numberline {3.3.2}Dialog Acts}{11}
+\contentsline {subsection}{\numberline {3.3.3}Relative Turn Length}{13}
+\contentsline {subsection}{\numberline {3.3.4}Relative Floor Control}{13}
+\contentsline {section}{\numberline {3.4}Machine learning}{13}
+\contentsline {subsection}{\numberline {3.4.1}Classification Models}{13}
+\contentsline {subsection}{\numberline {3.4.2}Metrics}{14}
+\contentsline {section}{\numberline {3.5}Results}{15}
 \contentsline {chapter}{\numberline {4}Conclusions}{17}
 \contentsline {section}{\numberline {4.1}Future Direction}{17}
 \contentsline {chapter}{Bibliography}{19}

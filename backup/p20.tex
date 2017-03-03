@@ -1,0 +1,51 @@
+%study 2 - features
+To compute the long term features over a fixed window of past turns, we use the same definitions 
+In this study we want to find the affect of long term features which are computed over fixed amount of past 
+turns relative to the current turn. We define a window of past turns relative to the current turn, and compute the long term features only for the turns in the windows. We than use the same machine learning models trained on the same features to check the affect of window size. I.e. how the predictive power change when the window size changes.   The summary features are based on measurements of each speaker's behavior over the preceding turns in the dialogue.
+
+     \subsection{Local Features}
+
+     As in the first study, we define a conversation as a sequence of dialogue acts $d_1 \dots d_N$, where $d_i$ is uttered by speaker $s_i$.  We write this as the following sequence:
+%
+     \begin{equation}
+       \ldots  s_{i-2}, d_{i-2}, s_{i-1} , d_{i-1}, s_i, d_i  \ldots
+     \end{equation}
+     We denote whether there was a turn transition with $y_i$. A turn transition occurs when the speaker $s_i$ is different from speaker $s_{i-1}$. Hence, (1) can be also be viewed as a sequence of dialog acts $d_i$ followed by turn transitions $y_i$:
+%
+     \begin{equation}
+       \ldots    d_{i-2}, y_{i-1}, d_{i-1}, y_{i} , d_i, y_{i+1} \ldots
+     \end{equation}
+      In our first baseline model, we try to predict the turn transition value $y_{i+1}$ based only on the latest dialog act $d_i$. In our second baseline model, we try to predict turn transition $y_{i+1}$ based on the latest two dialog acts: $d_{i-1}$ and $d_i$.
+
+       
+
+     \subsection{Summary Features Moving Averages}
+
+     As was discussed in the first study we still compute two long term features relative turn length ($rt_i$) and relative floor control ($rc_i$). However to compute the summary features, at dialogue act $d_i$, we denote  $W_i$ to be the set of $w$ complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in. 
+     
+     Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialog acts. Let length(t) be the length of the turn or partial turn in seconds (or words). To compute the moving average of  \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $W_i$
+%
+    \begin{equation}
+     avg\_t_i = \frac{\sum_{t \in W_i} length(t)}{|W_i|}
+     \end{equation}
+     The \textit{relative turn length} summary feature of $t_i$, denoted as $rt_i$, measures the percent of the length of the turn $t_i$ so far, relative to the average turn length up to $t_i$ of the current speaker $s_i$ (but not including $t_i$).
+%
+     \begin{equation}
+            rt_i =  \frac{length(t_i)} {avg\_t_i}
+     \end{equation}
+     Note that we calculate two versions of $rt_i$: in seconds and in words.  The purpose of $rt_i$ moving average is to let the listener, in predicting turn changes, take into account whether the current speaker is exceeding his or her average turn length over the past $W$ turns.
+
+     For the second study, the \textit{relative floor control}, denoted as $rc_i$, measures the percent of time in which the current speaker controlled the conversation floor up to $d_i$ within the last $w$ turn where $w$ is the size of the moving average window. We again define $W_i$ as above, and we define $L_i$ to be the turns of the other conversant (the listener of $d_i$) within $w$ turns. We first compute the conversation length up to $d_i$ denoted as $c_i$ which excludes inter-utterance pauses.
+     \begin{equation}
+         c_i = \sum_{t \in W_i \cup L_i} length(t)
+     \end{equation}
+     To compute relative floor control at $d_i$, we divide the floor time of the speaker $s_i$ up to turn $t_i$ by $c_i$:
+
+     \begin{equation}
+        rc_i = \frac{\sum_{t \in W_i} length(t)} {c_i}
+     \end{equation}
+     Note that we calculate $rc_i$ in seconds and in words. Participants can use the relative floor control as a means to determine if one speaker is controlling the conversation; a controlling speaker will probably be less inclined to give up the floor.
+
+     Study two also investigate the affect of varying both the length of $W$ (5,10,15,20,30) , as well as the method of computing the moving average. The first part uses simple moving average, while the second part uses exponential moving average. We use these two summary features in the \textit{summary model} and \textit{full model}, as described in the next section.
+
+

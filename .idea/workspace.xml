@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4052a3d-1abe-4499-8f00-c3f9eaddf7d7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scikitlearn/01-Data processing.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scikitlearn/Eval.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scikitlearn/Stage 1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scikitlearn/Stage 2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scikitlearn/before_training.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scikitlearn/examples from the tutorial.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.pdf" afterPath="$PROJECT_DIR$/latex/thesis.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/barplot_da_prob_to_tchange.png" afterPath="$PROJECT_DIR$/scikitlearn/figures/barplot_da_prob_to_tchange.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/boxplot_da_by_tchange.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/boxplot_da_by_tchange.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/countplot_da_name_count.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/countplot_da_name_count.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/da_sec_histogram.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/da_sec_histogram.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p11.tex" afterPath="$PROJECT_DIR$/latex/p11.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p4.tex" afterPath="$PROJECT_DIR$/latex/p4.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p5.tex" afterPath="$PROJECT_DIR$/latex/p5.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p9.tex" afterPath="$PROJECT_DIR$/latex/p9.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.aux" afterPath="$PROJECT_DIR$/latex/thesis.aux" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.log" afterPath="$PROJECT_DIR$/latex/thesis.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.synctex" afterPath="$PROJECT_DIR$/latex/thesis.synctex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.tex" afterPath="$PROJECT_DIR$/latex/thesis.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.toc" afterPath="$PROJECT_DIR$/latex/thesis.toc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/visualization.tex" afterPath="$PROJECT_DIR$/latex/visualization.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/dev/03-02-exploration.ipynb" afterPath="$PROJECT_DIR$/scikitlearn/dev/03-02-exploration.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

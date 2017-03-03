@@ -1,0 +1,257 @@
+\begin{thebibliography}{10}
+
+\bibitem{arsikere2015enhanced}
+H.~Arsikere, E.~Shriberg, and U.~Ozertem.
+\newblock Enhanced end-of-turn detection for speech to a personal assistant.
+\newblock In {\em AAAI Spring Symposium on Turn-taking and Coordination in
+  Human-Machine Interaction}, 2015.
+
+\bibitem{atterer2008towards}
+M.~Atterer, T.~Baumann, and D.~Schlangen.
+\newblock Towards incremental end-of-utterance detection in dialogue systems.
+\newblock In {\em COLING (Posters)}, pages 11--14, 2008.
+
+\bibitem{Breiman01randomforests}
+L.~Breiman.
+\newblock Random forests.
+\newblock {\em Machine Learning}, 45(1):5--32, 2001.
+
+\bibitem{calhoun2010nxt}
+S.~Calhoun, J.~Carletta, J.~M. Brenier, N.~Mayo, D.~Jurafsky, M.~Steedman, and
+  D.~Beaver.
+\newblock The nxt-format switchboard corpus: a rich resource for investigating
+  the syntax, semantics, pragmatics and prosody of dialogue.
+\newblock {\em Language Resources and Evaluation}, 44(4):387--419, 2010.
+
+\bibitem{de2006projecting}
+J.~P. De~Ruiter, H.~Mitterer, and N.~J. Enfield.
+\newblock Projecting the end of a speaker's turn: A cognitive cornerstone of
+  conversation.
+\newblock {\em Language}, pages 515--535, 2006.
+
+\bibitem{duncan1972some}
+S.~Duncan.
+\newblock Some signals and rules for taking speaking turns in conversations.
+\newblock {\em Journal of Personality and Social Psychology}, 23:283--292,
+  1972.
+
+\bibitem{stolcke2002speaker}
+L.~Ferrer, E.~Shriberg, and A.~Stolcke.
+\newblock Is the speaker done yet? faster and more accurate end-of-utterance
+  detection using prosody.
+\newblock In {\em INTERSPEECH}, 2002.
+
+\bibitem{ferrer2003prosody}
+L.~Ferrer, E.~Shriberg, and A.~Stolcke.
+\newblock A prosody-based approach to end-of-utterance detection that does not
+  require speech recognition.
+\newblock In {\em ICASSP}, pages 608--611, 2003.
+
+\bibitem{ford2001intersection}
+C.~E. Ford.
+\newblock At the intersection of turn and sequence.
+\newblock {\em Studies in Interactional Linguistics}, 10:51, 2001.
+
+\bibitem{ford1996interactional}
+C.~E. Ford and S.~A. Thompson.
+\newblock Interactional units in conversation: syntactic, intonational, and
+  pragmatic resources for the management of turns.
+\newblock {\em Studies in Interactional Sociolinguistics}, 13:134--184, 1996.
+
+\bibitem{garrod2015use}
+S.~Garrod and M.~J. Pickering.
+\newblock The use of content and timing to predict turn transitions.
+\newblock {\em Frontiers in Psychology}, 6, 2015.
+
+\bibitem{Godfrey-etal92:icassp}
+J.~J. Godfrey, E.~C. Holliman, and J.~McDaniel.
+\newblock {SWITCHBOARD}: {T}elephone speech corpus for research and
+  development.
+\newblock In {\em ICASSP}, pages 517--520, 1992.
+
+\bibitem{225858}
+J.~J. Godfrey, E.~C. Holliman, and J.~McDaniel.
+\newblock Switchboard: telephone speech corpus for research and development.
+\newblock In {\em Acoustics, Speech, and Signal Processing, 1992. ICASSP-92.,
+  1992 IEEE International Conference on}, volume~1, pages 517--520 vol.1, Mar
+  1992.
+
+\bibitem{gravano2011turn}
+A.~Gravano and J.~Hirschberg.
+\newblock Turn-taking cues in task-oriented dialogue.
+\newblock {\em Computer Speech \& Language}, 25(3):601--634, 2011.
+
+\bibitem{SSS1510313}
+N.~Guntakandla and R.~Nielsen.
+\newblock Modelling turn-taking in human conversations.
+\newblock In {\em AAAI Spring Symposium on Turn-Taking and Coordination in
+  Human-Machine Interaction}, Stanford CA, 2015.
+
+\bibitem{hariharan2001robust}
+R.~Hariharan, J.~Hakkinen, and K.~Laurila.
+\newblock Robust end-of-utterance detection for real-time speech recognition
+  applications.
+\newblock In {\em ICASSP}, pages 249--252, 2001.
+
+\bibitem{hinton2012deep}
+G.~Hinton, L.~Deng, D.~Yu, G.~E. Dahl, A.-r. Mohamed, N.~Jaitly, A.~Senior,
+  V.~Vanhoucke, P.~Nguyen, T.~N. Sainath, et~al.
+\newblock Deep neural networks for acoustic modeling in speech recognition: The
+  shared views of four research groups.
+\newblock {\em IEEE Signal Processing Magazine}, 29(6):82--97, 2012.
+
+\bibitem{kendon1967some}
+A.~Kendon.
+\newblock Some functions of gaze-direction in social interaction.
+\newblock {\em Acta Psychologica}, 26:22--63, 1967.
+
+\bibitem{nla.cat-vn163724}
+W.~J.~M. Levelt.
+\newblock {\em Speaking : from intention to articulation / Willem J.M. Levelt}.
+\newblock MIT Press Cambridge, Mass, 1989.
+
+\bibitem{levinson2016turn}
+S.~C. Levinson.
+\newblock Turn-taking in human communication--origins and implications for
+  language processing.
+\newblock {\em Trends in Cognitive Sciences}, 20(1):6--14, 2016.
+
+\bibitem{levinson2015timing}
+S.~C. Levinson and F.~Torreira.
+\newblock Timing in turn-taking and its implications for processing models of
+  language.
+\newblock {\em Frontiers In Psychology}, 6, 2015.
+
+\bibitem{levitan2015entrainment}
+R.~Levitan, S.~Benus, A.~Gravano, and J.~Hirschberg.
+\newblock Entrainment and turn-taking in human-human dialogue.
+\newblock In {\em AAAI Spring Symposium on Turn-Taking and Coordination in
+  Human-Machine Interaction, Stanford, CA}, 2015.
+
+\bibitem{magyari2014early}
+L.~Magyari, M.~C. Bastiaansen, J.~P. de~Ruiter, and S.~C. Levinson.
+\newblock Early anticipation lies behind the speed of response in conversation.
+\newblock {\em Journal of Cognitive Neuroscience}, 2014.
+
+\bibitem{magyari2012prediction}
+L.~Magyari and J.~P. De~Ruiter.
+\newblock Prediction of turn-ends based on anticipation of upcoming words.
+\newblock {\em Frontiers in Psychology}, 3:376, 2012.
+
+\bibitem{mckinneypandas}
+W.~McKinney.
+\newblock pandas: a foundational python library for data analysis and
+  statistics.
+
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{raux2008flexible}
+A.~Raux.
+\newblock {\em Flexible turn-taking for spoken dialog systems}.
+\newblock PhD thesis, US National Science Foundation, 2008.
+
+\bibitem{raux2009finite}
+A.~Raux and M.~Eskenazi.
+\newblock A finite-state turn-taking model for spoken dialog systems.
+\newblock In {\em Proceedings of Human Language Technologies: The 2009 Annual
+  Conference of the North American Chapter of the Association for Computational
+  Linguistics}, pages 629--637, 2009.
+
+\bibitem{raux2012optimizing}
+A.~Raux and M.~Eskenazi.
+\newblock Optimizing the turn-taking behavior of task-oriented spoken dialog
+  systems.
+\newblock {\em ACM Transactions on Speech and Language Processing (TSLP)},
+  9(1):1, 2012.
+
+\bibitem{reed2009units}
+B.~S. Reed.
+\newblock Units of interaction: “intonation phrases” or “turn
+  constructional phrases”.
+\newblock {\em Actes/Proceedings from IDP (Interface Discours \& Prosodie)},
+  pages 351--363, 2009.
+
+\bibitem{riest2015anticipation}
+C.~Riest, A.~B. Jorschick, and J.~P. De~Ruiter.
+\newblock Anticipation in turn-taking: mechanisms and information sources.
+\newblock {\em Frontiers in Psychology}, 6, 2015.
+
+\bibitem{roberts2015effects}
+S.~G. Roberts, F.~Torreira, and S.~C. Levinson.
+\newblock The effects of processing and sequence organization on the timing of
+  turn taking: a corpus study.
+\newblock {\em Frontiers in Psychology}, 6, 2015.
+
+\bibitem{sacks1974simplest}
+H.~Sacks, E.~A. Schegloff, and G.~Jefferson.
+\newblock A simplest systematics for the organization of turn-taking for
+  conversation.
+\newblock {\em language}, pages 696--735, 1974.
+
+\bibitem{Sato02learningdecision}
+R.~Sato, R.~Higashinaka, M.~Tamoto, M.~Nakano, and K.~Aikawa.
+\newblock Learning decision trees to determine turntaking by spoken dialogue
+  systems.
+\newblock In {\em ICSLP}, pages 861--864, 2002.
+
+\bibitem{schlangen2006reaction}
+D.~Schlangen.
+\newblock From reaction to prediction: Experiments with computational models of
+  turn-taking.
+\newblock {\em Proceedings of Interspeech 2006, Panel on Prosody of Dialogue
+  Acts and Turn-Taking}, 2006.
+
+\bibitem{SelfridgeHeeman10:acl}
+E.~O. Selfridge and P.~A. Heeman.
+\newblock Importance-driven turn-bidding for spoken dialogue systems.
+\newblock In {\em Proceedings of the 48th Annual Meeting of the Association for
+  Computational Linguistics}, pages 177--185, Uppsala Sweden, 2010.
+
+\bibitem{selting2000construction}
+M.~Selting.
+\newblock The construction of units in conversational talk.
+\newblock {\em Language in Society}, 29(04):477--517, 2000.
+
+\bibitem{shriberg2000prosody}
+E.~Shriberg, A.~Stolcke, D.~Hakkani-T{\"u}r, and G.~T{\"u}r.
+\newblock Prosody-based automatic segmentation of speech into sentences and
+  topics.
+\newblock {\em Speech Communication}, 32(1):127--154, 2000.
+
+\bibitem{stolcke2000dialogue}
+A.~Stolcke, N.~Coccaro, R.~Bates, P.~Taylor, C.~Van Ess-Dykema, K.~Ries,
+  E.~Shriberg, D.~Jurafsky, R.~Martin, and M.~Meteer.
+\newblock Dialogue act modeling for automatic tagging and recognition of
+  conversational speech.
+\newblock {\em Computational linguistics}, 26(3):339--373, 2000.
+
+\bibitem{tice2011turn}
+M.~Tice and T.~Henetz.
+\newblock Turn-boundary projection: Looking ahead.
+\newblock In {\em The 33rd Annual Meeting of the Cognitive Science Society
+  [CogSci 2011]}, pages 838--843. Cognitive Science Society, 2011.
+
+\bibitem{torreira2015breathing}
+F.~Torreira, S.~B{\"o}gels, and S.~C. Levinson.
+\newblock Breathing for answering: the time course of response planning in
+  conversation.
+\newblock {\em Frontiers in Psychology}, 6, 2015.
+
+\bibitem{Webber:2012:PIN:2384716.2384777}
+J.~Webber.
+\newblock A programmatic introduction to neo4j.
+\newblock In {\em Proceedings of the 3rd Annual Conference on Systems,
+  Programming, and Applications: Software for Humanity}, SPLASH '12, pages
+  217--218, New York, NY, USA, 2012.
+
+\bibitem{wilson2005oscillator}
+M.~Wilson and T.~P. Wilson.
+\newblock An oscillator model of the timing of turn-taking.
+\newblock {\em Psychonomic Bulletin \& Review}, 12(6):957--968, 2005.
+
+\end{thebibliography}

@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {3.4}Machine learning}{13}
 \contentsline {subsection}{\numberline {3.4.1}Classification Models}{13}
 \contentsline {subsection}{\numberline {3.4.2}Metrics}{14}
-\contentsline {section}{\numberline {3.5}Results}{15}
-\contentsline {chapter}{\numberline {4}Conclusions}{17}
-\contentsline {section}{\numberline {4.1}Future Direction}{17}
-\contentsline {chapter}{Bibliography}{19}
+\contentsline {section}{\numberline {3.5}Results}{16}
+\contentsline {chapter}{\numberline {4}Conclusions}{18}
+\contentsline {section}{\numberline {4.1}Future Direction}{18}
+\contentsline {chapter}{Bibliography}{20}

@@ -20,6 +20,9 @@
 \usepackage{enumitem}
 \usepackage{listings}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+
 
 \GraphInit[vstyle = Shade]
 \tikzset{
@@ -47,6 +50,16 @@
   breakatwhitespace=false,
   tabsize=3
 }
+
+
+\newcommand\MyBox[2]{
+  \fbox{\lower0.75cm
+    \vbox to 1.7cm{\vfil
+      \hbox to 1.7cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+      \vfil}%
+  }%
+}
+
 
 \begin{document}
 

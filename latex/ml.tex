@@ -16,11 +16,51 @@ We used random forests to build the binary classifiers $(N=200)$ \cite{Breiman01
 To find the optimal hyper parameters, we ran a grid search over the \textit{max\_features} and \textit{max\_depth} hyper parameters for each model. The hyper parameters search was done over $\{sqrt, log2, 10\}$ for \textit{max\_features} and $\{5, 7, 9\}$ for \textit{max\_depth}. When training the model, we used the optimal hyper parameters for each feature set.
 
 We performed 10 fold-labeled cross validations.  We made sure that each conversation was entirely in a single fold. This way, each dialogue was entirely used for training or testing, but never for both at the same time.
-   
+
 \subsection{Metrics}
-After training the models, we perform the actual prediction and evaluate the prediction against the true labels. We than compute the confusion matrix which compose of the following variables.
+To evaluate our hypothesis, we use the trained model to perform prediction of the test data. We than compare the results against the truth values. The results are recorded in a confusion matrix.
+Each row in the matrix represent the actual class and each column represent the predicted class.
+The cell in the matrix are compute as follow :
 
+\begin{tabular}{c >{\bfseries}r @{\hspace{0.7em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
+  \multirow{10}{*}{\rotatebox{90}{\parbox{1.1cm}{\bfseries\centering actual\\ value}}} &
+    & \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
+  & & \bfseries p & \bfseries n & \bfseries total \\
+  & p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
+  & n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
+  & total & P & N &
+\end{tabular}
 
+\begin{enumerate}
+  \item True Positive - Labels which were predicted as positive and are positive
+  \item False Positive- Labels which were predicted as positive but are in fact negative
+  \item True Negative - Labels which were predicted as negative and are negative
+  \item False Negative - Labels which were predicted as negative but are in fact positive
+\end{enumerate}
 
-   
-   
+Based on the confusion matrix, we compute the following metrics for each model:
+
+\begin{equation}
+Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation}
+The accuracy measure how many instances were classified correctly out of the total instances.
+
+\begin{equation}
+Precision = \frac{TP }{TP + FN}
+\end{equation}
+The precision metric measure how accurate is the classifier for the positive instances. I.e. how many instances that were classified as positive, were in fact positive.
+
+\begin{equation}
+Recall = \frac{TP }{TP + FN}
+\end{equation}
+The recall metric measure how many positive instances were detected by the classifier.
+
+\begin{equation}
+F1 = \frac{2 \cdot Precision\cdot Recall}{Precision+ Recall}
+\end{equation}
+In order to have one measurement which encompass both recall and precision, we compute F1 which is the
+harmonic mean of recall and precision.
+
+Note that there is a trade off between recall and precision. I.e. if we want to increase recall we will reduce precision. To measure this tradeoff, we will use ROC (Receiver Operating Characteristic) curve.
+The ROC curve measure the true positive rate (TPR) or recall, against the false positive rate (FPR). 
+

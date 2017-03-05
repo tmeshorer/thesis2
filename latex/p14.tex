@@ -4,5 +4,7 @@ syntactic \cite{ duncan1972some, sacks1974simplest, ford1996interactional, de200
 
 In our work, we evaluated our model on the Switchboard corpus.  In future work, it would also be good to evaluate our summary features on other corpora, especially task-based dialogues.  Tasks in which there is a difference in the role of the user and speaker, such as in Trains \cite{HeemanAllen95:cdrom}, should benefit from modeling the past turn-taking behavior of each speaker.
 
+In our work, we computed the relative turn length and relative speaker control using the turn length avrage as computed over all the previous turns. In future work , it would be interesting to use simple moving average (measured over multiple window width) as well as exponential moving average. 
+
 More generally, the summary features introduced in this work represent just one aspect of the conversational image of the user. Future work should try to ``summarize'' other local features by creating
 the average value of a local feature over past turns. For example, we can compute relative speech rate, or relative use of stereotyped expressions.

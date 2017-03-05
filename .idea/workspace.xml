@@ -3,24 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c4052a3d-1abe-4499-8f00-c3f9eaddf7d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.pdf" afterPath="$PROJECT_DIR$/latex/thesis.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/barplot_da_prob_to_tchange.png" afterPath="$PROJECT_DIR$/scikitlearn/figures/barplot_da_prob_to_tchange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/boxplot_da_by_tchange.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/boxplot_da_by_tchange.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/countplot_da_name_count.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/countplot_da_name_count.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/da_sec_histogram.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/da_sec_histogram.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf" afterPath="$PROJECT_DIR$/scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p11.tex" afterPath="$PROJECT_DIR$/latex/p11.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p4.tex" afterPath="$PROJECT_DIR$/latex/p4.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p5.tex" afterPath="$PROJECT_DIR$/latex/p5.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p9.tex" afterPath="$PROJECT_DIR$/latex/p9.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.aux" afterPath="$PROJECT_DIR$/latex/thesis.aux" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/ml.tex" afterPath="$PROJECT_DIR$/latex/ml.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/p14.tex" afterPath="$PROJECT_DIR$/latex/p14.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.log" afterPath="$PROJECT_DIR$/latex/thesis.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.synctex" afterPath="$PROJECT_DIR$/latex/thesis.synctex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/thesis.toc" afterPath="$PROJECT_DIR$/latex/thesis.toc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/visualization.tex" afterPath="$PROJECT_DIR$/latex/visualization.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scikitlearn/dev/03-02-exploration.ipynb" afterPath="$PROJECT_DIR$/scikitlearn/dev/03-02-exploration.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +38,8 @@
       <file leaf-file-name="runner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neo4j/runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="627">
+              <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -134,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,7 +152,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -363,15 +352,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="0" width="3204" height="1714" extended-state="0" />
+    <frame x="10" y="0" width="3204" height="1714" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2477932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35538882" sideWeight="0.5075662" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35538882" sideWeight="0.5088272" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35538882" sideWeight="0.4924338" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35538882" sideWeight="0.49117276" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951483" sideWeight="0.4962169" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -393,6 +382,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/neo4j/syntax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neo4j/corpus_resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neo4j/corpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18810">
+          <caret line="513" column="6" lean-forward="false" selection-start-line="513" selection-start-column="6" selection-end-line="513" selection-end-column="6" />
+          <folding>
+            <element signature="e#361#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neo4j/turn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -803,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neo4j/runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="627">
+          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
           <folding />
         </state>
       </provider>

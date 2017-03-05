@@ -16,12 +16,12 @@
 \contentsline {section}{\numberline {3.1}Data}{9}
 \contentsline {section}{\numberline {3.2}Data Preparation}{9}
 \contentsline {section}{\numberline {3.3}Data Exploration}{11}
-\contentsline {subsection}{\numberline {3.3.1}Features}{11}
+\contentsline {subsection}{\numberline {3.3.1}Variables}{11}
 \contentsline {subsection}{\numberline {3.3.2}Dialog Acts}{11}
-\contentsline {subsection}{\numberline {3.3.3}Relative Turn Length}{13}
+\contentsline {subsection}{\numberline {3.3.3}Relative Turn Length}{12}
 \contentsline {subsection}{\numberline {3.3.4}Relative Floor Control}{13}
-\contentsline {section}{\numberline {3.4}Machine learning}{13}
-\contentsline {subsection}{\numberline {3.4.1}Classification Models}{13}
+\contentsline {section}{\numberline {3.4}Machine learning}{14}
+\contentsline {subsection}{\numberline {3.4.1}Classification Models}{14}
 \contentsline {subsection}{\numberline {3.4.2}Metrics}{14}
 \contentsline {section}{\numberline {3.5}Results}{16}
 \contentsline {chapter}{\numberline {4}Conclusions}{18}

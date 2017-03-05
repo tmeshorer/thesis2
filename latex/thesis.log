@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  4 MAR 2017 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  4 MAR 2017 18:22
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -776,21 +776,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--30
  []
 
 ) (visualization.tex
-Overfull \hbox (11.05254pt too wide) in paragraph at lines 10--22
+Overfull \hbox (10.46922pt too wide) in paragraph at lines 10--22
  [] 
  []
 
+<../scikitlearn/figures/precent_dacts.png, id=83, 433.62pt x 289.08pt>
+File: ../scikitlearn/figures/precent_dacts.png Graphic file (type png)
 
-<../scikitlearn/figures/countplot_da_name_count.pdf, id=83, 722.7pt x 722.7pt>
-File: ../scikitlearn/figures/countplot_da_name_count.pdf Graphic file (type pdf
-)
+<use ../scikitlearn/figures/precent_dacts.png>
+Package pdftex.def Info: ../scikitlearn/figures/precent_dacts.png used on input
+ line 34.
+(pdftex.def)             Requested size: 213.19627pt x 142.13123pt.
 
-<use ../scikitlearn/figures/countplot_da_name_count.pdf>
-Package pdftex.def Info: ../scikitlearn/figures/countplot_da_name_count.pdf use
-d on input line 34.
-(pdftex.def)             Requested size: 213.19627pt x 213.19464pt.
-
-<../scikitlearn/figures/grid_secs_by_da_name.pdf, id=84, 1734.48pt x 216.81pt>
+<../scikitlearn/figures/grid_secs_by_da_name.pdf, id=85, 1734.48pt x 216.81pt>
 File: ../scikitlearn/figures/grid_secs_by_da_name.pdf Graphic file (type pdf)
 
 <use ../scikitlearn/figures/grid_secs_by_da_name.pdf>
@@ -798,7 +796,7 @@ Package pdftex.def Info: ../scikitlearn/figures/grid_secs_by_da_name.pdf used o
 n input line 43.
 (pdftex.def)             Requested size: 426.39255pt x 53.29921pt.
  [11]
-<../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf, id=88, 1734.48pt x
+<../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf, id=89, 1734.48pt x
  433.62pt>
 File: ../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf Graphic file (
 type pdf)
@@ -807,7 +805,7 @@ Package pdftex.def Info: ../scikitlearn/figures/grid_secs_by_da_name_by_tchange
 .pdf used on input line 53.
 (pdftex.def)             Requested size: 426.39255pt x 106.59842pt.
 
-<../scikitlearn/figures/barplot_da_prob_to_tchange.png, id=89, 722.7pt x 722.7p
+<../scikitlearn/figures/barplot_da_prob_to_tchange.png, id=90, 722.7pt x 722.7p
 t>
 File: ../scikitlearn/figures/barplot_da_prob_to_tchange.png Graphic file (type 
 png)
@@ -825,19 +823,9 @@ e (type pdf)
 Package pdftex.def Info: ../scikitlearn/figures/grid_precent_secs_sofar_by_da_n
 ame.pdf used on input line 75.
 (pdftex.def)             Requested size: 426.39255pt x 53.29921pt.
- [12 <../scikitlearn/figures/countplot_da_name_count.pdf> <../scikitlearn/figur
-es/grid_secs_by_da_name.pdf
 
-pdfTeX warning: pdflatex.exe (file ../scikitlearn/figures/grid_secs_by_da_name.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf
-
-pdfTeX warning: pdflatex.exe (file ../scikitlearn/figures/grid_secs_by_da_name_
-by_tchange.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->]
-<../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf, id=214, 173
-4.48pt x 433.62pt>
+<../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf, id=92, 1734
+.48pt x 433.62pt>
 File: ../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf Graphic
  file (type pdf)
 
@@ -845,11 +833,22 @@ File: ../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf Graphic
 Package pdftex.def Info: ../scikitlearn/figures/grid_timecontrol_by_da_name_by_
 tchange.pdf used on input line 87.
 (pdftex.def)             Requested size: 426.39255pt x 106.59842pt.
-)
-(ml.tex [13 <../scikitlearn/figures/barplot_da_prob_to_tchange.png> <../scikitl
-earn/figures/grid_precent_secs_sofar_by_da_name.pdf>] [14 <../scikitlearn/figur
-es/grid_timecontrol_by_da_name_by_tchange.pdf>] [15]) (p11.tex
-<../scikitlearn/figures/roc.pdf, id=314, 578.16pt x 397.485pt>
+
+[12 <../scikitlearn/figures/precent_dacts.png> <../scikitlearn/figures/grid_sec
+s_by_da_name.pdf> <../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf
+
+pdfTeX warning: pdflatex.exe (file ../scikitlearn/figures/grid_secs_by_da_name_
+by_tchange.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]) (ml.tex [13 <../scikitlearn/figures/barplot_da_prob_to_tchange.png> <../sci
+kitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf> <../scikitlearn/figure
+s/grid_timecontrol_by_da_name_by_tchange.pdf
+
+pdfTeX warning: pdflatex.exe (file ../scikitlearn/figures/grid_timecontrol_by_d
+a_name_by_tchange.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+>] [14] [15]) (p11.tex
+<../scikitlearn/figures/roc.pdf, id=273, 578.16pt x 397.485pt>
 File: ../scikitlearn/figures/roc.pdf Graphic file (type pdf)
 
 <use ../scikitlearn/figures/roc.pdf>
@@ -889,10 +888,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16135 strings out of 493333
- 305272 string characters out of 3139182
+ 16136 strings out of 493333
+ 305233 string characters out of 3139182
  461169 words of memory out of 3000000
- 19285 multiletter control sequences out of 15000+200000
+ 19286 multiletter control sequences out of 15000+200000
  11590 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,72p,956b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -910,9 +909,9 @@ e1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on thesis.pdf (32 pages, 491981 bytes).
+Output written on thesis.pdf (32 pages, 484061 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
+ 392 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

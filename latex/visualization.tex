@@ -26,67 +26,47 @@ Variable &  Description & Type &\\
 
 \subsection{Dialog Acts}
 
-Figure \ref{dactsizefig} shows the percent for each dialog act. We can observe that the majority of dialog acts are statements, backchannels and opinions. This is true to the nature of the switchboard corpus
+Figure \ref{f1} shows the relative presence of each dialog act. We can observe that the majority of dialog acts are statements, backchannels and opinions. This is true to the nature of the switchboard corpus
 which consists mainly of casual conversations.
 
  \begin{figure}[ht!]
  \centering
- \includegraphics[width=0.5\textwidth]{../scikitlearn/figures/precent_dacts.png}
+ \includegraphics[width=\textwidth]{../scikitlearn/figures/f1.png}
  \caption{Dialog act relative count\label{overflow}}
- \label{dactsizefig}
+ \label{f1}
  \end{figure}
 
-Figure \ref{dactssecsbyname} shows an histogram of the length in seconds for each dialog act. It is evident that the distribution is left tilted.
-
- \begin{figure}[ht!]
- \centering
- \includegraphics[width=\textwidth]{../scikitlearn/figures/grid_secs_by_da_name.pdf}
- \caption{Distribution of dialog act length in seconds \label{overflow}}
- \label{dactssecsbyname}
-  \end{figure}
-
- Figure \ref{l3} shows the and histogram for each dialog act length conditioned on the occuruce of a turn change. We can observe that the length distribution is the same, however when a turn change occur, some
- dialog acts tends to be longer than regular.
-
-\begin{figure}[ht!]
- \centering
- \includegraphics[width=\textwidth]{../scikitlearn/figures/grid_secs_by_da_name_by_tchange.pdf}
- \caption{Dialog act length in words conditioned on turn change\label{overflow}}
- \label{l3}
- \end{figure}
-
-In figure \ref{l4} , we measure the probability that a dialog act will lead to turn change. We can observe that the majority of back channels and question will lead to a turn change.
+In figure \ref{f2} , we measure the probability that a dialog act will lead to turn change. We can observe that the majority of back channels and question will lead to a turn change.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=0.5\textwidth]{../scikitlearn/figures/barplot_da_prob_to_tchange.png}
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f2.png}
 \caption{Dialog act probability of turn change\label{overflow}}
-\label{l4}
+\label{f2}
 \end{figure}
 
+\subsection{Summary Features Analysis}
 
-\subsection{Relative Turn Length}
+Since we believe that the summary features (relative turn length and relative turn control) help in
+turn transition prediction, figure \ref{f3} and figure \ref{f4} show the distribution of the score for
+each class of dialog act. In figure \ref{f3} that most short dialog acts (for example back channel)
+or question, have short relative turn length.
+In addition, we can observe that the relative turn control is around 50\% regardless of the dialog act. This represent a balance control of the dialog floor.
 
-Figure \ref{l5} shows the distribution of the relative turn length for each dialog act. We can observe
-that
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=\textwidth]{../scikitlearn/figures/f3.png}
+ \caption{Relative Turn Change by dialog act\label{overflow}}
+ \label{f3}
+ \end{figure}
+
+
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/grid_precent_secs_sofar_by_da_name.pdf}
-\caption{Relative turn length for each dialog act\label{overflow}}
-\label{l5}
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f4.png}
+\caption{Relative Turn Control by dialog act\label{overflow}}
+\label{f4}
 \end{figure}
 
-
-\subsection{Relative Floor Control}
-
-Figure \ref{l6} shows distribution of floor control or each dialog act conditioned on a turn change. We can observe that regardless of the dialog act, most distributions are normal with mean of 50\%
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/grid_timecontrol_by_da_name_by_tchange.pdf}
-\caption{Relative flow control conditioned on turn change\label{overflow}}
-\label{l6}
-\end{figure}
-
-
+\pagebreak

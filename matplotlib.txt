@@ -1,0 +1,131 @@
+import matplotlib.pyplot as plt
+plt.scatter(year,pop)
+plt.show()
+
+Histogram - distubtion of varaible. Divide into bins. 
+            Hieght of the bar is the number of each bins
+
+import matplotlib.pyplot as plt
+plt.hist(x,bins=10)
+plt.show()
+
+#Label the axes
+plt.xlabel("Year")
+plt.ylabel("Population")
+plt.title("Population growth")
+plt.ytick([0,2,4],[0,4B])
+#Log plot 
+plt.xscale('log')
+#Add Text
+plt.text(1550, 71, 'India')
+#Add Grid
+plt.grid(True)
+
+Pandas
+======
+1. select column: brics["country"] // Series
+2. select column: brics[["country"]]
+3. select row brics[1:4]
+4. loc - select data based on labels. brics.loc[["RU","India"]]
+5. loc([:],[[RU,India]]
+5. iloc - brics.iloc[[1,2,3]]
+6. brics.iloc[[1,2,3][:]]
+
+#Comparison operator
+
+abline - mean/median (pandas)
+tapply (min,df)
+
+
+
+
+#
+Build models
+Aquire, Refine, Transform, Explore,Model,
+Model selection, 
+Communicate the solution.
+
+
+Data Space
+Feature Space
+Model alg try to apply (model algorithm)
+Model alg + Parameter -
+Search the hypotisis space.
+Classes (c1,c2)
+Features
+Observations:1000
+Do PCA. Pc1,Pc2
+
+1. Train a model
+2. Predict the porb of each Classes
+3. Sort the model via 5 fold cross validationn
+4. Show the decision boundires
+5. Add SVM Linear, Decision Tree, KNN. 
+6. Search Model
+7. https://www.safaribooksonline.com/library/view/strata-hadoop/9781491958551/video293166.html
+8. 
+
+
+David Chapper
+1. 10 Records - Columns
+2. Data - 
+   Machine learning alg - look for pattern data
+   Output : Model - Able to recognize pattern
+   Model - predict. Does this fit your data. 
+3. Lots of data.
+4. Compute power. 
+5. Machine learning process
+6. How can I predict if a new record is frudelent. 
+7. Is the data predicitive. 
+8. How would I know when I am done.
+
+process
+=======
+Raw data -> Data preprocessing -> Prepared data
+Apply machine learning alg -> Candidate Model
+Supplied machine learning alg.
+Deploy choosen model. 
+Azure ML Api - Deploy
+Recrease model periodcally
+App use a model.
+Azure ml generate a model 
+Each - how likly is customer to churn. 
+Data on azure blobs. 
+
+Termonilogy
+------------
+Training the model - train a model
+Using training data
+Superised model - the value is present in training data
+Labeled data - contain the value tyring to predict.
+Unlabled. 
+
+
+Data (Relational,no sql,)
+Training data - just a table of rows and Columns
+Data contain the label. 
+Columns - Features. 
+One of feature is the target value. 
+Apply machine learning algorithm . 
+Regression. 
+Classification. 
+Clustering. Find clusters. 
+Few styles
+----------
+Decision Tree
+Nural network 
+
+----
+Input only 75% into the learning alg. 
+Outcome is candidate model
+Is the model preditictive? 
+Make prediction - Generate target values. prediction values.
+Compare generated target value to actual target values.
+1) May be try other alg
+2) May be need to 
+3) Deploy model - Azure ML - build in support to deploy model to azure. 
+4) Application must supply the feature. 
+5) Model return the predicted target value. 
+
+
+

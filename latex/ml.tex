@@ -13,29 +13,33 @@
 
 We used random forests to build the binary classifiers $(N=200)$ \cite{Breiman01randomforests}. Random forests build an ensemble of decision trees during training, and during testing, each decision tree votes on the outcome.  Like decision trees, they can account for interactions between variables, such as making greater use of the summary features when the current speech act is not a question.  Random forests though are not as sensitive to overfitting and data fragmentation.
 
-To find the optimal hyper parameters, we ran a grid search over the \textit{max\_features} and \textit{max\_depth} hyper parameters for each model. The hyper parameters search was done over $\{sqrt, log2, 10\}$ for \textit{max\_features} and $\{5, 7, 9\}$ for \textit{max\_depth}. When training the model, we used the optimal hyper parameters for each feature set.
-
 We performed 10 fold-labeled cross validations.  We made sure that each conversation was entirely in a single fold. This way, each dialogue was entirely used for training or testing, but never for both at the same time.
 
 \subsection{Metrics}
-To evaluate our hypothesis, we use the trained model to perform prediction of the test data. We than compare the results against the truth values. The results are recorded in a confusion matrix.
+To evaluate our hypothesis, we use the trained model to perform prediction of the test data. We than compare the predictions against the truth values. The results are recorded in a confusion matrix.
 Each row in the matrix represent the actual class and each column represent the predicted class.
 The cell in the matrix are compute as follow :
-
+%
+\begin{table}[ht!]
+\begin{center}
 \begin{tabular}{c >{\bfseries}r @{\hspace{0.7em}}c @{\hspace{0.4em}}c @{\hspace{0.7em}}l}
-  \multirow{10}{*}{\rotatebox{90}{\parbox{1.1cm}{\bfseries\centering actual\\ value}}} &
-    & \multicolumn{2}{c}{\bfseries Prediction outcome} & \\
-  & & \bfseries p & \bfseries n & \bfseries total \\
-  & p$'$ & \MyBox{True}{Positive} & \MyBox{False}{Negative} & P$'$ \\[2.4em]
-  & n$'$ & \MyBox{False}{Positive} & \MyBox{True}{Negative} & N$'$ \\
-  & total & P & N &
+  \multirow{10}{*}{\rotatebox{90}{\parbox{2cm}{\bfseries Caused turn change}}} &
+    & \multicolumn{2}{c}{\bfseries Predicted to cause turn change} & \\
+  & & \bfseries yes & \bfseries no & \\
+  & yes & \MyBox{True}{Positive} & \MyBox{False}{Negative} \\[2.4em]
+  & no & \MyBox{False}{Positive} & \MyBox{True}{Negative}  \\
 \end{tabular}
+\end{center}\vspace{-0.5em}
+\caption{Confusion Matrix}
+\label{tab:mapping}
+\end{table}
+
 
 \begin{enumerate}
-  \item True Positive - Labels which were predicted as positive and are positive
-  \item False Positive- Labels which were predicted as positive but are in fact negative
-  \item True Negative - Labels which were predicted as negative and are negative
-  \item False Negative - Labels which were predicted as negative but are in fact positive
+  \item True Positive - Count of the dialog acts which were predicted to cause a turn change and led to turn change.
+  \item False Positive-  Count of the dialog acts which were predicted to cause a turn change but in fact did not cause one.
+  \item True Negative - Count of dialog acts which were predicted to not cause a turn change and did not cause turn change. 
+  \item False Negative - Count of dialog acts which were predicted to not cause a turn change but in fact caused one.
 \end{enumerate}
 
 Based on the confusion matrix, we compute the following metrics for each model:
@@ -43,17 +47,17 @@ Based on the confusion matrix, we compute the following metrics for each model:
 \begin{equation}
 Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
 \end{equation}
-The accuracy measure how many instances were classified correctly out of the total instances.
+The accuracy measure how many dialog acts were classified correctly out of the total dialog acts.
 
 \begin{equation}
 Precision = \frac{TP }{TP + FP}
 \end{equation}
-The precision metric measure how accurate is the classifier for the positive instances. I.e. how many instances that were classified as positive, were in fact positive.
+The precision metric measure how accurate is the classifier for the the dialog acts that caused turn change. I.e. how many dialog acts that were classified as causing a turn change, did in fact led to a turn change.
 
 \begin{equation}
 Recall = \frac{TP }{TP + FN}
 \end{equation}
-The recall metric measure how many positive instances were detected by the classifier.
+The recall metric measure how many dialog act that predicted turn change were detected by the classifier.
 
 \begin{equation}
 F1 = \frac{2 \cdot Precision\cdot Recall}{Precision+ Recall}
@@ -63,5 +67,5 @@ harmonic mean of recall and precision.
 
 Note that there is a trade off between recall and precision. I.e. if we want to increase recall we will reduce precision. To measure this tradeoff, we will use ROC (Receiver Operating Characteristic) curve.
 The ROC curve measure the true positive rate (TPR) or recall, against the false positive rate (FPR).
-When comparing different ROC curves, we measure the area under the curve (AUC). 
+When comparing different ROC curves, we measure the area under the curve (AUC).
 

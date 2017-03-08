@@ -4,22 +4,21 @@ Table 2 shows the results of training a random forest for each model.
 We see that using the summary features provides better accuracy than baseline 1, which use only the current dialog act ($66.14\%$ vs $60.26\%$). In addition, using the full model yields an improvement of over $1.58\%$ in the result.
 %
 \begin{table}[ht!]
-\scriptsize
-   \begin{center}
-    \begin{tabular}{| l | l | l | c |}
-    \hline
-    Model & Accuracy & AUC & hyper parameters\\
-    \hline
-    Baseline 1      & 60.26\% & 0.63 & \scriptsize{max\_features=sqrt, max\_depth=7} \\
-    Baseline 2     & 74.43\% & 0.79 & \scriptsize{max\_features=log2, max\_depth=9}\\
-    Summary        & 66.14\% & 0.65 & \scriptsize{max\_features=sqrt, max\_depth=5} \\
-    Full           & 76.05\% & 0.82 &\scriptsize{max\_features=10, max\_depth=9}\\
-  \hline
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  Accuracy &        F1 &  Precision &    Recall &   AUC \\
+\midrule
+baseline &  0.625909 &  0.576875 &   0.750083 &  0.468757 &  0.658477 \\
+summary  &  0.653642 &  0.692980 &   0.671740 &  0.714266 &  0.693968 \\
+both     &  0.749753 &  0.749143 &   0.820763 &  0.689140 &  0.812432 \\
+all      &  0.758771 &  0.779289 &   0.776226 &  0.781598 &  0.839711 \\
+\bottomrule
 \end{tabular}
 \end{center}
-\vspace{-1.2em}
-\caption{Accuracy and AUC results }
+\caption{Precision, recall and F1 results }
 \end{table}
+
 
 The effect can also be seen in Figure 3, which shows the ROC curves and the AUC for each
 model. We notice that the AUC of the summary model is better than baseline model ($0.65$ vs $0.63$), and when adding the summary features to the local features in the full model, we see the AUC improves ($0.82$ vs $0.79$). This suggests that while the discrimination facility of the summary features is lacking (AUC $<0.7$), adding them to a classifier that uses local features (full model) yields better results than the baseline.
@@ -34,21 +33,5 @@ In addition to analyzing the results in terms of accuracy, we also analyze the r
 leading to a higher F1 score and overall better performance. Using the full model improves precision, which means that dialog acts
 that were considered to lead to turn transitions are classified correctly. If we use the full model, we lose precision (over baseline 2 model), but gain recall,
 leading to the highest F1 score and the best performance.
-%
-\begin{table}[ht!]
-\begin{center}
-\begin{tabular}{lrrrrr}
-\toprule
-{} &  Accuracy &        F1 &  Precision &    Recall &   AUC \\
-\midrule
-baseline 1&  0.624320 &  0.577152 &   0.746507 &  0.470676 &  0.655748 \\
-summary   &  0.653455 &  0.692469 &   0.670798 &  0.714937 &  0.690383 \\
-baseline 2&  0.748215 &  0.747843 &   0.823304 &  0.685486 &  0.810832 \\
-all       &  0.754587 &  0.775238 &   0.773176 &  0.777437 &  0.835127 \\
-\bottomrule
-\end{tabular}
-\end{center}
-\caption{Precision, recall and F1 results }
-\end{table}
 
 

@@ -18,7 +18,9 @@
    After computing the summary features, we perform the following data transformation:
     \begin{itemize}[leftmargin=1em]
     \item We exclude 11 dialogue acts that were coded in Switchboard as ``other.''
-    \item Since we believe that it takes a certain amount of time to build a stable conversational image, in evaluating our model, we removed all turns that occurred in the first part of each conversation. For this paper, we used an estimate of 120 seconds. This reduced the number of dialog acts from 50,633 to 37,508.
+    \item We filtered out all the dialogs that had data integrity issues,  for example 
+          dialog acts that referred to non existent terminals. This decrease the number
+          of conversations from 624 to 310 conversations consisting of 60595 dialog acts.  
     \item To reduce data sparsity, we grouped switchboard dialog acts into dialog act classes. This reduced the number of dialog acts from 148 to 9 dialog act classes. See Table 1 for examples of the mapping.
     \item We added a binary $y_{i+1}$ feature to each dialog act. As explained in Section 3, the variable is 1 if there is a turn change from dialogue act $d_i$ to $d_{i+1}$.
 

@@ -370,7 +370,7 @@ class SbCorpus():
         for x in crd.dialogs:
             self.dialog_nodes[x.id] = x
 
-        logger.debug("done reading corpus resources")
+        logger.debug("done reading corpus resources " + str(len(self.dialog_nodes)))
 
 
     

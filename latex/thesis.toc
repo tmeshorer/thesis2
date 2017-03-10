@@ -1,6 +1,6 @@
 \contentsline {chapter}{Dedication}{iv}
 \contentsline {chapter}{Acknowledgements}{v}
-\contentsline {chapter}{Abstract}{viii}
+\contentsline {chapter}{Abstract}{vii}
 \contentsline {part}{I\hspace {1em}Introduction}{1}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Thesis Statement}{3}
@@ -18,11 +18,10 @@
 \contentsline {section}{\numberline {3.3}Data Exploration}{12}
 \contentsline {subsection}{\numberline {3.3.1}Variables}{12}
 \contentsline {subsection}{\numberline {3.3.2}Dialog Acts}{12}
-\contentsline {subsection}{\numberline {3.3.3}Summary Features Analysis}{12}
-\contentsline {section}{\numberline {3.4}Machine learning}{15}
-\contentsline {subsection}{\numberline {3.4.1}Classification Models}{15}
-\contentsline {subsection}{\numberline {3.4.2}Metrics}{15}
-\contentsline {section}{\numberline {3.5}Results}{17}
-\contentsline {chapter}{\numberline {4}Conclusions}{19}
-\contentsline {section}{\numberline {4.1}Future Direction}{19}
-\contentsline {chapter}{Bibliography}{21}
+\contentsline {section}{\numberline {3.4}Machine learning}{14}
+\contentsline {subsection}{\numberline {3.4.1}Classification Models}{14}
+\contentsline {subsection}{\numberline {3.4.2}Metrics}{14}
+\contentsline {section}{\numberline {3.5}Results}{16}
+\contentsline {chapter}{\numberline {4}Conclusions}{18}
+\contentsline {section}{\numberline {4.1}Future Direction}{18}
+\contentsline {chapter}{Bibliography}{20}

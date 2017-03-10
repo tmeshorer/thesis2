@@ -16,7 +16,7 @@ We used random forests to build the binary classifiers $(N=200)$ \cite{Breiman01
 We performed 10 fold-labeled cross validations.  We made sure that each conversation was entirely in a single fold. This way, each dialogue was entirely used for training or testing, but never for both at the same time.
 
 \subsection{Metrics}
-To evaluate our hypothesis, we use the trained model to perform prediction of the test data. We than compare the predictions against the truth values. The results are recorded in a confusion matrix.
+To evaluate our hypothesis, we use the trained model to perform prediction of the test data. We than compare the predictions against the truth values. The results are recorded in a confusion matrix as shown in table \ref{tab:mapping}.
 Each row in the matrix represent the actual class and each column represent the predicted class.
 The cell in the matrix are compute as follow :
 %
@@ -38,7 +38,7 @@ The cell in the matrix are compute as follow :
 \begin{enumerate}
   \item True Positive - Count of the dialog acts which were predicted to cause a turn change and led to turn change.
   \item False Positive-  Count of the dialog acts which were predicted to cause a turn change but in fact did not cause one.
-  \item True Negative - Count of dialog acts which were predicted to not cause a turn change and did not cause turn change. 
+  \item True Negative - Count of dialog acts which were predicted to not cause a turn change and did not cause turn change.
   \item False Negative - Count of dialog acts which were predicted to not cause a turn change but in fact caused one.
 \end{enumerate}
 

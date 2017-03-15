@@ -1,4 +1,4 @@
-\subsection{Classification Models}
+\section{Classification Models}
 
     To test the contribution of the summary features, we used a binary classifier with
     $y_i$ as the outcome variable. We trained four models, which used the following sets of features:
@@ -15,8 +15,8 @@ We used random forests to build the binary classifiers $(N=200)$ \cite{Breiman01
 
 We performed 10 fold-labeled cross validations.  We made sure that each conversation was entirely in a single fold. This way, each dialogue was entirely used for training or testing, but never for both at the same time.
 
-\subsection{Metrics}
-To evaluate our hypothesis, we use the trained model to perform prediction of the test data. We than compare the predictions against the truth values. The results are recorded in a confusion matrix as shown in table \ref{tab:mapping}.
+\section{Metrics}
+To evaluate our hypothesis, we use the trained model to perform prediction of the data. We than compare the predictions against the truth values. The results are shown in a confusion matrix as shown in Table \ref{tab:mapping}.
 Each row in the matrix represent the actual class and each column represent the predicted class.
 The cell in the matrix are compute as follow :
 %
@@ -36,10 +36,10 @@ The cell in the matrix are compute as follow :
 
 
 \begin{enumerate}
-  \item True Positive - Count of the dialog acts which were predicted to cause a turn change and led to turn change.
-  \item False Positive-  Count of the dialog acts which were predicted to cause a turn change but in fact did not cause one.
-  \item True Negative - Count of dialog acts which were predicted to not cause a turn change and did not cause turn change.
-  \item False Negative - Count of dialog acts which were predicted to not cause a turn change but in fact caused one.
+  \item True Positive - Count of the dialog acts that were predicted to cause a turn change and that did lead to turn change.
+  \item False Positive- Count of the dialog acts that were predicted to cause a turn change but in fact did not cause one.
+  \item True Negative - Count of dialog acts that were predicted to not cause a turn change and did not cause turn change.
+  \item False Negative - Count of dialog acts that were predicted to not cause a turn change but in fact caused one.
 \end{enumerate}
 
 Based on the confusion matrix, we compute the following metrics for each model:
@@ -47,14 +47,14 @@ Based on the confusion matrix, we compute the following metrics for each model:
 \begin{equation}
 Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
 \end{equation}
-The accuracy measure how many dialog acts were classified correctly out of the total dialog acts.
+The accuracy measures how many dialog acts were classified correctly out of the total dialog acts.
 
 \begin{equation}
 Precision = \frac{TP }{TP + FP}
 \end{equation}
-The precision metric measure how accurate is the classifier for the the dialog acts that caused turn change. I.e. how many dialog acts that were classified as causing a turn change, did in fact led to a turn change.
+The precision metric measures how accurate the classifier is for the the dialog acts that caused turn change; I.e., how many dialog acts that were classified as causing a turn change, did in fact led to a turn change.
 
-\begin{equation}
+\begin{equation}+-
 Recall = \frac{TP }{TP + FN}
 \end{equation}
 The recall metric measure how many dialog act that predicted turn change were detected by the classifier.
@@ -65,7 +65,7 @@ F1 = \frac{2 \cdot Precision\cdot Recall}{Precision+ Recall}
 In order to have one measurement which encompass both recall and precision, we compute F1 which is the
 harmonic mean of recall and precision.
 
-Note that there is a trade off between recall and precision. I.e. if we want to increase recall we will reduce precision. To measure this tradeoff, we will use ROC (Receiver Operating Characteristic) curve.
+Note that there is a trade off between recall and precision: if we want to increase recall we will reduce precision. To measure this tradeoff, we will use ROC (Receiver Operating Characteristic) curve.
 The ROC curve measure the true positive rate (TPR) or recall, against the false positive rate (FPR).
-When comparing different ROC curves, we measure the area under the curve (AUC).
+When comparing different ROC curves, we measures the area under the curve (AUC).
 

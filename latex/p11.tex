@@ -16,7 +16,7 @@ full       &  0.757515 &  0.775993 &   0.775099 &  0.778319 &  0.837863 \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Precision, recall and F1 results }
+\caption{Precision, recall and F1 results using Random Forests }
 \label{table:result}
 \end{table}
 
@@ -32,13 +32,27 @@ model. We notice that the AUC of the summary model is better than baseline 1 mod
  \end{figure}
 
 
-To measure the affect of time on the conversational image,
-we measured the AUC for the four models, using a varying windows sizes from the start of
-the conversation. Table \ref{table:starttime} shows the AUC values for different
-grouping start time (including a group that contain all the dialog act - starting at time 0).
-We can observe that it takes around 30 seconds to reach the maximum AUC when using the baseline model,
-while it takes 15 seconds when using all the features. This suggest that as more information
-is available to the speaker, it can form an effective turn allocation policy earlier in the conversation.
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  accuracy &        f1 &  precision &    recall &   roc\_auc \\
+\midrule
+all        &  0.765718 &  0.787481 &   0.774492 &  0.801152 &  0.848495 \\
+baseline 1 &  0.627938 &  0.578149 &   0.749824 &  0.470491 &  0.659992 \\
+baseline 2 &  0.748834 &  0.748210 &   0.819280 &  0.688687 &  0.811097 \\
+summary    &  0.679110 &  0.713018 &   0.692053 &  0.735588 &  0.726475 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Precision, recall and F1 results using Random Forests }
+\label{table:result}
+\end{table}
+
+
+\subsection{Sensitivity to measurement start time}
+
+In Meshorer and Heeman \cite{Meshorer2016UsingPS} we assumed that it take 120 seconds for the conversational image to form. To validate this assumption here, we computed the AUC for the different model using different starting time. Table \ref{table:starttime} shows that the AUC values stay consistent with using different start times. This shows that the summary features predictive strengh is not affected by the start time.
 
 %
 \begin{table}[ht!]
@@ -59,5 +73,5 @@ all        & 0.837863 & 0.838777 & 0.838533 & 0.838016  & 0.836148 & 0.831940 & 
 \label{table:starttime}
 \end{table}
 
- 
+
 

@@ -113,9 +113,11 @@ This work was funded by the National Science Foundation under grant IIS-1321146.
 \abstract
  Conversations are at the core of everyday social interactions. The interactions between conversants are preformed within the realm of a sophisticated and self-managed turn taking system. In human conversations, the turn taking system  supports minimal speaker overlap during turn transitions and minimum gaps between turns. Spoken dialogue systems are a new form of conversational user interface that permits users to use their voice to interact with the computer. As such, the turn taking capabilities of SDS should evolve from a simple timeout to a more human-like model. Recent advances in turn taking systems for SDS use different local features of the last few utterances to predict turn transition.
 
-This thesis explores using a summary of past speaker behavior to better predict turn transitions. We believe that the summary features represent an evolving model of the other conversant. For example, speakers who typically use long turns will be likely to use long turns in the future. Moreover, speakers with more control of the conversation floor will be unlikely to yield their turn often. As the conversational image of the speaker evolves with the conversation, other speakers might adjust their turn taking behavior in response.
+This thesis explores using a summary of past speaker behavior to better predict turn transitions. We believe that the summary features represent an evolving model of the other conversant. For example, speakers who typically use long turns will be likely to use long turns in the future. In addition, speakers with more control of the conversation floor will be less likely to yield the turn. As the conversational image of the speaker evolves as the conversation progresses, other speakers might adjust their turn taking behavior in response.
 
-We computed two types of summary features that represent the current speaker's past turn-taking behavior: \textit{relative turn length} and \textit{relative floor control}. Relative turn length measures the current turn length so far (in time and words) relative to the speaker's average turn length. Relative floor control measures the speaker's control of the conversation floor (in time and words) relative to the total conversation length. The features are recomputed for each dialog act based on past turns of the speaker within the current conversation. Using the switchboard corpus, we trained two models to predict turn transitions: one with just local features (e.g., current speech act, previous speech act) and one that added the summary features. Our results shows that using the summary features improves turn transitions prediction.
+We computed two types of summary features that represent the current speaker's past turn-taking behavior: \textit{relative turn length} and \textit{relative floor control}. Relative turn length measures the current turn length so far (in seconds and words) relative to the speaker's average turn length. Relative floor control measures the speaker's control of the conversation floor (in seconds and words) relative to the total conversation length. The features are recomputed for each dialog act based on past turns of the speaker within the current conversation. Using the switchboard corpus, we trained two models to predict turn transitions: one with just local features (e.g., current speech act, previous speech act) and one that added the summary features. Our results shows that using the summary features improves turn transition prediction.
+
+This work is based on Meshorer and Heeman\cite{Meshorer2016UsingPS} which was submitted and presented in interspeech 2016.
  % Main body
 \body
 
@@ -128,26 +130,26 @@ We computed two types of summary features that represent the current speaker's p
 \input{p2}
 \section{Approach}
 \input{p3}
-\section{Dissertation Structure}
-\input{p4}
 \section{Contribution}
 \input{p5}
+\section{Dissertation Structure}
+\input{p4}
 \chapter{Related Work}
 \input{p6}
 \section{Human-Human Conversations}
 \input{p7}
 \section{Human-Computer Conversations}
 \input{p8}
-\chapter{Study}
-\section{Data}
+\chapter{Theoretical model}
+\input{theory}
+\chapter{Data}
+\section{Data Source}
 \input{p9}
 \section{Data Preparation}
 \input{p10}
-\clearpage
 \section{Data Exploration}
 \input{visualization}
-\clearpage
-\section{Machine learning}
+\chapter {Study}
 \input{ml}
 \section{Results}
 \input{p11}

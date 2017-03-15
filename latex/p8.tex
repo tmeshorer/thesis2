@@ -1,12 +1,10 @@
 
-As recent advances in machine learning \cite{hinton2012deep} reduce speech recognition error rates, the problem of
-turn taking in SDS rises in importance. Traditional SDS systems use a simple silence timeout approach to
-trigger turn transitions. This creates three issues \cite{arsikere2015enhanced} first, the model might not be robust enough
+As recent advances in machine learning reduce speech recognition error rates, the problem of turn taking in SDS rises in importance \cite{hinton2012deep}. Traditional SDS systems use a simple silence timeout approach to trigger turn transitions. This creates three issues \cite{arsikere2015enhanced} first, the model might not be robust enough
 in a noisy environment (for example when driving); second, if the timeout is too short, the system might
 detect intra-turn pauses (for example, the user pausing to think) as a turn transition and will cut into the user's turn;
 and third, if the timeout is too long the system will wait too long to take the turn, resulting in large gaps between turns.
 
-Recent studies tried to improve over the simple threshold model by using machine learning to train models based on features derived from the last utterance. As different studies use a variety of features, we will outline those that used counting features that are close to the summary features.
+Recent studies tried to improve over the simple threshold model by using machine learning to train models based on features derived from the latest utterance. As different studies use a variety of features, we will outline those that used counting features that are close to the summary features.
 
 Arsikere et al.~\cite{atterer2008towards} focused on utterance segmentation in the context of an incremental dialog system.
 Using the switchboard corpus, they used a decision tree algorithm to decide if a word is the final utterance by using various features and in particular the number of words in the turn so far. The usage of count features improves precision by 10\% but has very low recall (7\%), which might have occurred, according to the author, from turns with only one word.

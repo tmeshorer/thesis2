@@ -143,6 +143,11 @@ W.~McKinney.
 \newblock pandas: a foundational python library for data analysis and
   statistics.
 
+\bibitem{Meshorer2016UsingPS}
+T.~Meshorer and P.~A. Heeman.
+\newblock Using past speaker behavior to better predict turn transitions.
+\newblock In {\em INTERSPEECH}, 2016.
+
 \bibitem{scikit-learn}
 F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
   M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,

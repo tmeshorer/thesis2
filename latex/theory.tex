@@ -1,4 +1,6 @@
-\subsection{Local Features}
+This chapter aim to provide more formal description of the different phenomenon that were investigated in this thesis. The chapter gives a formal definition of a conversation, turn changes and the local features. We than presents the formulas to compute the summary features : relative turn length and relative floor control.
+
+\section{Local Features}
 
      We define a conversation as a sequence of dialogue acts $d_1 \dots d_N$, where $d_i$ is uttered by speaker $s_i$.  We write this as the following sequence:
 %
@@ -13,11 +15,11 @@
       In our first baseline model, we try to predict the turn transition value $y_{i+1}$ based only on the latest dialog act $d_i$. In our second baseline model, we try to predict turn transition $y_{i+1}$ based on the latest two dialog acts: $d_{i-1}$ and $d_i$.
 
 
-\subsection{Summary Features}\label{sfeatures}
+\section{Summary Features}\label{sfeatures}
 
      As discussed in the introduction, we introduce two types of summary features in this paper: relative turn length ($rt_i$) and relative floor control ($rc_i$).  These features are used in predicting whether there is a change in speaker $y_{i+1}$ after dialogue act $d_i$.
 
-     To compute the summary features at dialogue act $d_i$, we introduced the some notation. let $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
+     To compute the summary features at dialogue act $d_i$, we introduced the some notation. Let $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
 %
     \begin{equation}
      avg\_t_i = \frac{\sum_{t \in S_i} length(t)}{|S_i|}
@@ -29,7 +31,12 @@
      \end{equation}
      Note that we calculate two versions of $rt_i$: in seconds and in words.  The purpose of $rt_i$ is to let the listener, in predicting turn changes, take into account whether the current speaker is exceeding his or her average turn length.
 
-     The \textit{relative floor control}, denoted as $rc_i$, measures the percent of time in which the current speaker controlled the conversation floor up to $d_i$. We again define $S_i$ as above, and we define $L_i$ to be the turns of the other conversant (the listener of $d_i$). We first compute the conversation length up to $d_i$ denoted as $c_i$ which excludes inter-utterance pauses.
+     The \textit{relative floor control}, denoted as $rc_i$, measures the percent of time in which the current speaker controlled the conversation floor up to $d_i$. We use $S_i$ as defined above:
+     the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.
+     %
+     We similarly define $L_i$ to be the turns of the other conversant (the listener of $d_i$) that are prior to $d_i$.
+     %
+     We first compute the conversation length up to $d_i$ denoted as $c_i$, which excludes inter-utterance pauses but includes intra-utterance pauses.
      \begin{equation}
          c_i = \sum_{t \in S_i \cup L_i} length(t)
      \end{equation}

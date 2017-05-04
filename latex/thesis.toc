@@ -11,14 +11,12 @@
 \contentsline {section}{\numberline {2.1}Human-Human Conversations}{5}
 \contentsline {section}{\numberline {2.2}Human-Computer Conversations}{6}
 \contentsline {chapter}{\numberline {3}Theoretical model}{8}
-\contentsline {subsection}{\numberline {3.0.1}Local Features}{8}
-\contentsline {subsection}{\numberline {3.0.2}Summary Features}{8}
+\contentsline {section}{\numberline {3.1}Local Features}{8}
+\contentsline {section}{\numberline {3.2}Summary Features}{8}
 \contentsline {chapter}{\numberline {4}Data}{10}
-\contentsline {section}{\numberline {4.1}Data Source}{10}
-\contentsline {section}{\numberline {4.2}Data Preparation}{10}
-\contentsline {section}{\numberline {4.3}Data Exploration}{12}
-\contentsline {subsection}{\numberline {4.3.1}Variables}{12}
-\contentsline {subsection}{\numberline {4.3.2}Dialog Acts}{12}
+\contentsline {section}{\numberline {4.1}Data Preparation}{10}
+\contentsline {section}{\numberline {4.2}Data Exploration}{12}
+\contentsline {subsection}{\numberline {4.2.1}Dialog Acts}{12}
 \contentsline {chapter}{\numberline {5}Study}{14}
 \contentsline {section}{\numberline {5.1}Classification Models}{14}
 \contentsline {section}{\numberline {5.2}Metrics}{14}

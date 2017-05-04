@@ -72,8 +72,8 @@
 % Advisor, readers are in {Name}{Title} format
 % Fourth reader is optional; all others are required
 \principaladvisor{Prof. Peter A. Heeman}{Research Associate Professor}
-\firstreader{Steven Bedrick}{Research Assistant Professor}
-\secondreader{Stephen Wu}{Research Associate Professor}
+\firstreader{Steven Bedrick}{Assistant Professor}
+\secondreader{Stephen Wu}{Assistant Professor}
 %\thirdreader{NA}{NA}
 % Date degree will be conferred
 \degreedate{March}{2017}
@@ -101,7 +101,7 @@ the work and providing invaluable feedback.
 
 I am also indebted to the staff and students of the Center of Spoken Language Understanding, and especially to the gradate program coordinator, Ms. Patricia Dickerson,
 for her valuable assistance during the course of my studies.
-This work was funded by the National Science Foundation under grant IIS-1321146.
+This work was partially funded by the National Science Foundation under grant IIS-1321146.
 
 
 % Table of contents, lists of tables/figures
@@ -117,7 +117,7 @@ This thesis explores using a summary of past speaker behavior to better predict 
 
 We computed two types of summary features that represent the current speaker's past turn-taking behavior: \textit{relative turn length} and \textit{relative floor control}. Relative turn length measures the current turn length so far (in seconds and words) relative to the speaker's average turn length. Relative floor control measures the speaker's control of the conversation floor (in seconds and words) relative to the total conversation length. The features are recomputed for each dialog act based on past turns of the speaker within the current conversation. Using the switchboard corpus, we trained two models to predict turn transitions: one with just local features (e.g., current speech act, previous speech act) and one that added the summary features. Our results shows that using the summary features improves turn transition prediction.
 
-This work is based on Meshorer and Heeman\cite{Meshorer2016UsingPS} which was submitted and presented in interspeech 2016.
+
  % Main body
 \body
 
@@ -143,7 +143,6 @@ This work is based on Meshorer and Heeman\cite{Meshorer2016UsingPS} which was su
 \chapter{Theoretical model}
 \input{theory}
 \chapter{Data}
-\section{Data Source}
 \input{p9}
 \section{Data Preparation}
 \input{p10}

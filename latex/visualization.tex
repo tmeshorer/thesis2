@@ -1,7 +1,6 @@
-In this section we use visualization method in order to explore the data variables
-distribution and relationships.
+In this section we use visualization method in order to explore the distribution of the independent data variables and thier relationships with the turn taking (which is the depended variable) 
 %
-After preprocessing the data, the data set contains the following variables
+The visualization was done using python seaborn library which is based on matplotlib. The data set for the visualization contains a row for each dialog act. For each dialog act we measure its length, and the values of the summary features (RTL and RTC). The independent variable denote wether a turn change occured after the dialog act.
 
 \begin{table}[ht!]
 \begin{center}
@@ -24,8 +23,7 @@ Variable &  Description & Type &\\
 
 \subsection{Dialog Acts}
 
-Figure \ref{f1} shows the relative presence of each dialog act. We observe that the majority of dialog acts are statements, backchannels and opinions. This is true to the nature of the switchboard corpus
-which consists mainly of casual conversations.
+The first visualization, Figure \ref{f1} plots the distribution of each dialog act in the corpus. Each bar is a count of the dialog act type, divided by the total dialog acts.  We can observe that the majority of dialog acts are statements, backchannels and opinions. This is true to the nature of the switchboard corpus which consists mainly of casual conversations.
 
  \begin{figure}[ht!]
  \centering
@@ -34,7 +32,7 @@ which consists mainly of casual conversations.
  \label{f1}
  \end{figure}
 
-In figure \ref{f2}, we measure the probability that a dialog act will lead to turn change. We observe that the majority of back channels and question will lead to a turn change.
+Next we wanted to measure the correlation between dialog act type and the probability of a turn change.  In figure \ref{f2}, each bar measures the number of time a turn change occurred after a dialog act type divided by the total dialog act of this type. Or the probability that a dialog act of the said type will lead to turn change. We observe that the majority of back channels and question (which are usually the first utterance in an question-answer adjacency pair) will lead to a turn change.
 
 \begin{figure}[ht!]
 \centering

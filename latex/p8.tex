@@ -1,5 +1,5 @@
 
-As recent advances in machine learning reduce speech recognition error rates, the problem of turn taking in SDS rises in importance \cite{hinton2012deep}. Traditional SDS systems use a simple silence timeout approach to trigger turn transitions. This creates three issues \cite{arsikere2015enhanced} first, the model might not be robust enough
+As recent advances in machine learning reduce speech recognition error rates, the problem of turn taking in SDS rises in importance \cite{hinton2012deep}. Traditional SDS systems use a simple silence timeout approach to trigger turn transitions. This creates three issues \cite{arsikere2015enhanced}: first, the model might not be robust enough
 in a noisy environment (for example when driving); second, if the timeout is too short, the system might
 detect intra-turn pauses (for example, the user pausing to think) as a turn transition and will cut into the user's turn;
 and third, if the timeout is too long the system will wait too long to take the turn, resulting in large gaps between turns.
@@ -8,14 +8,14 @@ Recent studies tried to improve over the simple threshold model by using machine
 
 Gravano and Hirschberg \cite{gravano2011turn} used the Columbia games corpus to study the effectiveness of
 different turn transition cues. The authors define inter-pausal units (IPU) as a maximum sequence of words surrounded by silence of more than 50 ms. A turn is the longest sequence of IPUs by the same speaker.
-One of the features studied is IPU duration in ms as well as number of words. As in our findings,
-the authors found that long IPUs are a good indication of upcoming turn changes (long IPUs might correlate with a speaker passing its average turn length). Moreover, as we show in Section 5, the authors found that combining multiple cues leads to better accuracy.
+One of the features studied is IPU duration in milliseconds as well as number of words. As in our findings,
+the authors found that long IPUs are a good indication of upcoming turn changes (long IPUs might correlate with a speaker passing its average turn length). Moreover, as we also show in Section 5, the authors found that combining multiple cues leads to better accuracy.
 
-Raux and Eskenazi \cite{raux2012optimizing} performed a comprehensive study of features that inform turn changes. The study
+Raux and Eskenazi \cite{raux2012optimizing} performed a comprehensive study of features that might affect turn changes. The study
 found that timing features, such as turn duration and number of pauses, have relatively strong predictive power. While Raux and Eskenazi use features of the current turn, in our study we use the timing features for the turns that have occurred so far in the current conversation.
 
-In more recent study, Nishitha and Rodney \cite{SSS1510313} used a model based on N grams of dialog acts to predict turn transitions.
+In a more recent study, Nishitha and Rodney \cite{SSS1510313} used a model based on N grams of dialog acts to predict turn transitions.
 They trained decision tree models using the switchboard data. As features, they contrasted the use of the previous dialog act, the previous two dialog acts and the previous three dialog acts. They also contrasted whether to indicate if there is a speaker change between the previous dialog acts. They achieved an F1 measure of $0.67$ for the model that use the previous two dialog acts.
 %
-In this paper, we based our baseline models on previous dialog act and the previous two dialog acts. We also mapped the switchboard dialog acts from 148 dialog acts down to 9 to reduce data dimensionality. The prediction performance of our baseline model is comparable to their results.
+In our work, we base our baseline models on the previous dialog act and the previous two dialog acts. We also mapped the switchboard dialog acts from 148 dialog acts down to 9 to reduce data dimensionality. The prediction performance of our baseline model is comparable to their results.
 

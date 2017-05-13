@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  10 MAY 2017 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  12 MAY 2017 16:59
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -619,31 +619,7 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (thesis.aux
 
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `f4' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `f4' multiply defined.
-
-
 LaTeX Warning: Label `tab:mapping' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
 
 
 LaTeX Warning: Label `table:result' multiply defined.
@@ -800,28 +776,28 @@ Overfull \hbox (10.46922pt too wide) in paragraph at lines 7--19
 File: ../scikitlearn/figures/f1.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f1.png>
-Package pdftex.def Info: ../scikitlearn/figures/f1.png used on input line 30.
+Package pdftex.def Info: ../scikitlearn/figures/f1.png used on input line 31.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
  [12]
 <../scikitlearn/figures/f2.png, id=93, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f2.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f2.png>
-Package pdftex.def Info: ../scikitlearn/figures/f2.png used on input line 39.
+Package pdftex.def Info: ../scikitlearn/figures/f2.png used on input line 40.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
 
 <../scikitlearn/figures/f3.png, id=94, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f3.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f3.png>
-Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 54.
+Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 55.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
 
 <../scikitlearn/figures/f4.png, id=95, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f4.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f4.png>
-Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 66.
+Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 67.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
  [13 <../scikitlearn/figures/f1.png>]
 [14 <../scikitlearn/figures/f2.png> <../scikitlearn/figures/f3.png>]
@@ -829,14 +805,14 @@ Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 66.
 File: ../scikitlearn/figures/f5.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f5.png>
-Package pdftex.def Info: ../scikitlearn/figures/f5.png used on input line 78.
+Package pdftex.def Info: ../scikitlearn/figures/f5.png used on input line 79.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
  [15 <../scikitlearn/figures/f4.png> <../scikitlearn/figures/f5.png>]
 <../scikitlearn/figures/f6.png, id=111, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f6.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f6.png>
-Package pdftex.def Info: ../scikitlearn/figures/f6.png used on input line 90.
+Package pdftex.def Info: ../scikitlearn/figures/f6.png used on input line 91.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
 ) [16 <../scikitlearn/figures/f6.png>]
 Chapter 5.
@@ -892,10 +868,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16173 strings out of 493333
- 304863 string characters out of 3139182
+ 16176 strings out of 493333
+ 304950 string characters out of 3139182
  461169 words of memory out of 3000000
- 19307 multiletter control sequences out of 15000+200000
+ 19310 multiletter control sequences out of 15000+200000
  16539 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,72p,882b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -914,7 +890,7 @@ amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (36 pages, 534782 bytes).
+Output written on thesis.pdf (36 pages, 534965 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

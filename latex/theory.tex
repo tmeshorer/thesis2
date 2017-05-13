@@ -1,4 +1,4 @@
-This chapter aims to provide a more formal description of our turn taking model. First we present a formal definition of a conversation, turn changes and local features. Next we presents the formulas to compute the summary features: relative turn length and relative floor control.
+This chapter aims to provide a more formal description of our turn taking model. First we present a formal definition of a conversation, turn changes and local features. Next we present the formulas to compute the summary features: relative turn length and relative floor control.
 
 \section{Local Features}
 
@@ -19,7 +19,7 @@ This chapter aims to provide a more formal description of our turn taking model.
 
      As discussed in the introduction, we introduce two types of summary features in this paper: relative turn length ($rt_i$) and relative floor control ($rc_i$).  These features are used in predicting whether there is a change in speaker $y_{i+1}$ after dialogue act $d_i$.
 
-     To compute the summary features at dialogue act $d_i$, we introduced the some notation. Let $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
+     To compute the summary features at dialogue act $d_i$, we introduce some notation. Let $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
 %
     \begin{equation}
      avg\_t_i = \frac{\sum_{t \in S_i} length(t)}{|S_i|}
@@ -45,8 +45,8 @@ This chapter aims to provide a more formal description of our turn taking model.
      \begin{equation}
         rc_i = \frac{\sum_{t \in S_i} length(t)} {c_i}
      \end{equation}
-     Note that we calculate $rc_i$ in seconds and in words. Participants can use the relative floor control as a means to determine if one speaker is controlling the conversation; a controlling speaker will probably be less inclined to give up the floor.
+     Note that we also calculate $rc_i$ in seconds and in words. Participants can use the relative floor control as a means to determine if one speaker is controlling the conversation; a controlling speaker will probably be less inclined to give up the floor.
 
-     We use these two summary features in the \textit{summary model} and \textit{full model}, as described in the next section.
+     We use these two summary features in the \textit{summary model} and \textit{full model}, as described in Chapter 5.
 
 

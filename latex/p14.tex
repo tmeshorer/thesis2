@@ -2,9 +2,11 @@ In this work, the local features that we considered in our baseline model were j
 %
 syntactic \cite{ duncan1972some, sacks1974simplest, ford1996interactional, de2006projecting, magyari2012prediction, atterer2008towards}, prosodic \cite{ duncan1972some, ford1996interactional, shriberg2000prosody, ferrer2003prosody, de2006projecting, reed2009units, raux2012optimizing, hariharan2001robust, atterer2008towards}, pragmatic \cite{ ford1996interactional, garrod2015use, raux2012optimizing}, semantic \cite{raux2012optimizing} and non-verbal \cite{kendon1967some}. In future work, it would be good to evaluate the contribution of our summary features with a richer set of local features.
 
-In our work, we evaluated our model on the Switchboard corpus.  In future work, it would also be good to evaluate our summary features on other corpora, especially task-based dialogues.  Tasks in which there is a difference in the role of the user and speaker, such as in Trains \cite{HeemanAllen95:cdrom}, should benefit from modeling the past turn-taking behavior of each speaker.
+In our work, we evaluated our model on the Switchboard corpus.  In future work, it would also be good to evaluate our summary features on other corpora, especially task-based dialogues.  Tasks in which there is a difference in the role of the user and system, such as in Trains \cite{HeemanAllen95:cdrom}, should benefit from modeling the past turn-taking behavior of each speaker.
 
-In our work, we computed the relative turn length and relative speaker control using the turn length avrage as computed over all the previous turns. In future work , it would be interesting to use simple moving average (measured over multiple window width) as well as exponential moving average. 
+In our work, we computed the relative turn length and relative speaker control using the turn length average as computed over all the previous turns. In future work , it would be interesting to use a simple moving average (measured over multiple window widths) as well as an exponential moving average.
+
+In our work, we treated back-channels as full turn. This resulted in a results which were different than our initial hypothesis. In future work we will perform investigation in which we do not consider back channels as a full turn change.
 
 More generally, the summary features introduced in this work represent just one aspect of the conversational image of the user. Future work should try to ``summarize'' other local features by creating
 the average value of a local feature over past turns. For example, we can compute relative speech rate, or relative use of stereotyped expressions.

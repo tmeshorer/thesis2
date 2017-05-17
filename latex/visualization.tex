@@ -1,6 +1,6 @@
 In this section we explore the distribution of the independent data variables and their relationships with turn taking (which is the dependent variable)
 %
-We visualized the data using the python seaborn library, which is based on matplotlib. The data set for the visualization contains a row for each dialog act. For each dialog act we measure its length, and the values of the summary features (RTL and RTC). The independent variable denotes whether a turn change occured after the dialog act.  The variables are summarized in Table \ref {tab:vars}.
+We visualized the data using the python seaborn library, which is based on matplotlib. The data set for the visualization contains a row for each dialog act. For each dialog act we measure its length, and the values of the summary features (Relative turn length and Relative turn control). The independent variable denotes whether a turn change occurred after the dialog act.  The variables are summarized in Table \ref {tab:vars}.
 
 \begin{table}[ht!]
 \begin{center}
@@ -22,73 +22,78 @@ Variable &  Description & Type &\\
 \end{table}
 
 
-\subsection{Dialog Acts}
+\subsection{Influence of Summary Features on Turn-Taking}
 
-The first visualization, Figure \ref{fig:act}, plots the distribution of each dialog act in the corpus. Each bar is a count of the dialog act type, divided by the total dialog acts.  We observe that the majority of dialog acts are statements, backchannels and opinions. This might be due to the nature of the switchboard corpus, which consists mainly of casual conversations.
-
- \begin{figure}[ht!]
- \centering
- \includegraphics[width=\textwidth]{../scikitlearn/figures/f1.png}
- \caption{Dialog act relative count}
- \label{fig:act}
- \end{figure}
-
-Next we measure the correlation between dialog act type and the probability of a turn change.  In Figure \ref{fig:act:turnchange}, each bar measures the number of time a turn change occurred after a dialog act type divided by the total dialog act of this type: the probability that a dialog act of the said type will lead to a turn change. We observe that the majority of back channels and question (which are usually the first utterance in an question-answer adjacency pair) will lead to a turn change.
-
+In this section we explore how the summary features, defined Section \ref{sfeatures}, affect turn-taking.
+To measure the influence of relative turn length on turn taking, we first removed all the dialog acts that occurred in the first 120s of each dialog, as their relative turn lengths are not based on as much dialog history as the later ones, and so will not be as reliable.
+%
+This left us with 42721 dialog acts. We then divided the range of relative turn values into buckets and counted the number of dialog acts (regardless of their type) that led to a turn change and the total number of dialog acts for each bucket.
+We computed the probability of a turn change by dividing the former by the latter. As can be seen in Figure \ref {fig:rtl:turn}, the chance of turn change is higher when the speaker has the floor for the relative short amount of a time.  The really small relative turn lengths (0-15\%) are probably back channels. We also observe that as the speaker has the floor for more time, the speaker tends to hold it. Note that this do not confirm our hypothesis which assumed that if a speaker spoke for less time than its average, than he would not give the turn and vice verse, if the speaker passed its average turn length he would give up the turn. However, based on \ref {fig:rtl:turn}, we see the exact opposite. The suspect here is the distribution of dialog acts in the corpus as can be seen in \ref{fig:act}. We see that the corpus is composed of 43\% statements and 23\% back channels. The statements dialog acts are relarively long and tend to not cause turn change, which the back channels are relativity short and almost always do cause turn change. We suspect that this structure of the corpus led to \ref {fig:rtl:turn} which is not our initial hypothesis. 
+%
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/f2.png}
-\caption{Dialog act probability of turn change}
-\label{fig:act:turnchange}
-\end{figure}
-
-Next we measure the relative turn length score for each type of dialog act.
-In Figure \ref{fig:act:turn:rtl}, for each dialog act we show the distribution of relative turn length score for act that
-led to turn change and act that did not. We can see that in most of the dialog acts,
-the median RTL score that led to turn change is smaller than RTL score of acts of which
-the speaker kept the floor. This suggests that a speaker which uses the floor more than its
-avarage turn length will tend to hold the floor even more.
-
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/f3.png}
-\caption{Relative turn length for dialog act type}
-\label{fig:act:turn:rtl}
-\end{figure}
-
-Next we measured the relative floor control score for each type of dialog act.
-In Figure \ref{fig:act:turn:rfc}, for each dialog act we show the distribution of relative floor control for act that
-led to turn change and act that did not. We can see that in most of the dialog acts,
-the median score is about equal and close to 50\%. We can observe that for the question dialog act, when the speaker had high relative floor control, it tend to keep the turn after the question (for example, by asking rhetorical question)
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/f4.png}
-\caption{Relative floor control by dialog act}
-\label{fig:act:turn:rfc}
-\end{figure}
-
-Next we measured the relation between values of relative turn length and probability of turn change.
-To compute figure \ref{fig:rtl:turn}, we divided the range of relative floor control into buckets and counted for each bucket the number of dialog acts (regardless of the type) that led to a turn change and the total dialog acts in the bucket.
-We than computed the probability of a turn change by dividing the former by the latter. As shown, when the chance of turn transfer is higher when the speaker has the floor for the relative short amount of a time ( probably the affect of back channel). We can also observe that as the speaker has the floor for more time, it tend to hold it.
-
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/f5.png}
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f5.png}\vspace{-0.5em}
 \caption{Relative turn length effect on probability of a turn change}
 \label{fig:rtl:turn}
 \end{figure}
 
 Next we measured the relation between values of relative floor control and probability of turn change.
-As with relative turn length, to compute Figure \ref{fig:rfc:turn}, we divided the range of relative floor control into buckets and counted for each bucket the number of dialog acts (regardless of the type) that led to a turn change and the total dialog acts in the bucket.
-Again, we than computed the probability of a turn change by dividing the former by the latter. As shown,
-we can see that the relative floor control does not have a lot of affect on the proababilty of a turn change. However, we can notice that when the speaker has relative floor control scores above 50\% it tend to keep the floor and avoid turn change.
-
+As with relative turn length, to compute Figure \ref{fig:rfc:turn}, we only included dialog acts after 120s into the conversation. We also divided the range of relative floor control into buckets such that each bucket will contains roughly the same number of dialogs acts. Then we counted the number of dialog acts (regardless of the type) that led to a turn change and the total dialog acts for each bucket. We then computed the probability of a turn change by dividing the former by the latter.
+We observe that high values of floor control correlate with the willingness of the current speaker to give up the turn. When the speaker has relative floor control scores above 50\% the speaker tends to keep the floor and avoid a turn change.
+%
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth]{../scikitlearn/figures/f6.png}
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f6.png}\vspace{-0.5em}
 \caption{Relative floor control probability of turn change}
 \label{fig:rfc:turn}
 \end{figure}
+
+
+
+\subsection{Influence of Dialogue Acts Types}
+
+Next we explore the influence of dialog acts types (which are the local features in the theoretical model) on turn changes.
+First we compute the distribution of dialog acts type over all the dialog acts in corpus.
+Figure \ref{fig:act}, plots the distribution of each dialog act in the corpus. Each bar is a count of the dialog act type, divided by the total number of dialog acts.  We observe that the majority of dialog acts are statements, backchannels and opinions. This might be due to the nature of the switchboard corpus, which consists mainly of casual conversations.
+%
+\begin{figure}[ht!]
+ \centering
+ \includegraphics[width=\textwidth]{../scikitlearn/figures/f1.png}\vspace{-0.5em}
+ \caption{Dialog act relative count}
+ \label{fig:act}
+ \end{figure}
+
+Next we measure the correlation between dialog act type and the probability of a turn change.  In Figure \ref{fig:act:turnchange}, each bar measures the number of times a turn change occurred after a dialog act type divided by the total number of dialog acts of this type: the probability that a dialog act of the said type will lead to a turn change. We observe that the majority of back channels and questions (which are usually the first utterance in an question-answer adjacency pair) will lead to a turn change.
+%
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f2.png}\vspace{-0.5em}
+\caption{Dialog act probability of turn change}
+\label{fig:act:turnchange}
+\end{figure}
+
+\subsection{Dialogue Act Types and Summary Features}
+
+In this section we explore how the summary features are distributed for each dialog act. Moreover, we look at the score distribution for dialog acts that are followed by a turn change and ones that do not. In Figure \ref{fig:act:turn:rtl}, we see that for most of the dialog acts,
+the median relative turn length that led to a turn change is smaller than when it does not. This suggests that speakers who are using the floor more than their
+average turn length will tend to hold the floor even longer. This is consistent with our finding that longer relative turn lengths result in a lower rate of turn-changes, but shows that it holds across speech act types as well.
+%
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f3.png}\vspace{-0.5em}
+\caption{Relative turn length for dialog act type}
+\label{fig:act:turn:rtl}
+\end{figure}
+
+Next we measure the relative floor control score for each type of dialog act.
+In Figure \ref{fig:act:turn:rfc}, for each dialog act we show the distribution of relative floor control for acts that lead to turn changes and acts thatdo not. We see that for most of the dialog acts, the median score is about equal and close to 50\%.
+%
+We also observe that the median for for relative floor control is slightly higher for each dialogue act when it not followed by a turn change, than when it is.  Again, this is consistent with our earlier result that higher values for relative floor control tend to lead to less turn-changes, but here we see that it also applies to each dialog act.
+%
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f4.png}\vspace{-0.5em}
+\caption{Relative floor control by dialog act}
+\label{fig:act:turn:rfc}
+\end{figure}
+

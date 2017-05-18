@@ -1,0 +1,20 @@
+\subsection{Dialog Act and Turn Length Distribution}
+\label{sec:opposite}
+
+In Section \ref {sec:data:summary}, we reported that the relative turn length feature was giving us results opposite from what we expected.  We found that the chance of turn change is higher when the speaker has the floor for shorter than its average turn. And that the speaker will likely to keep the floor when speaking more than the average turn length. 
+
+We suspect that the reason that our initial hypothesis proved to be incorrect is due structural properties of the corpus. I.e. We were assuming that turn lengths would have a somewhat normal distribution.  In that case, if a partial turn was shorter than a speaker's average, the speaker would tend to keep speaking.  If it was longer than a speaker's average, the speaker would tend to stop speaking.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{../scikitlearn/figures/f10.png}\vspace{-0.5em}
+\caption{Distribution of the turn length}
+\label{fig:turn_dist}
+\end{figure}
+%
+Figure \ref {fig:turn_dist} shows the actual distribution of turn lengths (in seconds).
+We see that the distribution of turn length is highly skewed toward short turns (back channels, short answers). Having a skew distribution resulting in relative short average turn length (2.88 secs), which cause either low RTL values for short turns, or very high RTL numbers when the speaker uses a statement, or long answer. The results is that turn transition occur at very short turns (with relative turn length less than 100\%). Note that this figure is not directly comparable to Figure \ref {fig:rtl:turn} as that figure is realized for each speaker, allowing it to take into account speaker differences.
+
+
+
+

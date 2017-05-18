@@ -19,7 +19,7 @@ This chapter aims to provide a more formal description of our turn taking model.
 
      As discussed in the introduction, we introduce two types of summary features in this paper: relative turn length ($rt_i$) and relative floor control ($rc_i$).  These features are used in predicting whether there is a change in speaker $y_{i+1}$ after dialogue act $d_i$.
 
-     To compute the summary features at dialogue act $d_i$, we introduce some notation. Let $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn starting from the beginning of the first dialog act in the turn up to the end of the last dialog act. We measure length in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
+     To compute the summary features at dialogue act $d_i$, we introduce some notation. Let $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.  Let $t_i$ represent the turn so far that $d_i$ is in, up to $d_i$ but no subsequent dialogue acts.  Let length(t) be the length of a turn or a partial turn starting from the beginning of the first dialog act in the turn, and up to the end of the last dialog act. We measure length in seconds (or words). To compute the \textit{relative turn length} of turn $t_i$ we first compute the average length of all the turns in $S_i$
 %
     \begin{equation}
      avg\_t_i = \frac{\sum_{t \in S_i} length(t)}{|S_i|}

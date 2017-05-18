@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  17 MAY 2017 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  18 MAY 2017 11:16
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -619,6 +619,9 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (thesis.aux
 
+LaTeX Warning: Label `sec:data:summary' multiply defined.
+
+
 LaTeX Warning: Label `tab:mapping' multiply defined.
 
 )
@@ -773,35 +776,35 @@ Overfull \hbox (10.46922pt too wide) in paragraph at lines 7--19
 File: ../scikitlearn/figures/f5.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f5.png>
-Package pdftex.def Info: ../scikitlearn/figures/f5.png used on input line 35.
+Package pdftex.def Info: ../scikitlearn/figures/f5.png used on input line 36.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
  [12]
 <../scikitlearn/figures/f6.png, id=93, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f6.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f6.png>
-Package pdftex.def Info: ../scikitlearn/figures/f6.png used on input line 46.
+Package pdftex.def Info: ../scikitlearn/figures/f6.png used on input line 50.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
  [13 <../scikitlearn/figures/f5.png>]
 <../scikitlearn/figures/f1.png, id=98, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f1.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f1.png>
-Package pdftex.def Info: ../scikitlearn/figures/f1.png used on input line 61.
+Package pdftex.def Info: ../scikitlearn/figures/f1.png used on input line 65.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
 
 <../scikitlearn/figures/f2.png, id=99, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f2.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f2.png>
-Package pdftex.def Info: ../scikitlearn/figures/f2.png used on input line 70.
+Package pdftex.def Info: ../scikitlearn/figures/f2.png used on input line 74.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
 
 <../scikitlearn/figures/f3.png, id=100, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f3.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f3.png>
-Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 83.
+Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 88.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
  [14 <../scikitlearn/figures/f6.png>]
 [15 <../scikitlearn/figures/f1.png> <../scikitlearn/figures/f2.png>]
@@ -809,10 +812,17 @@ Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 83.
 File: ../scikitlearn/figures/f4.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f4.png>
-Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 95.
+Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 100.
 (pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
-) [16 <../scikitlearn/figures/f3.png>]
-[17 <../scikitlearn/figures/f4.png>]
+) (v2.tex [16 <../scikitlearn/figures/f3.png>] <../scikitlearn/figures/f10.png,
+ id=116, 1336.995pt x 758.835pt>
+File: ../scikitlearn/figures/f10.png Graphic file (type png)
+
+<use ../scikitlearn/figures/f10.png>
+Package pdftex.def Info: ../scikitlearn/figures/f10.png used on input line 10.
+(pdftex.def)             Requested size: 426.39255pt x 242.01006pt.
+) [17 <../scikitlearn/figures/f4.png>]
+[18 <../scikitlearn/figures/f10.png>]
 Chapter 5.
 (ml.tex
 Underfull \hbox (badness 10000) in paragraph at lines 29--29
@@ -824,27 +834,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
 \OT1/cmr/bx/n/10 turn
  []
 
-[18
+[19
 
-] [19]) (p11.tex
-<../scikitlearn/figures/roc.pdf, id=126, 578.16pt x 397.485pt>
+] [20]) (p11.tex
+<../scikitlearn/figures/roc.pdf, id=131, 578.16pt x 397.485pt>
 File: ../scikitlearn/figures/roc.pdf Graphic file (type pdf)
 
 <use ../scikitlearn/figures/roc.pdf>
 Package pdftex.def Info: ../scikitlearn/figures/roc.pdf used on input line 29.
 (pdftex.def)             Requested size: 426.39255pt x 293.14568pt.
- [20] [21 <../scikitlearn/figures/roc.pdf>]) [22]
+ [21] [22 <../scikitlearn/figures/roc.pdf>]) [23]
 Chapter 6.
 (p12.tex) (p14.tex
 
-LaTeX Warning: Citation `HeemanAllen95:cdrom' on page 23 undefined on input lin
+LaTeX Warning: Citation `HeemanAllen95:cdrom' on page 24 undefined on input lin
 e 5.
 
-[23
+[24
 
-]) (thesis.bbl [24] [25
+]) (thesis.bbl [25] [26
 
-] [26]
+] [27]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -857,7 +867,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [27]) [28] (thesis.aux)
+ [28]) [29] (thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -866,13 +876,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16178 strings out of 493333
- 304985 string characters out of 3139182
- 463169 words of memory out of 3000000
- 19312 multiletter control sequences out of 15000+200000
+ 16189 strings out of 493333
+ 305192 string characters out of 3139182
+ 461169 words of memory out of 3000000
+ 19319 multiletter control sequences out of 15000+200000
  16539 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,72p,1215b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,72p,882b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tmeshorer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
 600\tcrm1000.pk> <C:\Users\tmeshorer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
 knappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
@@ -888,9 +898,9 @@ amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (37 pages, 553944 bytes).
+Output written on thesis.pdf (38 pages, 577711 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
+ 258 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

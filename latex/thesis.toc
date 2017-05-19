@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Influence of Summary Features on Turn-Taking}{12}
 \contentsline {subsection}{\numberline {4.2.2}Influence of Dialogue Acts Types}{14}
 \contentsline {subsection}{\numberline {4.2.3}Dialogue Act Types and Summary Features}{15}
-\contentsline {subsection}{\numberline {4.2.4}Dialog Act and Turn Length Distribution}{16}
+\contentsline {subsection}{\numberline {4.2.4}Explanation of the correlation between Relative turn length and turn changes}{16}
 \contentsline {chapter}{\numberline {5}Study}{19}
 \contentsline {section}{\numberline {5.1}Classification Models}{19}
 \contentsline {section}{\numberline {5.2}Metrics}{20}

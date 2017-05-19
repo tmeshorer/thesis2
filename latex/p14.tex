@@ -7,7 +7,6 @@ In our work, we evaluated our model on the Switchboard corpus.  In future work, 
 In our work, we computed the relative turn length and relative speaker control using the turn length average as computed over all the previous turns. In future work, it would be interesting to use a simple moving average (measured over multiple window widths) as well as an exponential moving average.
 
 
-
 Our work treated back-channels as counting toward turn-taking events:  if conversant A makes a statement, then conversant B back channel, and then A makes another statement, we count B's back channel as a full turn.  However, there is not a clear consensus in the research community that back channels should be treated as independent turns.  Our treatment of back channels as turns is partially responsible for the large number of short turns that we observed in Figure \ref {fig:turn_dist}.  This probably contributed to our finding that smaller values for relative turn length result in a greater chance for a turn change, which is opposite from what we expected. Future work should investigate the correlation between turn length and turn changes when back channels are not counted as independent turns.
 
 More generally, the summary features introduced in this work represent just one aspect of the conversational image of the user. Future work should try to ``summarize'' other local features by creating

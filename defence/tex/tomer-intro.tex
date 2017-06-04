@@ -1,0 +1,262 @@
+`% !TeX root = ../defense.tex
+
+\section{Motivation}
+\frame{\sectionpage}
+
+\begin{frame}{Current Issues}
+    \begin{enumerate}[<+->]\itemsep9pt
+      \item For a natural conversation between human and machine, we want to conform
+            to human to human turn taking system (Sacks et al, 1978)
+      \item In Human-Human conversations conversant predict (Sacks et al, 1978) or
+            signal (Duncan 1972) each other on coming turn transition
+      \item {
+        Timeouts leads to poor user interaction(Arsikere et al, 2015)
+        \begin{itemize}
+            \item Not effective in noisy environment
+            \item too little - machine barge in during intra turn pause.
+            \item too much - user waiting for the machine.
+        \end{itemize}
+      }
+      \item {
+        Turn transition prediction based on local features improve turn taking but still
+        do not match human performance.
+        \begin{itemize}
+            \item Syntactic (Sacks et al 1978,De Ruiter et al. 2006)
+            \item Prosodic (Ford 1996,Stolcke 2002,Ferrer 2003)
+            \item Pragmatic (Ford 2001)
+        \end{itemize}
+      }
+    \end{enumerate}
+\end{frame}
+
+\begin{frame} {Goal of Work}
+        Use summary features which are computed over the speaker history in
+        the conversation to better predict turn transition.
+\end{frame}
+
+\begin{frame}{Theoretical Model}
+
+%\begin{figure}
+% \centering
+% \includegraphics[scale=0.3]{c2.png}
+% \end{figure}
+
+  \begin{alertblock}{Conversation}
+    { $\ldots  s_{i-2}, d_{i-2}, s_{i-1} , d_{i-1}, s_i, d_i  \ldots$  }
+  \end{alertblock}
+  \begin{alertblock}{Conversation with turn change}
+     $\ldots d_{i-2}, y_{i-1}, d_{i-1}, y_{i} , d_i, y_{i+1}\ldots$
+  \end{alertblock}
+\end{frame}
+
+
+\section{Summary Features}
+\frame{\sectionpage}
+
+%slide 3
+\begin{frame}{Relative Turn Length}
+\begin{enumerate}[<+->]\itemsep9pt
+  \item Measure how long (in percent) the current turn length relative to his/her average turn length.
+  \item {Computed as follow:
+        \begin{itemize}
+            \item $S_i$ to be the set of complete turns of speaker $s_i$ that are prior to the turn that $d_i$ is in.
+            \item compute the average turn length up to the last turn
+                \begin{block}{Average turn length }
+                   $avg\_t_i = \frac{\sum_{t \in S_i} length(t)}{|S_i|}$
+                \end{block}
+            \item Compute relative turn length at the end of each dialog act
+                \begin{block}{Relative Turn Length}
+                     $rt_i =  \frac{length(t_i)} {avg\_t_i}$
+                \end{block}
+         \end{itemize}
+        }
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame} {Relative Floor Control}
+\begin{enumerate}
+    \item Measure how long (in percent) the current speaker held the conversation floor. How dominate he/she is.
+    \item Computed as follow:
+         \begin{itemize}
+              \item compute the total conversation time.
+                 \begin{block} {Total Conversation Time}
+                       $c_i = \sum_{t \in S_i \cup L_i} length(t)$
+                 \end{block}
+             \item  compute the total time of the current speaker relative to the total conversation time
+                 \begin{block}{Relative Floor Control}
+                     $\frac{\sum_{t \in S_i} length(t)} {c_i}$
+                 \end{block}
+         \end{itemize}
+ \end{enumerate}
+\end{frame}
+
+\begin{frame} {Relative Floor Control}
+%\begin{figure}[ht!]
+%\centering
+% \includegraphics[width=0.5\textwidth,width=8cm,height=8cm,keepaspectratio]{relative_control.png}
+% \caption{Relative floor control\label{overflow}}
+% \end{figure}
+\end{frame}
+
+
+\section{Evaluation}
+\frame{\sectionpage}
+
+% slide 5
+
+\begin{frame}{Preprocessing}
+  \begin{itemize}
+    \item Removed 11 dialogue acts that were coded as other in switchboard.
+    \item Skip the first 120 seconds of the conversation.
+      \begin{itemize}
+      \item Gives time for conversant to form the conversional image.
+      \item Reduces the dialogue acts from 50633 to 37508.
+      \end{itemize}
+    \item Reduce data sparsity by collapsing 65 dialog acts into 9.
+  \end{itemize}
+
+  \begin{table}
+     \begin{center}
+     \begin{tabular}{l | l}
+    \hline
+Switchboard dialog acts &  Dialog act classes  \\
+    \hline
+sd,h,bf      & statement   \\
+sv,ad,sv@    & statement - opinion  \\
+aa,aa\^r     & agree accept \\
+\%.\%-,\%@   & abandon      \\
+b,bh         & backchannel  \\
+qy,qo,qh     & question     \\
+no,ny,ng,arp & answer       \\
++            & +            \\
+o@,+@        & NA           \\
+  \hline
+\end{tabular}
+\end{center}\vspace{-0.5em}
+\caption{Mapping from dialog act to dialog act class}
+\label{tab:mapping}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{ML Classifiers}
+  \begin{itemize}
+  \item Used random forests (N=200) to train and test the following models
+  \begin{itemize}
+    \item baseline 1: current dialog act label.
+    \item baseline 2: current and previous dialog acts.
+    \item summary model: just the summary features.
+    \item full model: summary features and the current and previous dialog acts.
+  \end{itemize}
+  \item Evaluation was done using 10 fold cross validation.
+  \item Run grid search to find the optimal hyper parameters.
+  \end{itemize}
+\end{frame}
+
+% slide 4
+\section{Results and Discussion}
+\frame{\sectionpage}
+
+\begin{frame}{Accuracy}
+\begin{table}
+\begin{center}
+ \begin{tabular}{| l | l | l | c |}
+    \hline
+    Model & Accuracy & AUC & hyper parameters\\
+    \hline
+    Baseline 1      & 60.26\% & 0.63 & \scriptsize{max\_features=sqrt, max\_depth=7} \\
+    Baseline 2     & 74.43\% & 0.79 & \scriptsize{max\_features=log2, max\_depth=9}\\
+    Summary        & 66.14\% & 0.65 & \scriptsize{max\_features=sqrt, max\_depth=5} \\
+    Full           & 76.05\% & 0.82 &\scriptsize{ max\_features=10, max\_depth=9}\\
+  \hline
+\end{tabular}
+\end{center}
+\caption{Accuracy, Area under the curve }
+\end{table}
+\begin{itemize}
+\item Using only summary features is more accurate than Baseline 1.
+\item The Full model is more accurate than Baseline 2.
+\end{itemize}
+
+\end{frame}
+
+\section{Summary}
+\frame{\sectionpage}
+
+%slide 6
+
+\begin{frame}{Conclusion and Future Work}
+  \begin{itemize}
+     \item Conclusion
+       \begin{itemize}
+          \item The experiment proved that summary feature improve turn transition predication
+       \end{itemize}
+  \item Future Work
+     \begin{itemize}
+        \item Combine summary feature with other local features:syntax,prosody.
+        \item Test Simple moving average windows (5,10,20 turns)
+        \item Test Exponential moving average.
+        \item Convert other local features to summary feature.
+     \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Perspective}{Disciplines for investigating energy topics}
+    \begin{center}
+    \begin{tikzpicture}[
+      node distance=4.5em and .75cm,font=\small
+    ]
+    % flowboxes
+    \node[flowbox] (physik) {
+        \fbtitle{Model I}\vphantom{yÖ}
+    \nodepart{two}
+        \begin{minipage}{.16\textwidth}
+            Current dial act            
+        \end{minipage}
+    };
+
+    \node[flowbox,right=of physik] (technik) {
+        \fbtitle{Model II}\vphantom{yÖ}
+    \nodepart{two}
+        \begin{minipage}{.16\textwidth}
+            Current and prev dialog act
+        \end{minipage}
+    };
+
+    \node[flowbox,right=of technik] (econ) {
+        \fbtitle{Summary Model}\vphantom{yÖ}
+    \nodepart{two}
+        \begin{minipage}{.16\textwidth}
+            Summary features 
+        \end{minipage}
+    };
+
+    \node[flowbox,right=of econ] (society) {
+        \fbtitle{All Model}\vphantom{yÖ}
+    \nodepart{two}
+        \begin{minipage}{.16\textwidth}
+            All features 
+        \end{minipage}
+    };
+
+    \uncover<2->{%
+        \draw [decorate,decoration={brace,amplitude=10pt,mirror},ultra thick,jdblue]
+            ($(technik.south west) + (-.2em,-1em)$) --
+            ($(econ.south east)    + (+.2em,-1em)$) coordinate[midway,yshift=-3.8em] (midpoint-below);
+
+        \node[flowbox] at (midpoint-below) (tech-econ)  {
+            \fbtitle{Techno-economic modelling}\vphantom{yÖ}
+        \nodepart{two}
+            \begin{minipage}{.4\textwidth}
+                \centering
+                How much energy?
+                For how much?\vphantom{yÖ}
+            \end{minipage}
+        };
+    }
+    \end{tikzpicture}
+    \end{center}
+\end{frame}

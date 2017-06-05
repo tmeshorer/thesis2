@@ -1,12 +1,12 @@
 `% !TeX root = ../defense.tex
 
-\section{Study}
+\section{Machine Learning Models}
 \frame{\sectionpage}
 
 
 \begin{frame}{Classifiers}
  \begin{itemize}
-  \item Used random forests (N=200) to train and test the following models
+  \item Used random forests (N=200) / Gradient Boosting to train and test the following models
   \begin{itemize}
     \item baseline 1: current dialog act label.
     \item baseline 2: current and previous dialog acts.
@@ -63,6 +63,7 @@ all        &  76.57\% &  78.74\% &   77.44\% &  80.11\% &  84.84\% \\
  \includegraphics[width=32em]{../scikitlearn/figures/roc.pdf}
  \end{figure}
 \end{frame}
+
 
 \begin{frame} {Sensitivity to Measurement Start Time}
 \begin{table}

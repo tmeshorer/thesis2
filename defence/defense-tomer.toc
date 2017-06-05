@@ -1,6 +1,7 @@
 \select@language {english}
 \beamer@sectionintoc {1}{Motivation}{3}{0}{1}
-\beamer@sectionintoc {2}{Theoretical Model}{28}{0}{2}
-\beamer@sectionintoc {3}{Data}{33}{0}{3}
-\beamer@sectionintoc {4}{Study}{43}{0}{4}
-\beamer@sectionintoc {5}{Summary}{50}{0}{5}
+\beamer@sectionintoc {2}{Theoretical Model}{19}{0}{2}
+\beamer@sectionintoc {3}{Data Preparation}{39}{0}{3}
+\beamer@sectionintoc {4}{Data Exploration}{48}{0}{4}
+\beamer@sectionintoc {5}{Machine Learning Models}{56}{0}{5}
+\beamer@sectionintoc {6}{Summary}{63}{0}{6}

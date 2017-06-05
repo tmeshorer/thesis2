@@ -3,23 +3,303 @@
 \section{Theoretical Model}
 \frame{\sectionpage}
 
-\begin{frame}{Conversation}
+\begin{frame}{Relative Turn Length}{Timing Diagram}
+\begin{center}
+\begin{tikzpicture}
+ %   \begin{axis}[
+ %       tumaxisstyle,
+ %       x post scale=1.75,
+     %   ymin=0,ymax=3,
+ %        xmin=0,xmax=24,
+ %        xlabel={Time}]
+     %   ylabel={Turns}]
+ %    \end{axis}
+    \draw [->, thick, black] (0,0) -- (12.5,0);
+    \draw (0,-.2) -- (0, .2);
+    \draw (0.5,-.2) -- (0.5, .2);
+    \draw (1,-.2) -- (1, .2);
+    \draw (1.5,-.2) -- (1.5, .2);
+    \draw (2,-.2) -- (2, .2);
+    \draw (2.5,-.2) -- (2.5, .2);
+    \draw (3,-.2) -- (3, .2);
+    \draw (3.5,-.2) -- (3.5, .2);
+    \draw (4,-.2) -- (4, .2);
+    \draw (4.5,-.2) -- (4.5, .2);
+    \draw (5,-.2) -- (5, .2);
+    \draw (5.5,-.2) -- (5.5, .2);
+    \draw (6,-.2) -- (6, .2);
+    \draw (6.5,-.2) -- (6.5, .2);
+    \draw (7,-.2) -- (7, .2);
+    \draw (7.5,-.2) -- (7.5, .2);
+    \draw (8,-.2) -- (8, .2);
+    \draw (8.5,-.2) -- (8.5, .2);
+    \draw (9,-.2) -- (9, .2);
+    \draw (9.5,-.2) -- (9.5, .2);
+    \draw (10,-.2) -- (10, .2);
+    \draw (10.5,-.2) -- (10.5, .2);
+    \draw (11,-.2) -- (11, .2);
+    \draw (11.5,-.2) -- (11.5, .2);
+    \draw (12,-.2) -- (12, .2);
 
-%\begin{figure}
-% \centering
-% \includegraphics[scale=0.3]{c2.png}
-% \end{figure}
+    \draw (17,-.2) -- (17, .2);
 
-  \begin{alertblock}{Conversation}
-    { $\ldots  s_{i-2}, d_{i-2}, s_{i-1} , d_{i-1}, s_i, d_i  \ldots$  }
-  \end{alertblock}
-  \begin{alertblock}{Conversation with turn change}
-     $\ldots d_{i-2}, y_{i-1}, d_{i-1}, y_{i} , d_i, y_{i+1}\ldots$
-  \end{alertblock}
+    \node at (-1,-0.5) {Time};
+    \node at (0,-0.5) {0};
+    \node at (1,-0.5) {1};
+    \node at (2,-0.5) {2};
+    \node at (3,-0.5) {3};
+    \node at (4,-0.5) {4};
+    \node at (5,-0.5) {5};
+    \node at (6,-0.5) {6};
+    \node at (7,-0.5) {7};
+    \node at (8,-0.5) {8};
+    \node at (9,-0.5) {9};
+    \node at (10,-0.5) {10};
+    \node at (11,-0.5) {11};
+    \node at (12,-0.5) {12};
+
+    \node at (-1,1) {A};
+    \node at (-1,2.5) {B};
+
+    %A turn 1 , 0 - 1.5 sec with one da
+    \uncover<1->{%
+      \path [fill=gray] (0,0.5) rectangle (1.5,1.5);
+    }
+
+    \uncover<2->{%
+        \draw [<->] (0,2.2) -- node[above] {T1} (1.5,2.2);
+        \draw [<->] (0,1.6) -- node[above] {da1} (1.5,1.6);
+    }
+
+    %B turn 1, da1  2 - 3
+    \uncover<3->{%
+       \path [fill=teal] (2,2) rectangle (3,3);
+       \draw [<->] (2,3.2) -- node[above] {da1} (3,3.2);
+    }
+
+
+    %B turn 1, da2 3.2 - 4
+    \uncover<4->{%
+        \path [fill=teal] (3.2,2) rectangle (4,3);
+        \draw [<->] (3.2,3.2) -- node[above] {da2} (4,3.2);
+    }
+
+    \uncover<5->{%
+            \draw [<->] (2,4) -- node[above] {T1} (4,4);
+    }
+
+
+    % A turn 2 4.5 - 6
+    \uncover<6->{%
+       \path [fill=gray] (4.5,0.5) rectangle (6,1.5);
+    }
+
+    % A turn 2 4.5 - 6 , header
+    \uncover<7->{%
+        \draw [<->] (4.5,2.2) -- node[above] {T2} (6,2.2);
+        \draw [<->] (4.5,1.6) -- node[above] {da2} (6,1.6);
+    }
+
+
+    %B turn 2 6.5 - 7.5
+    \uncover<8->{%
+       \path [fill=teal] (6.5,2) rectangle (7.5,3);
+    }
+
+    %B turn 2 6.5 - 7.5 header
+    \uncover<9->{%
+        \draw [<->] (6.5,3.2) -- node[above] {da3} (7.5,3.2);
+        \draw [<->] (6.5,4) -- node[above] {T2=1 sec} (7.5,4);
+    }
+
+    %A turn 3, da3=0.5, avg turn length: 1.5, RTL = 0.5/1.5
+    \uncover<10->{%
+       \path [fill=gray] (8,0.5) rectangle (8.5,1.5);
+       \draw [<->] (8,1.6) -- node[above] {da3} (8.5,1.6);
+
+    }
+
+    \only<10> {
+       \node at (11,3) {\small{Avg Turn Legnth: 1.5}};
+       \node at (11,3.5) {\small{Relative Turn Legnth: $33\%$}};
+       \draw [<->] (8,2.2) -- node[above] {\small{0.5 sec}} (8.5,2.2);
+    }
+
+    %A turn 3, da4, avg turn length: 1.5, RTL = 2/1.5
+    \uncover<11->{%
+       \path [fill=gray] (8.7,0.5) rectangle (10.3,1.5);
+       \draw [<->] (8.7,1.6) -- node[above] {da4} (10.3,1.6);
+    }
+
+    \only<11> {
+       \node at (11,3) {\small{Avg Turn Legnth: 1.5}};
+       \node at (11,3.5) {Relative Turn Legnth: $153\%$};
+       \draw [<->] (8,2.2) -- node[above] {\small{2.3 sec}} (10.3,2.2);
+
+    }
+
+
+    \uncover<12->{% avg turn length: 1.5, RTL = 3/1.5
+       \path [fill=gray] (10.5,0.5) rectangle (11.5,1.5);
+       \draw [<->] (10.5,1.6) -- node[above] {da5} (11.5,1.6);
+    }
+
+    \only<12> {
+       \node at (11,3) {\small{Avg Turn Legnth: 1.5}};
+       \node at (11,3.5) {Relative Turn Legnth: $233\%$};
+       \draw [<->] (8,2.2) -- node[above] {\small{3.5 sec}} (11.5,2.2);
+
+    }
+
+\end{tikzpicture}
+\end{center}
 \end{frame}
 
-\begin{frame}{Relative Turn Length}
-\end{frame}
 
-\begin{frame}{Relative Floor Control}
+
+
+\begin{frame}{Relative Floor Control}{Timing Diagram}
+\begin{center}
+\begin{tikzpicture}
+ %   \begin{axis}[
+ %       tumaxisstyle,
+ %       x post scale=1.75,
+     %   ymin=0,ymax=3,
+ %        xmin=0,xmax=24,
+ %        xlabel={Time}]
+     %   ylabel={Turns}]
+ %    \end{axis}
+    \draw [->, thick, black] (0,0) -- (12.5,0);
+    \draw (0,-.2) -- (0, .2);
+    \draw (0.5,-.2) -- (0.5, .2);
+    \draw (1,-.2) -- (1, .2);
+    \draw (1.5,-.2) -- (1.5, .2);
+    \draw (2,-.2) -- (2, .2);
+    \draw (2.5,-.2) -- (2.5, .2);
+    \draw (3,-.2) -- (3, .2);
+    \draw (3.5,-.2) -- (3.5, .2);
+    \draw (4,-.2) -- (4, .2);
+    \draw (4.5,-.2) -- (4.5, .2);
+    \draw (5,-.2) -- (5, .2);
+    \draw (5.5,-.2) -- (5.5, .2);
+    \draw (6,-.2) -- (6, .2);
+    \draw (6.5,-.2) -- (6.5, .2);
+    \draw (7,-.2) -- (7, .2);
+    \draw (7.5,-.2) -- (7.5, .2);
+    \draw (8,-.2) -- (8, .2);
+    \draw (8.5,-.2) -- (8.5, .2);
+    \draw (9,-.2) -- (9, .2);
+    \draw (9.5,-.2) -- (9.5, .2);
+    \draw (10,-.2) -- (10, .2);
+    \draw (10.5,-.2) -- (10.5, .2);
+    \draw (11,-.2) -- (11, .2);
+    \draw (11.5,-.2) -- (11.5, .2);
+    \draw (12,-.2) -- (12, .2);
+
+    \draw (17,-.2) -- (17, .2);
+
+    \node at (-1,-0.5) {Time};
+    \node at (0,-0.5) {0};
+    \node at (1,-0.5) {1};
+    \node at (2,-0.5) {2};
+    \node at (3,-0.5) {3};
+    \node at (4,-0.5) {4};
+    \node at (5,-0.5) {5};
+    \node at (6,-0.5) {6};
+    \node at (7,-0.5) {7};
+    \node at (8,-0.5) {8};
+    \node at (9,-0.5) {9};
+    \node at (10,-0.5) {10};
+    \node at (11,-0.5) {11};
+    \node at (12,-0.5) {12};
+
+    \node at (-1,1) {A};
+    \node at (-1,2.5) {B};
+
+    %A turn 1 , 0 - 1.5 sec with one da
+    \uncover<1->{%
+      \path [fill=gray] (0,0.5) rectangle (1.5,1.5);
+      \draw [<->] (0,2.2) -- node[above] {T1} (1.5,2.2);
+      \draw [<->] (0,1.6) -- node[above] {da1} (1.5,1.6);
+    % B Trun  
+      \path [fill=teal] (2,2) rectangle (3,3);
+      \draw [<->] (2,3.2) -- node[above] {da1} (3,3.2);
+      \path [fill=teal] (3.2,2) rectangle (4,3);
+      \draw [<->] (3.2,3.2) -- node[above] {da2} (4,3.2);
+      \draw [<->] (2,4) -- node[above] {T1} (4,4);
+    }
+
+    %Total Length
+    \only<1> {
+        \node at (11,4) {\small{A RTC: 42\%}};
+        \node at (11,3) {\small{B RTC: 58\%}};
+        \draw [<->] (0,4.7) -- node[above] {\small{A: 1.5 secs / B: 2 secs}} (4,4.7);
+    }
+
+    % A turn 2 4.5 - 6
+    \uncover<2->{%
+       \path [fill=gray] (4.5,0.5) rectangle (6,1.5);
+       \draw [<->] (4.5,2.2) -- node[above] {T2} (6,2.2);
+       \draw [<->] (4.5,1.6) -- node[above] {da2} (6,1.6);
+    }
+
+    %Total Length
+    \only<2> {
+        \node at (11,4) {\small{A RTC: 60\%}};
+        \node at (11,3) {\small{B RTC: 40\%}};
+        \draw [<->] (0,4.7) -- node[above] {\small{A: 3 secs / B: 2 secs}} (6,4.7);
+    }
+
+    %B turn 2 6.5 - 7.5
+    \uncover<3->{%
+       \path [fill=teal] (6.5,2) rectangle (7.5,3);
+       \draw [<->] (6.5,4) -- node[above] {T2} (7.5,4);
+    }
+
+        %Total Length
+    \only<3> {
+        \node at (11,4) {\small{A RTC: 50\%}};
+        \node at (11,3) {\small{B RTC: 50\%}};
+        \draw [<->] (0,4.7) -- node[above] {\small{A: 3 secs / B: 3 secs}}  (7.5,4.7);
+    }
+
+
+    %A turn 3, da3=0.5, avg turn length: 1.5, RTL = 0.5/1.5
+    \uncover<4->{%
+       \path [fill=gray] (8,0.5) rectangle (8.5,1.5);
+       \draw [<->] (8,1.6) -- node[above] {da3} (8.5,1.6);
+    }
+
+    \only<4> {
+        \node at (11,4) {\small{A RTC: 54\%}};
+        \node at (11,3) {\small{B RTC: 46\%}};
+        \draw [<->] (0,4.7) -- node[above] {\small{A: 3.5 secs / B: 3 secs}} (8.5,4.7);
+    }
+
+    %A turn 3, da4, avg turn length: 1.5, RTL = 2/1.5
+    \uncover<5->{%
+       \path [fill=gray] (8.7,0.5) rectangle (10.3,1.5);
+       \draw [<->] (8.7,1.6) -- node[above] {da4} (10.3,1.6);
+    }
+
+    \only<5> {
+        \node at (11,4) {\small{A RTC: 62.5\%}};
+        \node at (11,3) {\small{B RTC: 37.5\%}};
+        \draw [<->] (0,4.7) -- node[above] {\small{A: 5 secs / B: 3 secs}} (10.3,4.7);
+    }
+
+
+    \uncover<6->{% 
+       \path [fill=gray] (10.5,0.5) rectangle (11.5,1.5);
+       \draw [<->] (10.5,1.6) -- node[above] {da5} (11.5,1.6);
+    }
+
+    \only<6> {
+       \node at (11,4) {\small{A RTC: 66\%}};
+       \node at (11,3) {\small{B RTC: 33\%}};
+       \draw [<->] (0,4.7) -- node[above] {\small{A: 6 secs / B: 3 secs}} (11.5,4.7);
+    }
+
+\end{tikzpicture}
+\end{center}
 \end{frame}

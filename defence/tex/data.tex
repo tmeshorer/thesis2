@@ -1,11 +1,36 @@
 `% !TeX root = ../defense.tex
 
-\section{Data}
+\section{Data Preparation}
 \frame{\sectionpage}
 
 
 \begin{frame}{Corpus}
+    \begin{enumerate}[<+->]\itemsep9pt
+      \item Switchboard corpus (NXT).
+      \item Audio recording of casual conversations between randomly chosen speakers.
+      \item 2483 conversation, involving 520 speakers
+      \item In our research the corpus contain 642 conversations.
+    \end{enumerate}
+
 \end{frame}{}
+
+
+\begin{frame}{Preprocessing pipeline}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=20em]{../latex/pipeline.jpg}\vspace{-1em}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Conversation representation}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=30em]{../latex/graph5.jpg}\vspace{-1em}
+\end{figure}
+\end{frame}
+
+
 
 \begin{frame}{Preprocessing}
  \begin{itemize}
@@ -43,19 +68,10 @@ o@,+@        & NA           \\
 \end{frame}{}
 
 
-\begin{frame}{Relative floor control probability of turn change}
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=36em]{../scikitlearn/figures/f5.png}\vspace{-1em}
-\end{figure}
-\end{frame}
+\section{Data Exploration}
+\frame{\sectionpage}
 
-\begin{frame}{Relative turn length effect on probability of a turn change}
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=36em]{../scikitlearn/figures/f6.png}\vspace{-1em}
-\end{figure}
-\end{frame}
+
 
 \begin{frame}{Dialog act relative count}
 \begin{figure}[ht!]
@@ -64,6 +80,15 @@ o@,+@        & NA           \\
 \end{figure}
 \end{frame}
 
+\begin{frame}{Turn Length Distribution}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=36em]{../scikitlearn/figures/f10.png}\vspace{-1em}
+\end{figure}
+\end{frame}
+
+
+
 \begin{frame}{Dialog act probability of turn change}
 \begin{figure}[ht!]
 \centering
@@ -71,6 +96,21 @@ o@,+@        & NA           \\
 \end{figure}
 \end{frame}
 
+
+
+\begin{frame}{Relative Turn Length effect on probability of turn change}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=36em]{../scikitlearn/figures/f5.png}\vspace{-1em}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Relative Turn Control effect on probability of a turn change}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=36em]{../scikitlearn/figures/f6.png}\vspace{-1em}
+\end{figure}
+\end{frame}
 
 \begin{frame}{Relative turn length for dialog act type}
 \begin{figure}[ht!]

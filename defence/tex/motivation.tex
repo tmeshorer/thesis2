@@ -12,8 +12,9 @@
             to human to human turn taking system (Sacks et al, 1978)
       \item In Human-Human conversations conversant predict (Sacks et al, 1978) or
             signal (Duncan 1972) each other on coming turn transition
+      \item Human-Machine conversations mainly use time-out for predicting turn transition.      
       \item {
-        Timeouts leads to poor user interaction(Arsikere et al, 2015)
+        However, timeouts leads to poor user interaction(Arsikere et al, 2015)
         \begin{itemize}
             \item Not effective in noisy environment
             \item too little - machine barge in during intra turn pause.
@@ -21,8 +22,7 @@
         \end{itemize}
       }
       \item {
-        Turn transition prediction based on local features improve turn taking but still
-        do not match human performance.
+        Recent research tries to use utterance local features but still do not match human performance.
         \begin{itemize}
             \item Syntactic (Sacks et al 1978,De Ruiter et al. 2006)
             \item Prosodic (Ford 1996,Stolcke 2002,Ferrer 2003)
@@ -33,21 +33,14 @@
 \end{frame}
 
 \begin{frame} {Thesis Statement}
- \begin{center}
-
-        \Large{Conversant's past behavior can help predict turn transitions}\\
-        \vspace{10mm}
-        \Large{Past behavior represented by Summary features}
- \end{center}
+   \begin{enumerate}[<+->]\itemsep9pt
+         \item Conversant's past behavior can help predict turn transitions
+         \item Past behavior represented by Summary features
+         \begin{itemize}
+            \item Relative turn length: current turn length so far (in seconds and words) relative to the speaker's average turn length
+            \item Relative Floor Control: the speaker's control of the conversation floor (in seconds and words) relative to the total conversation length
+            \item Computed for every dialog act.
+         \end{itemize}
+     \end{enumerate}
  \end{frame} 
  
-
-\begin{frame} {Acknowledgement}
- \begin{center}
-       \begin{enumerate}[<+->]\itemsep9pt
-           \item This work was partially funded by the National Science Foundation under grant IIS-1321146.
-           \item This thesis is based on a paper that was submitted and presented at Interspeech 2016.
-           \item Thesis advisor and collaborator : Prof. Peter Heeman. 
-       \end{enumerate}
- \end{center}
-\end{frame}

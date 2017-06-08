@@ -1,0 +1,83 @@
+`% !TeX root = ../defense.tex
+
+\section{Related Work}
+\frame{\sectionpage}
+
+
+\begin{frame}{Turn taking in human-human conversations}
+    \begin{enumerate}
+       \item (Duncan 1972) Some signals and rules for taking speaking turns in conversations
+          \begin{itemize}
+            \item Intonation : terminate the final clause with rising or falling pitch.
+            \item Drawl on the final syllable
+            \item Body motion,
+            \item Sociocentric sequence ("you know")
+            \item Drop in pitch or loudness
+            \item Syntax - completion of grammatical clause , involving subject-predicate combination.
+          \end{itemize}
+       \item (Sacks et al, 1974) A Simplest Systematics for the Organization of Turn-Taking for Conversation
+          \begin{itemize}
+            \item Introduced Turn Construction Unit (TCU) (word, phrase, clause, sentence)
+            \item Defined Transition Relevance Place (TRP) between TCUs. Defined a local rule system is operational in TRP
+            \begin{itemize}
+                \item Current speaker selects the next conversant;
+                \item If the current speaker did not select, any of the listeners can self select; or
+                \item If neither of the previous two cases apply, the current speaker continue.
+            \end{itemize}
+          \end{itemize}
+       \item Later research focused on local features
+        \begin{itemize}
+            \item Syntactic (Sacks et al 1978,De Ruiter et al. 2006)
+            \item Prosodic (Ford 1996,Stolcke 2002,Ferrer 2003)
+            \item Pragmatic (Ford 2001)
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame} {Turn taking in Spoken dialogue systems I }
+   \begin{enumerate}
+         \item Early systems used time out based on speech signal threshold. Fixed size of 500ms (Arsikere et al, 2015)
+         \item A. Raux and M. Eskenazi. (2009) - A Finite-State Turn-Taking Model for Spoken Dialog System
+             \begin{itemize}
+                \item Used a 6 state non deterministic state machine to model the turn taking system between the user and the system.
+                \item Define a set of possible actions that both user and the system can take:
+                      Grab the floor, Release the floor, Wait while not claiming the floor, and Keep
+                      the floor.   
+                \item Created a cost matrix to assign cost to each action in the state machine.
+                \item Applied probabilistic decision theory principle of selecting the action with lowest expected cost
+                \item Improvement of 29.5\% over the fixed timeout.    
+             \end{itemize}  
+         \item Selfridge and Heeman (2010) - A Bidding Approach to Turn-Taking
+         \begin{itemize}
+            \item Utterance importance is a driving force behind turn-taking
+            \item Conversant measures the importance of their potential contribution when negotiating
+                  the right to the conversation floor.
+            \item Use Reinforcement Learning to map a given situation to the optimal utterance and bidding behavior  
+             \item In relation to our work, conversants might use summary feature to signal their bid.        
+         \end{itemize}
+                 
+   \end{enumerate}
+ \end{frame}
+
+\begin{frame} {Turn taking in Spoken dialogue systems II }
+   \begin{enumerate}
+      \item Gravano and Hirschberg (2011) - Turn-taking cues in task-oriented dialogue
+         \begin{itemize}
+            \item Impressive study of local utterance features as cues (signals) for turn taking.
+            \item Formalized and verified Ducan work on signaling.
+            \item Defined an IPU - Inter Pausal Unit. Max Sequence of words surrounded by silence.
+            \item Tested over 200 features.  prosodic , syntactic , IPU duration, speaking rate.
+            \item Found the combining features can improve turn transition prediction.
+            \item Our work can complement the local features.
+         \end{itemize}
+        
+         \item N. Guntakandla and R. Nielsen (2015) - Modelling turn-taking in human conversations
+         \begin{itemize}
+            \item Used dialog act as local feature.
+            \item Tested prediction based on Bigram, Trigram and 4-gram of dialog acts.
+            \item We based our base models on current and previous dialog acts.
+            \item We used the same corpus, but mapped the dialog act types from 148 to 9.
+         \end{itemize}
+   \end{enumerate}
+ \end{frame}
+

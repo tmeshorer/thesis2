@@ -7,22 +7,28 @@
 
 
 \begin{frame}{Current Issues}
-    \begin{enumerate}[<+->]\itemsep9pt
+    \begin{enumerate}
       \item For a natural conversation between human and machine, we want to conform
-            to human to human turn taking system (Sacks et al, 1978)
-      \item In Human-Human conversations conversant predict (Sacks et al, 1978) or
+            to human to human turn taking system (Sacks et al, 1974)
+                \begin{itemize}
+                    \item One speaker at the time
+                    \item Overlap speech is common but brief (only 17% of turns, 100ms long)
+                    \item Gaps between turns kept to a minimum (200 ms)
+                    \item No fixed turn size and no fixed conversation size.
+                \end{itemize}
+      \item In Human-Human conversations conversants predict (Sacks et al, 1974) or
             signal (Duncan 1972) each other on coming turn transition
-      \item Human-Machine conversations mainly use time-out for predicting turn transition.      
+      \item Spoken Dialogue Systems mainly use time-out for predicting turn transition.      
       \item {
         However, timeouts leads to poor user interaction(Arsikere et al, 2015)
         \begin{itemize}
             \item Not effective in noisy environment
-            \item too little - machine barge in during intra turn pause.
-            \item too much - user waiting for the machine.
+            \item Too little - machine barge in during intra turn pause.
+            \item Too much - user waiting for the machine.
         \end{itemize}
       }
       \item {
-        Recent research tries to use utterance local features but still do not match human performance.
+        Recent research tries to use utterance's local features but still do not match human performance.
         \begin{itemize}
             \item Syntactic (Sacks et al 1978,De Ruiter et al. 2006)
             \item Prosodic (Ford 1996,Stolcke 2002,Ferrer 2003)
@@ -33,14 +39,14 @@
 \end{frame}
 
 \begin{frame} {Thesis Statement}
-   \begin{enumerate}[<+->]\itemsep9pt
+   \begin{enumerate}
          \item Conversant's past behavior can help predict turn transitions
-         \item Past behavior represented by Summary features
+         \item Past behavior is represented by summary features
          \begin{itemize}
-            \item Relative turn length: current turn length so far (in seconds and words) relative to the speaker's average turn length
-            \item Relative Floor Control: the speaker's control of the conversation floor (in seconds and words) relative to the total conversation length
-            \item Computed for every dialog act.
+            \item {\em Relative turn length}: current turn length so far (in seconds and words) relative to the speaker's average turn length
+            \item {\em Relative Floor Control}: the speaker's control of the conversation floor (in seconds and words) relative to the total conversation length
          \end{itemize}
+         \item Computed for each dialog act.
      \end{enumerate}
  \end{frame} 
  

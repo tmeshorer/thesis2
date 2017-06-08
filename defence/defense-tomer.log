@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  6 JUN 2017 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  7 JUN 2017 17:32
 entering extended mode
 **./defense-tomer.tex
 (defense-tomer.tex
@@ -2373,13 +2373,13 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [4]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 4.3pt on input line 33.
+(Font)              scaled to size 4.3pt on input line 39.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 39.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 33.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 39.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 39.
 
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
@@ -2388,13 +2388,19 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [5
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 51.
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [6
 
-]
+]) (tex/related-work.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2402,13 +2408,14 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [7
 
 ]
+Overfull \vbox (12.0pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[8
-
-]
+[8]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2429,69 +2436,6 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [11
 
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[12
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[13
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[14
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[15
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[16
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[17
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[18
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[19
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[20
-
 ]) (tex/theortical-model.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2500,7 +2444,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[21
+[12
 
 ]
 Overfull \vbox (12.0pt too high) has occurred while \output is active []
@@ -2510,7 +2454,130 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[22]
+[13]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[18
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+]
+Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+ [] 
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[22
+
+]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.6pt on input line 158.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 6.02pt on input line 158.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 158.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 158.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 158.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 158.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 158.
+
 Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
  [] 
  []
@@ -2547,7 +2614,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
  [] 
  []
 
@@ -2559,7 +2626,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [26
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
  [] 
  []
 
@@ -2571,7 +2638,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
  [] 
  []
 
@@ -2583,7 +2650,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [28
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
  [] 
  []
 
@@ -2595,7 +2662,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [29
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
  [] 
  []
 
@@ -2607,7 +2674,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [30
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
+Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
  [] 
  []
 
@@ -2618,27 +2685,8 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [31
 
-]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.6pt on input line 158.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 6.02pt on input line 158.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 158.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 158.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 158.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 158.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 158.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 158.
-
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
- [] 
- []
+]) (tex/data.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
@@ -2648,112 +2696,6 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [32
 
 ]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[33
-
-]
-Overfull \hbox (105.56007pt too wide) in paragraph at lines 158--158
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[34
-
-]
-Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[35
-
-]
-Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[36
-
-]
-Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[37
-
-]
-Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[38
-
-]
-Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[39
-
-]
-Overfull \hbox (95.6821pt too wide) in paragraph at lines 307--307
- [] 
- []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[40
-
-]) (tex/data.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[41
-
-]
 Overfull \vbox (12.0pt too high) has occurred while \output is active []
 
 
@@ -2761,7 +2703,83 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[42]
+[33]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[35
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[36
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[37
+
+] <../latex/pipeline.jpg, id=328, 693.34032pt x 506.6428pt>
+File: ../latex/pipeline.jpg Graphic file (type jpg)
+
+<use ../latex/pipeline.jpg>
+Package pdftex.def Info: ../latex/pipeline.jpg used on input line 23.
+(pdftex.def)             Requested size: 218.99994pt x 160.02625pt.
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[38
+
+ <../latex/pipeline.jpg>]
+<../latex/graph5.jpg, id=336, 749.80125pt x 268.75406pt>
+File: ../latex/graph5.jpg Graphic file (type jpg)
+
+<use ../latex/graph5.jpg>
+Package pdftex.def Info: ../latex/graph5.jpg used on input line 31.
+(pdftex.def)             Requested size: 328.49991pt x 117.74774pt.
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[39
+
+ <../latex/graph5.jpg>]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[40
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[41
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[42
+
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2775,83 +2793,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [44
 
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[45
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[46
-
-] <../latex/pipeline.jpg, id=385, 693.34032pt x 506.6428pt>
-File: ../latex/pipeline.jpg Graphic file (type jpg)
-
-<use ../latex/pipeline.jpg>
-Package pdftex.def Info: ../latex/pipeline.jpg used on input line 23.
-(pdftex.def)             Requested size: 218.99994pt x 160.02625pt.
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[47
-
- <../latex/pipeline.jpg>]
-<../latex/graph5.jpg, id=393, 749.80125pt x 268.75406pt>
-File: ../latex/graph5.jpg Graphic file (type jpg)
-
-<use ../latex/graph5.jpg>
-Package pdftex.def Info: ../latex/graph5.jpg used on input line 31.
-(pdftex.def)             Requested size: 328.49991pt x 117.74774pt.
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[48
-
- <../latex/graph5.jpg>]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[49
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[50
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[51
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[52
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[53
-
-] <../scikitlearn/figures/f1.png, id=439, 1336.995pt x 758.835pt>
+] <../scikitlearn/figures/f1.png, id=382, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f1.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f1.png>
@@ -2862,10 +2804,10 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[54
+[45
 
  <../scikitlearn/figures/f1.png>]
-<../scikitlearn/figures/f10.png, id=449, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f10.png, id=392, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f10.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f10.png>
@@ -2877,10 +2819,10 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[55
+[46
 
  <../scikitlearn/figures/f10.png>]
-<../scikitlearn/figures/f2.png, id=459, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f2.png, id=401, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f2.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f2.png>
@@ -2891,10 +2833,10 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[56
+[47
 
  <../scikitlearn/figures/f2.png>]
-<../scikitlearn/figures/f5.png, id=468, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f5.png, id=410, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f5.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f5.png>
@@ -2910,10 +2852,10 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[57
+[48
 
  <../scikitlearn/figures/f5.png>]
-<../scikitlearn/figures/f6.png, id=477, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f6.png, id=419, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f6.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f6.png>
@@ -2924,10 +2866,10 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[58
+[49
 
  <../scikitlearn/figures/f6.png>]
-<../scikitlearn/figures/f3.png, id=486, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f3.png, id=429, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f3.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f3.png>
@@ -2938,10 +2880,10 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[59
+[50
 
  <../scikitlearn/figures/f3.png>]
-<../scikitlearn/figures/f4.png, id=495, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f4.png, id=438, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f4.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f4.png>
@@ -2952,42 +2894,42 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[60
+[51
 
  <../scikitlearn/figures/f4.png>]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[61
+[52
 
 ]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[62
+[53
 
 ]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[63
+[54
 
 ]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[64
+[55
 
 ]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[65
+[56
 
 ]) (tex/study.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2997,7 +2939,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[66
+[57
 
 ]
 Overfull \vbox (12.0pt too high) has occurred while \output is active []
@@ -3007,7 +2949,84 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[67]
+[58]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[59
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[60
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[61
+
+] <../scikitlearn/figures/roc.pdf, id=521, 578.16pt x 397.485pt>
+File: ../scikitlearn/figures/roc.pdf Graphic file (type pdf)
+
+<use ../scikitlearn/figures/roc.pdf>
+Package pdftex.def Info: ../scikitlearn/figures/roc.pdf used on input line 66.
+(pdftex.def)             Requested size: 350.3999pt x 240.90068pt.
+
+Overfull \vbox (8.86159pt too high) detected at line 66
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[62
+
+ <../scikitlearn/figures/roc.pdf>]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[63
+
+]) (tex/summary.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[64
+
+]
+Overfull \vbox (12.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[65]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[66
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[67
+
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -3028,34 +3047,21 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [70
 
-] <../scikitlearn/figures/roc.pdf, id=578, 578.16pt x 397.485pt>
-File: ../scikitlearn/figures/roc.pdf Graphic file (type pdf)
-
-<use ../scikitlearn/figures/roc.pdf>
-Package pdftex.def Info: ../scikitlearn/figures/roc.pdf used on input line 66.
-(pdftex.def)             Requested size: 350.3999pt x 240.90068pt.
-
-Overfull \vbox (8.86159pt too high) detected at line 66
- []
-
-
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [71
 
- <../scikitlearn/figures/roc.pdf>]
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [72
 
-]) (tex/summary.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -3063,14 +3069,13 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [73
 
 ]
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
-
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[74]
+[74
+
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -3091,69 +3096,6 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [77
 
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[78
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[79
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[80
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[81
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[82
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[83
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[84
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[85
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[86
-
 ])
 \tf@nav=\write6
 \openout6 = `defense-tomer.nav'.
@@ -3164,20 +3106,20 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `defense-tomer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (defense-tomer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `defense-tomer.out' has not changed.
-(rerunfilecheck)             Checksum: 18896C3895EF4D7E264836AAB7C5AE63;305.
+(rerunfilecheck)             Checksum: 263EB46CA0D91928459E2FA3B69AA328;353.
  ) 
 Here is how much of TeX's memory you used:
- 49162 strings out of 493333
- 1130681 string characters out of 3139182
- 1371090 words of memory out of 3000000
- 51607 multiletter control sequences out of 15000+200000
- 597763 words of font info for 110 fonts, out of 3000000 for 9000
+ 49188 strings out of 493333
+ 1131599 string characters out of 3139182
+ 1371313 words of memory out of 3000000
+ 51646 multiletter control sequences out of 15000+200000
+ 598980 words of font info for 111 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,15n,101p,10405b,799s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -3185,10 +3127,11 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helv
-etic/uhvr8a.pfb>
-Output written on defense-tomer.pdf (86 pages, 588472 bytes).
+etic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.p
+fb>
+Output written on defense-tomer.pdf (77 pages, 572933 bytes).
 PDF statistics:
- 798 PDF objects out of 1000 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

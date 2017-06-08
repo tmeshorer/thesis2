@@ -5,7 +5,7 @@
 
 
 \begin{frame}{Corpus}
-    \begin{enumerate}[<+->]\itemsep9pt
+    \begin{enumerate}
       \item Switchboard corpus . Originally recorded in 1991. 
       \item Audio recording of casual conversations between randomly chosen speakers.
       \item 2483 conversation, involving 520 speakers
@@ -26,8 +26,19 @@
 \begin{frame}{Conversation representation}
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=30em]{../latex/graph5.jpg}\vspace{-1em}
+\includegraphics[width=25em]{../latex/graph5.jpg}\vspace{-1em}
 \end{figure}
+
+     Stored entities on edges. Stored time on nodes.
+    \begin{alertblock}{Example Query}
+    
+     $MATCH\:(da\_start:TIMEPOINT)-[da:DIALACT]->(da\_end:TIMEPOINT)$\\
+            $WITH\:da, (da\_end.time - da\_start.time)\:AS\:length$\\
+            $SET\:da.length\_in\_time = length$
+    
+    
+    
+    \end{alertblock}
 \end{frame}
 
 
@@ -35,7 +46,10 @@
 \begin{frame}{Preprocessing}
  \begin{itemize}
     \item Removed 11 dialogue acts that were coded as other in switchboard.
-    \item Reduce data sparsity by collapsing 65 dialog acts into 9.
+    \item Removed all dialogs with
+     data integrity issues. This decrease the number of conversations from 624 to 310 conversations consisting of 60595 dialog acts.
+    \item Reduce data sparsity by collapsing 148 dialog acts types into 9.
+    \item For each dialog act, added a binary feature for a turn change.
     \item Performed using python-pandas.
   \end{itemize}
 
@@ -68,7 +82,7 @@ o@,+@        & NA           \\
 \frame{\sectionpage}
 
 \begin{frame}{Overview}
-     \begin{enumerate}[<+->]\itemsep9pt
+     \begin{enumerate}
           \item Want to understand distribution of the input variables.
           \item Want to understand correlations between the input features and outcome (turn transition)
           \item Done using python pandas for data preparation and python seaborn for data visualization

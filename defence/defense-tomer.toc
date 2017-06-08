@@ -3,6 +3,6 @@
 \beamer@sectionintoc {2}{Related Work}{7}{0}{2}
 \beamer@sectionintoc {3}{Theoretical Model}{12}{0}{3}
 \beamer@sectionintoc {4}{Data Preparation}{32}{0}{4}
-\beamer@sectionintoc {5}{Data Exploration}{41}{0}{5}
-\beamer@sectionintoc {6}{Machine Learning Models}{57}{0}{6}
-\beamer@sectionintoc {7}{Summary}{64}{0}{7}
+\beamer@sectionintoc {5}{Data Exploration}{38}{0}{5}
+\beamer@sectionintoc {6}{Machine Learning Models}{52}{0}{6}
+\beamer@sectionintoc {7}{Summary}{59}{0}{7}

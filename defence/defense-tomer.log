@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  7 JUN 2017 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.23)  7 JUN 2017 19:39
 entering extended mode
 **./defense-tomer.tex
 (defense-tomer.tex
@@ -2710,28 +2710,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [34
 
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[35
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[36
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[37
-
-] <../latex/pipeline.jpg, id=328, 693.34032pt x 506.6428pt>
+] <../latex/pipeline.jpg, id=306, 693.34032pt x 506.6428pt>
 File: ../latex/pipeline.jpg Graphic file (type jpg)
 
 <use ../latex/pipeline.jpg>
@@ -2742,108 +2721,98 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[38
+[35
 
  <../latex/pipeline.jpg>]
-<../latex/graph5.jpg, id=336, 749.80125pt x 268.75406pt>
+<../latex/graph5.jpg, id=314, 749.80125pt x 268.75406pt>
 File: ../latex/graph5.jpg Graphic file (type jpg)
 
 <use ../latex/graph5.jpg>
-Package pdftex.def Info: ../latex/graph5.jpg used on input line 31.
-(pdftex.def)             Requested size: 328.49991pt x 117.74774pt.
+Package pdftex.def Info: ../latex/graph5.jpg used on input line 42.
+(pdftex.def)             Requested size: 273.74992pt x 98.12106pt.
 
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[36
+
+ <../latex/graph5.jpg>]
+Overfull \vbox (13.30214pt too high) detected at line 78
+ []
+
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[37
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[38
+
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [39
 
- <../latex/graph5.jpg>]
+] <../scikitlearn/figures/f1.png, id=348, 1336.995pt x 758.835pt>
+File: ../scikitlearn/figures/f1.png Graphic file (type png)
+
+<use ../scikitlearn/figures/f1.png>
+Package pdftex.def Info: ../scikitlearn/figures/f1.png used on input line 106.
+(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [40
 
-]
+ <../scikitlearn/figures/f1.png>]
+<../scikitlearn/figures/f10.png, id=358, 1336.995pt x 758.835pt>
+File: ../scikitlearn/figures/f10.png Graphic file (type png)
+
+<use ../scikitlearn/figures/f10.png>
+Package pdftex.def Info: ../scikitlearn/figures/f10.png used on input line 121.
+
+(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [41
 
-]
+ <../scikitlearn/figures/f10.png>]
+<../scikitlearn/figures/f2.png, id=367, 1336.995pt x 758.835pt>
+File: ../scikitlearn/figures/f2.png Graphic file (type png)
+
+<use ../scikitlearn/figures/f2.png>
+Package pdftex.def Info: ../scikitlearn/figures/f2.png used on input line 137.
+(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [42
 
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[43
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[44
-
-] <../scikitlearn/figures/f1.png, id=382, 1336.995pt x 758.835pt>
-File: ../scikitlearn/figures/f1.png Graphic file (type png)
-
-<use ../scikitlearn/figures/f1.png>
-Package pdftex.def Info: ../scikitlearn/figures/f1.png used on input line 92.
-(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[45
-
- <../scikitlearn/figures/f1.png>]
-<../scikitlearn/figures/f10.png, id=392, 1336.995pt x 758.835pt>
-File: ../scikitlearn/figures/f10.png Graphic file (type png)
-
-<use ../scikitlearn/figures/f10.png>
-Package pdftex.def Info: ../scikitlearn/figures/f10.png used on input line 107.
-
-(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[46
-
- <../scikitlearn/figures/f10.png>]
-<../scikitlearn/figures/f2.png, id=401, 1336.995pt x 758.835pt>
-File: ../scikitlearn/figures/f2.png Graphic file (type png)
-
-<use ../scikitlearn/figures/f2.png>
-Package pdftex.def Info: ../scikitlearn/figures/f2.png used on input line 123.
-(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[47
-
  <../scikitlearn/figures/f2.png>]
-<../scikitlearn/figures/f5.png, id=410, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f5.png, id=376, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f5.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f5.png>
-Package pdftex.def Info: ../scikitlearn/figures/f5.png used on input line 140.
+Package pdftex.def Info: ../scikitlearn/figures/f5.png used on input line 154.
 (pdftex.def)             Requested size: 394.19989pt x 223.7386pt.
 
-Overfull \hbox (48.21278pt too wide) in paragraph at lines 140--140
+Overfull \hbox (48.21278pt too wide) in paragraph at lines 154--154
  [] 
  []
 
@@ -2852,51 +2821,89 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[48
+[43
 
  <../scikitlearn/figures/f5.png>]
-<../scikitlearn/figures/f6.png, id=419, 1336.995pt x 758.835pt>
+<../scikitlearn/figures/f6.png, id=386, 1336.995pt x 758.835pt>
 File: ../scikitlearn/figures/f6.png Graphic file (type png)
 
 <use ../scikitlearn/figures/f6.png>
-Package pdftex.def Info: ../scikitlearn/figures/f6.png used on input line 154.
+Package pdftex.def Info: ../scikitlearn/figures/f6.png used on input line 168.
 (pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
 
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[44
+
+ <../scikitlearn/figures/f6.png>]
+<../scikitlearn/figures/f3.png, id=395, 1336.995pt x 758.835pt>
+File: ../scikitlearn/figures/f3.png Graphic file (type png)
+
+<use ../scikitlearn/figures/f3.png>
+Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 183.
+(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[45
+
+ <../scikitlearn/figures/f3.png>]
+<../scikitlearn/figures/f4.png, id=404, 1336.995pt x 758.835pt>
+File: ../scikitlearn/figures/f4.png Graphic file (type png)
+
+<use ../scikitlearn/figures/f4.png>
+Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 200.
+(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
+
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[46
+
+ <../scikitlearn/figures/f4.png>]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[47
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[48
+
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [49
 
- <../scikitlearn/figures/f6.png>]
-<../scikitlearn/figures/f3.png, id=429, 1336.995pt x 758.835pt>
-File: ../scikitlearn/figures/f3.png Graphic file (type png)
-
-<use ../scikitlearn/figures/f3.png>
-Package pdftex.def Info: ../scikitlearn/figures/f3.png used on input line 169.
-(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
-
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [50
 
- <../scikitlearn/figures/f3.png>]
-<../scikitlearn/figures/f4.png, id=438, 1336.995pt x 758.835pt>
-File: ../scikitlearn/figures/f4.png Graphic file (type png)
-
-<use ../scikitlearn/figures/f4.png>
-Package pdftex.def Info: ../scikitlearn/figures/f4.png used on input line 186.
-(pdftex.def)             Requested size: 328.49991pt x 186.44304pt.
-
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
 [51
 
- <../scikitlearn/figures/f4.png>]
+]) (tex/study.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2904,13 +2911,14 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [52
 
 ]
+Overfull \vbox (12.0pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[53
-
-]
+[53]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -2931,46 +2939,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [56
 
-]) (tex/study.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[57
-
-]
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[58]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[59
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[60
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[61
-
-] <../scikitlearn/figures/roc.pdf, id=521, 578.16pt x 397.485pt>
+] <../scikitlearn/figures/roc.pdf, id=487, 578.16pt x 397.485pt>
 File: ../scikitlearn/figures/roc.pdf Graphic file (type pdf)
 
 <use ../scikitlearn/figures/roc.pdf>
@@ -2985,14 +2954,14 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[62
+[57
 
  <../scikitlearn/figures/roc.pdf>]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[63
+[58
 
 ]) (tex/summary.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3002,7 +2971,7 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[64
+[59
 
 ]
 Overfull \vbox (12.0pt too high) has occurred while \output is active []
@@ -3012,7 +2981,42 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
 
-[65]
+[60]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[61
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[62
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[63
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[64
+
+]
+Overfull \hbox (1.66792pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[65
+
+]
 Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 [][] 
  []
@@ -3061,41 +3065,6 @@ Overfull \hbox (1.66792pt too wide) has occurred while \output is active
 
 [72
 
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[73
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[74
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[75
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[76
-
-]
-Overfull \hbox (1.66792pt too wide) has occurred while \output is active
-[][] 
- []
-
-[77
-
 ])
 \tf@nav=\write6
 \openout6 = `defense-tomer.nav'.
@@ -3115,23 +3084,24 @@ Package rerunfilecheck Info: File `defense-tomer.out' has not changed.
 (rerunfilecheck)             Checksum: 263EB46CA0D91928459E2FA3B69AA328;353.
  ) 
 Here is how much of TeX's memory you used:
- 49188 strings out of 493333
- 1131599 string characters out of 3139182
+ 49214 strings out of 493333
+ 1132572 string characters out of 3139182
  1371313 words of memory out of 3000000
- 51646 multiletter control sequences out of 15000+200000
- 598980 words of font info for 111 fonts, out of 3000000 for 9000
+ 51680 multiletter control sequences out of 15000+200000
+ 603087 words of font info for 114 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,15n,101p,10405b,799s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helv
-etic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.p
-fb>
-Output written on defense-tomer.pdf (77 pages, 572933 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvet
+ic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on defense-tomer.pdf (72 pages, 582837 bytes).
 PDF statistics:
- 739 PDF objects out of 1000 (max. 8388607)
- 166 named destinations out of 1000 (max. 500000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

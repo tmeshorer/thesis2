@@ -14,7 +14,8 @@
     \item full model: summary features and the current and previous dialog acts.
   \end{itemize}
   \item Used pandas for data pre processing and scikit-learn for model training and evaluation.
-  \item Evaluation was done using 10 fold cross validation.
+  \item Evaluation was done using 10 fold cross validation, such that all the dialog acts from
+        a specific conversation can be either in the training set or in the validation set.
   \item Run grid search to find the optimal hyper parameters.
   \end{itemize}
 \end{frame}{}
@@ -83,5 +84,10 @@ full       & 83.78\% & 83.87\% & 83.85\% & 83.80\%  & 83.61\% & 83.19\% & 82.80\
 \caption{ AUC Score in relation to the start of the dialog }
 \label{table:starttime}
 \end{table}
+\begin{itemize}
+    \item Based on (Meshorer \& Heeman, 2016) which used fixed 120ms start time.
+    \item Wanted to test results based on different start times.
+    \item Found insensitivity to starting time.     
+  \end{itemize}
 
 \end{frame}{}
